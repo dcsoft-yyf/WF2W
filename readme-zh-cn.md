@@ -7,7 +7,7 @@
 
 ---
 ## 在线演示程序
-- [https://dcsoft-yyf.github.io/MWGAo](https://dcsoft-yyf.github.io/MWGA)
+- [https://dcsoft-yyf.github.io/MWGA](https://dcsoft-yyf.github.io/MWGA)
 ## 更新日志
 - 2026-1-28 : Upload demo Time line.
 - 2026-1-19 : Update demo calculator.
