@@ -154,6 +154,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="docs\dctimeline.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="WinForms\Mine\-.png" />
     <EmbeddedResource Include="WinForms\Mine\0.png" />
     <EmbeddedResource Include="WinForms\Mine\1.png" />
@@ -182,7 +190,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Lib\DCSoft.MWGA.Core.deps.json" />
     <None Include="WinForms\MWGAWinFormDemo.csproj" />
     <None Include="wwwroot\AttachedFiles\BLFX.JPG">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -258,6 +265,9 @@
 
   <ItemGroup>
     <Content Update="wwwroot\BlazorWASMPackager.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\dctimeline.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Update="wwwroot\index.html">

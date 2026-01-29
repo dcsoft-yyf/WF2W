@@ -82,34 +82,34 @@ namespace WindowsFormsApp
 #endif
         }
 #if MWGA
-        private async Task ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
+private async Task ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
 #else
-        private void ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
+private void ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
 #endif
+{
+    if (e.ClickedItem.Text == "打开本地时间轴文档")
+    {
+        using (OpenFileDialog ofd = new OpenFileDialog())
         {
-            if (e.ClickedItem.Text == "打开本地时间轴文档")
+            if (
+#if MWGA
+                await
+#endif
+                ofd.ShowDialog() == DialogResult.OK)
             {
-                using (OpenFileDialog ofd = new OpenFileDialog())
-                {
-                    if (
+                var stream =
 #if MWGA
-                        await
+                    await
 #endif
-                        ofd.ShowDialog() == DialogResult.OK)
-                    {
-                        var stream =
-#if MWGA
-                            await
-#endif
-                            ofd.OpenFile();
-                        var reader = new StreamReader(stream, Encoding.UTF8, true);
-                        var strXml = reader.ReadToEnd();
-                        temperatureControl1.LoadDocumentFormString(strXml);
-                        reader.Close();
-                        //temperatureControl1.LoadDocumentFromFile(ofd.FileName);
-                    }
-                }
+                    ofd.OpenFile();
+                var reader = new StreamReader(stream, Encoding.UTF8, true);
+                var strXml = reader.ReadToEnd();
+                temperatureControl1.LoadDocumentFormString(strXml);
+                reader.Close();
+                //temperatureControl1.LoadDocumentFromFile(ofd.FileName);
             }
+        }
+    }
             else
             {
                 var name = e.ClickedItem.Name;

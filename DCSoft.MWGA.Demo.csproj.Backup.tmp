@@ -1,0 +1,368 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <PublishTrimmed>true</PublishTrimmed>
+    <AssemblyName>DCSoft.MWGA.Demo</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants);MWGA</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>$(DefineConstants);MWGA</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="published\**" />
+    <Compile Remove="WinForms\bin\**" />
+    <Compile Remove="WinForms\obj\**" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\.vs\**" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\bin\**" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\obj\**" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\WindowsFormsApp\.vs\**" />
+    <Compile Remove="WinForms\Properties\**" />
+    <Compile Remove="net90\**" />
+    <Compile Remove="WinForms\Solitaire\**" />
+    <Content Remove="published\**" />
+    <Content Remove="WinForms\bin\**" />
+    <Content Remove="WinForms\obj\**" />
+    <Content Remove="WinForms\OpenSource.DCTimeLineForWinForm\.vs\**" />
+    <Content Remove="WinForms\OpenSource.DCTimeLineForWinForm\bin\**" />
+    <Content Remove="WinForms\OpenSource.DCTimeLineForWinForm\obj\**" />
+    <Content Remove="WinForms\OpenSource.DCTimeLineForWinForm\WindowsFormsApp\.vs\**" />
+    <Content Remove="WinForms\Properties\**" />
+    <Content Remove="net90\**" />
+    <Content Remove="WinForms\Solitaire\**" />
+    <EmbeddedResource Remove="published\**" />
+    <EmbeddedResource Remove="WinForms\bin\**" />
+    <EmbeddedResource Remove="WinForms\obj\**" />
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\.vs\**" />
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\bin\**" />
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\obj\**" />
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\WindowsFormsApp\.vs\**" />
+    <EmbeddedResource Remove="WinForms\Properties\**" />
+    <EmbeddedResource Remove="net90\**" />
+    <EmbeddedResource Remove="WinForms\Solitaire\**" />
+    <None Remove="published\**" />
+    <None Remove="WinForms\bin\**" />
+    <None Remove="WinForms\obj\**" />
+    <None Remove="WinForms\OpenSource.DCTimeLineForWinForm\.vs\**" />
+    <None Remove="WinForms\OpenSource.DCTimeLineForWinForm\bin\**" />
+    <None Remove="WinForms\OpenSource.DCTimeLineForWinForm\obj\**" />
+    <None Remove="WinForms\OpenSource.DCTimeLineForWinForm\WindowsFormsApp\.vs\**" />
+    <None Remove="WinForms\Properties\**" />
+    <None Remove="net90\**" />
+    <None Remove="WinForms\Solitaire\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="WinForms\Mine\AssemblyInfo.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\DCTimeLineValueEditManager.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgEditSingleValue.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgEditSingleValue.Designer.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgEditTowValues.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgEditTowValues.Designer.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgSQLText.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgSQLText.Designer.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgTickList.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgTickList.Designer.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgTitleValues.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgTitleValues.Designer.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\frmTimeLineData.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\frmTimeLineData.Designer.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\frmTimeLineDesigner.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\frmTimeLineDesigner.Designer.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\TemperaturePrintDocument.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\TickInfoListUITypeEditor.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\TimeLineDesignerControl.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\TimeLineDesignerControl.Designer.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\WindowsFormsApp\frmPicture.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\WindowsFormsApp\frmPicture.Designer.cs" />
+    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\WindowsFormsApp\Program.cs" />
+    <Compile Remove="WinForms\Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Lib\DCSoft.MWGA.Core.deps.json" />
+    <Content Remove="WinForms\OpenSource.DCTimeLineForWinForm\app.config" />
+    <Content Remove="wwwroot\AttachedFiles\BLFX.JPG" />
+    <Content Remove="wwwroot\AttachedFiles\CT.JPG" />
+    <Content Remove="wwwroot\AttachedFiles\HLJLD.png" />
+    <Content Remove="wwwroot\AttachedFiles\MZBL.png" />
+    <Content Remove="wwwroot\AttachedFiles\MZHLJLD.png" />
+    <Content Remove="wwwroot\AttachedFiles\RYJL.png" />
+    <Content Remove="wwwroot\AttachedFiles\SCBC.png" />
+    <Content Remove="wwwroot\AttachedFiles\SQTL.png" />
+    <Content Remove="wwwroot\AttachedFiles\SSJL.png" />
+    <Content Remove="wwwroot\AttachedFiles\XSHBGD.png" />
+    <Content Remove="wwwroot\AttachedFiles\XTJL1.png" />
+    <Content Remove="wwwroot\AttachedFiles\XTJL2.png" />
+    <Content Remove="wwwroot\DCResourceStrings-en.js" />
+    <Content Remove="wwwroot\DCResourceStrings-zh-cn.js" />
+    <Content Remove="wwwroot\Minesweeper.html" />
+    <Content Remove="wwwroot\WinFormCalculator - 复制.html.br" />
+    <Content Remove="wwwroot\WinFormCalculator - 复制.html.gz" />
+    <Content Remove="wwwroot\WinFormCalculator.html" />
+    <Content Remove="wwwroot\WinFormCalculator.html.br" />
+    <Content Remove="wwwroot\WinFormCalculator.html.gz" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgEditSingleValue.resx" />
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgEditTowValues.resx" />
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgSQLText.resx" />
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgTickList.resx" />
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\dlgTitleValues.resx" />
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\frmTimeLineData.resx" />
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\frmTimeLineDesigner.resx" />
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\TimeLineDesignerControl.resx" />
+    <EmbeddedResource Remove="WinForms\OpenSource.DCTimeLineForWinForm\WindowsFormsApp\frmPicture.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="WinForms\Mine\-.png" />
+    <None Remove="WinForms\Mine\0.png" />
+    <None Remove="WinForms\Mine\1.png" />
+    <None Remove="WinForms\Mine\2.png" />
+    <None Remove="WinForms\Mine\3.png" />
+    <None Remove="WinForms\Mine\4.png" />
+    <None Remove="WinForms\Mine\5.png" />
+    <None Remove="WinForms\Mine\6.png" />
+    <None Remove="WinForms\Mine\7.png" />
+    <None Remove="WinForms\Mine\8.png" />
+    <None Remove="WinForms\Mine\9.png" />
+    <None Remove="WinForms\Mine\Face1.png" />
+    <None Remove="WinForms\Mine\Face2.png" />
+    <None Remove="WinForms\Mine\Face3.png" />
+    <None Remove="WinForms\Mine\Face4.png" />
+    <None Remove="WinForms\Mine\Marked.png" />
+    <None Remove="WinForms\Mine\MarkedWrong.png" />
+    <None Remove="WinForms\Mine\NotDiscovery.png" />
+    <None Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\TimeLineDesignerControl.bmp" />
+    <None Remove="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_CustomTable.xml" />
+    <None Remove="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_HealthRecord.xml" />
+    <None Remove="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_PainScore.xml" />
+    <None Remove="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_Perioperative.xml" />
+    <None Remove="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_SurgicalSchedule.xml" />
+    <None Remove="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_TimeZoneTest.xml" />
+    <None Remove="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_ValuePointOverlapTest.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="docs\dctimeline.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="WinForms\Mine\-.png" />
+    <EmbeddedResource Include="WinForms\Mine\0.png" />
+    <EmbeddedResource Include="WinForms\Mine\1.png" />
+    <EmbeddedResource Include="WinForms\Mine\2.png" />
+    <EmbeddedResource Include="WinForms\Mine\3.png" />
+    <EmbeddedResource Include="WinForms\Mine\4.png" />
+    <EmbeddedResource Include="WinForms\Mine\5.png" />
+    <EmbeddedResource Include="WinForms\Mine\6.png" />
+    <EmbeddedResource Include="WinForms\Mine\7.png" />
+    <EmbeddedResource Include="WinForms\Mine\8.png" />
+    <EmbeddedResource Include="WinForms\Mine\9.png" />
+    <EmbeddedResource Include="WinForms\Mine\Face1.png" />
+    <EmbeddedResource Include="WinForms\Mine\Face2.png" />
+    <EmbeddedResource Include="WinForms\Mine\Face3.png" />
+    <EmbeddedResource Include="WinForms\Mine\Face4.png" />
+    <EmbeddedResource Include="WinForms\Mine\Marked.png" />
+    <EmbeddedResource Include="WinForms\Mine\MarkedWrong.png" />
+    <EmbeddedResource Include="WinForms\Mine\NotDiscovery.png" />
+    <EmbeddedResource Include="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_CustomTable.xml" />
+    <EmbeddedResource Include="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_HealthRecord.xml" />
+    <EmbeddedResource Include="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_PainScore.xml" />
+    <EmbeddedResource Include="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_Perioperative.xml" />
+    <EmbeddedResource Include="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_SurgicalSchedule.xml" />
+    <EmbeddedResource Include="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_TimeZoneTest.xml" />
+    <EmbeddedResource Include="WinForms\OpenSource.DCTimeLineForWinForm\TimeLineDemoFiles\timeline_ValuePointOverlapTest.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="WinForms\MWGAWinFormDemo.csproj" />
+    <None Include="wwwroot\AttachedFiles\BLFX.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\AttachedFiles\CT.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\AttachedFiles\HLJLD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\AttachedFiles\MZBL.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\AttachedFiles\MZHLJLD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\AttachedFiles\RYJL.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\AttachedFiles\SCBC.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\AttachedFiles\SQTL.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\AttachedFiles\SSJL.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\AttachedFiles\XSHBGD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\AttachedFiles\XTJL1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\AttachedFiles\XTJL2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\DCResourceStrings-en.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\DCResourceStrings-zh-cn.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\Minesweeper.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\Minesweeper.html.br" />
+    <None Include="wwwroot\Minesweeper.html.gz" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.11" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.11" />
+    <PackageReference Include="System.Resources.Extensions" Version="9.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\WinFormCalculator.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="wwwroot\WinFormCalculator.html.br" />
+    <None Include="wwwroot\WinFormCalculator.html.gz" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DCSoft.MWGA">
+      <HintPath>Lib\DCSoft.MWGA.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\BlazorWASMPackager.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\dctimeline.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\win10.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\DCWin32API.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\DCWinForm2WASM.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Drawing.Drawing2D.HatchBrush.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Drawing.Graphics.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Drawing.TextureBrush.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.Button.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.ComboBox.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.ContainerControl.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.Control.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.DataGridView.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.Form.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.Label.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.MainMenu.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.Menu.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.MenuItem.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.MessageBox.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.OpenFileDialog.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.Panel.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.PictureBox.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.ScrollableControl.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.TabControl.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.TabPage.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.TextBox.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.ToolStrip.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\_framework\System.Windows.Forms.UserControl.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="readme-zh-cn.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="readme-zh-cn.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="readme.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

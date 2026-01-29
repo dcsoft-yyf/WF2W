@@ -1,31 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><!-- Warning:Must be UTF-8 , otherwise Error !! -->
     <title>MWGA.Demo</title>
     <style>
-        html, body { height: 100%; margin: 0; overflow: hidden; }
-        body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Segoe UI Emoji"; }
-        .page-header { padding: 12px 16px; box-sizing: border-box; border-bottom: 1px solid #e5e7eb; }
-        .page-header h1 { margin: 0 0 8px 0; font-size: 18px; font-weight: 700; }
-        .page-header a { color: #2563eb; text-decoration: none; }
-        .page-header a:hover { text-decoration: underline; }
-
-        #split-container { display: flex; width: 100vw; height: calc(100% - 80px); box-sizing: border-box; }
-        #left-pane { flex: 1 1 auto; min-width: 160px; overflow: hidden; }
-        #splitter { flex: 0 0 6px; cursor: col-resize; background: linear-gradient(90deg,#e5e7eb,#cbd5e1); }
-        #right-pane { flex: 0 0 300px; width: 300px; min-width: 180px; max-width: 60vw; padding: 12px; box-sizing: border-box; overflow: auto; background: #f9fafb; border-right: 1px solid #e5e7eb; }
-
-        .controls-title { margin: 0 0 8px 0; font-size: 14px; font-weight: 600; color: #334155; }
-        .vue-btn {
-            appearance: none; border: 0; background: lightgray; color: black;
-            padding: 8px 14px; border-radius: 6px; font-weight: 600; cursor: pointer;
-            box-shadow: 0 1px 2px rgba(0,0,0,.04); transition: background .15s ease, transform .02s;
-            margin: 4px 0; width: 100%; text-align: left;
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
         }
-        .vue-btn:hover { background: #3aa876; }
-        .vue-btn:active { transform: translateY(1px); }
-        .hint { font-size: 12px; color: #64748b; margin: 8px 0 0; }
+
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Segoe UI Emoji";
+        }
+
+        .page-header {
+            padding: 12px 16px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+            .page-header h1 {
+                margin: 0 0 8px 0;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            .page-header a {
+                color: #2563eb;
+                text-decoration: none;
+            }
+
+                .page-header a:hover {
+                    text-decoration: underline;
+                }
+
+        #split-container {
+            display: flex;
+            width: 100vw;
+            height: calc(100% - 80px);
+            box-sizing: border-box;
+        }
+
+        #left-pane {
+            flex: 1 1 auto;
+            min-width: 160px;
+            overflow: hidden;
+        }
+
+        #splitter {
+            flex: 0 0 6px;
+            cursor: col-resize;
+            background: linear-gradient(90deg,#e5e7eb,#cbd5e1);
+        }
+
+        #right-pane {
+            flex: 0 0 300px;
+            width: 300px;
+            min-width: 180px;
+            max-width: 60vw;
+            padding: 12px;
+            box-sizing: border-box;
+            overflow: auto;
+            background: #f9fafb;
+            border-right: 1px solid #e5e7eb;
+        }
+
+        .controls-title {
+            margin: 0 0 8px 0;
+            font-size: 14px;
+            font-weight: 600;
+            color: #334155;
+        }
+
+        .vue-btn {
+            appearance: none;
+            border: 0;
+            background: lightgray;
+            color: black;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 1px 2px rgba(0,0,0,.04);
+            transition: background .15s ease, transform .02s;
+            margin: 4px 0;
+            width: 100%;
+            text-align: left;
+        }
+
+            .vue-btn:hover {
+                background: #3aa876;
+            }
+
+            .vue-btn:active {
+                transform: translateY(1px);
+            }
+
+        .hint {
+            font-size: 12px;
+            color: #64748b;
+            margin: 8px 0 0;
+        }
     </style>
 </head>
 <body>

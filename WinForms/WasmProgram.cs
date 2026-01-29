@@ -17,7 +17,7 @@ namespace MWGAWinFormDemo
                 var frm = new frmDCTimlineDemo();
                 Application.Run(frm);
             }
-            catch( Exception ext )
+            catch (Exception ext)
             {
                 Console.WriteLine(ext.ToString());
                 throw ext;
@@ -30,7 +30,7 @@ namespace MWGAWinFormDemo
             var frm = new Form();
             frm.Text = "Text file viewer";
             frm.StartPosition = FormStartPosition.CenterScreen;
-            
+
             var txt = new TextBox();
             txt.ScrollBars = ScrollBars.Both;
             txt.Multiline = true;
