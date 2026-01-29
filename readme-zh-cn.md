@@ -38,7 +38,7 @@ MWGA就是专门帮助将WinForms应用程序迁移到Blazor WASM平台上，即
 
 时间轴产品是南京都昌公司的一个WinForms软件产品，现已开源，这是一个面向医院的专业软件产品，可以认为是体温单软件的增强版，它包含了7万行C#代码，其中有数万行GDI+绘图相关代码，其运行界面如下图所示：
 
-![时间轴产品WinForms版本](https://www.dcwriter.cn/image/timeline1.png)
+![时间轴产品WinForms版本](https://github.com/dcsoft-yyf/MWGA/blob/main/images/winform-timeline.png?raw=true)
 
 我们创建了一个Blazor WASM 9.0的程序，把时间轴的代码复制过来，并做一些改造，代码修改量不超过700行，也就是小于1%，比如：
 
@@ -69,7 +69,7 @@ if (e.ClickedItem.Text == "打开本地时间轴文档")
 
 由于Blazor WASM是采用浏览器非阻断线程模式，为此我们实现了异步`ShowDialog()`函数，采用`await`语句来暂停当前代码执行，这样减少对旧代码的修改量。并使用了条件编译，使得同一份C#代码无需修改即可编译成.exe和.wasm文件。最后编译成.wasm的程序在谷歌浏览器中运行效果如下图所示：
 
-![时间轴产品Blazor WASM版本](https://www.dcwriter.cn/image/timeline2.png)
+![时间轴产品Blazor WASM版本](https://github.com/dcsoft-yyf/MWGA/blob/main/images/mwga-timeline.png?raw=true)
 
 程序中数万行内容排版和绘图代码未做修改，比如：
 

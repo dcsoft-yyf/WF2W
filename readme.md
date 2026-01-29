@@ -38,7 +38,7 @@ From another perspective, MWGA can be seen as a general-purpose frontend framewo
 
 The Timeline product is a WinForms software product of Nanjing Duchang, now open source. It is a professional software product for hospitals, which can be regarded as an enhanced version of temperature chart software. It contains 70,000 lines of C# code, including tens of thousands of lines of GDI+ drawing-related code. Its running interface is shown below:
 
-![Timeline Product WinForms Version](https://www.dcwriter.cn/image/timeline1.png)
+![Timeline Product WinForms Version](https://github.com/dcsoft-yyf/MWGA/blob/main/images/winform-timeline.png?raw=true)
 
 We created a Blazor WASM 9.0 program, copied the Timeline code over, and made some adaptations. The code modification did not exceed 700 lines, i.e., less than 1%, for example:
 
@@ -69,7 +69,7 @@ if (e.ClickedItem.Text == "打开本地时间轴文档")
 
 Since Blazor WASM uses a browser non-blocking thread mode, we implemented an asynchronous `ShowDialog()` function and use `await` to pause current code execution, thus reducing modifications to the old code. We also use conditional compilation so that the same C# code can be compiled into .exe and .wasm files without modification. The program compiled to .wasm runs in Google Chrome as shown below:
 
-![Timeline Product Blazor WASM Version](https://www.dcwriter.cn/image/timeline2.png)
+![Timeline Product Blazor WASM Version](https://github.com/dcsoft-yyf/MWGA/blob/main/images/mwga-timeline.png?raw=true)
 
 Tens of thousands of lines of layout and drawing code in the program were not modified, for example:
 
