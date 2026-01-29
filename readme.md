@@ -1,5 +1,4 @@
-# MWGA - To Revive 100 Billion Lines of C# Code| [English](https://github.com/dcsoft-yyf/MWGA/blob/main/readme.md)
-
+# MWGA - To Revive 100 Billion Lines of C# Code| [简体中文版](https://github.com/dcsoft-yyf/MWGA/blob/main/readme-zh-cn.md)
 **Nanjing Duchang Information Technology Co., Ltd.**  
 **January 28, 2026**
 

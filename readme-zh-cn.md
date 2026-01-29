@@ -1,4 +1,4 @@
-# MWGA - 为了复活1000亿行C#代码[简体中文版](https://github.com/dcsoft-yyf/MWGA/blob/main/readme-zh-cn.md)
+# MWGA - 为了复活1000亿行C#代码
 
 **南京都昌信息科技有限公司**  
 **2026-1-28**
