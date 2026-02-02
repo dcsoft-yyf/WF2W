@@ -8,7 +8,7 @@
 ## Online demo
 - [https://dcsoft-yyf.github.io/MWGA](https://dcsoft-yyf.github.io/MWGA)
 ## Update Log
-- 2026-1-28 : Upload demo Time line.
+- 2026-2-2 : Upload demo Time line. [How MWGA Can Help Quickly Migrate 70,000 Lines of C# Source Code WinForms Program to Web Frontend](https://github.com/dcsoft-yyf/MWGA/blob/main/demo-timeline.md).
 - 2026-1-19 : Update demo calculator.
 - 2026-1-19 : Update demo Mimesweeper at 
 ---

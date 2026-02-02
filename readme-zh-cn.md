@@ -9,9 +9,9 @@
 ## 在线演示程序
 - [https://dcsoft-yyf.github.io/MWGA](https://dcsoft-yyf.github.io/MWGA)
 ## 更新日志
-- 2026-1-28 : Upload demo Time line.
-- 2026-1-19 : Update demo calculator.
-- 2026-1-19 : Update demo Mimesweeper at 
+- 2026-2-2 : 更新时间轴演示程序. [MWGA 如何帮助 7 万行C#源代码 WinForms 程序快速迁移到 WEB 前端](https://github.com/dcsoft-yyf/MWGA/blob/main/demo-timeline.md).
+- 2026-1-19 : 更新计算器演示程序.
+- 2026-1-19 : 更新扫雷演示程序.
 ---
 
 ## 1. 一句话介绍

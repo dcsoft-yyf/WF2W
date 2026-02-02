@@ -1,4 +1,4 @@
-﻿# MWGA 如何帮助 7 万行 WinForms 程序快速迁移到 WEB 前端 丨 How MWGA Helps Migrate a 70,000-Line WinForms Application to the Web Frontend
+﻿# MWGA 如何帮助 7 万行C#源代码 WinForms 程序快速迁移到 WEB 前端 丨 How MWGA Can Help Quickly Migrate 70,000 Lines of C# Source Code WinForms Program to Web Frontend
 
 **2026-1-29**
 
@@ -34,7 +34,7 @@ The migration target is a commercial healthcare software product called "Timelin
 
 The following is the interface for displaying cross-institution resident health record data:
 
-![跨机构居民健康档案数据展示界面 丨 Cross-institution resident health record data display interface](https://github.com/dcsoft-yyf/MWGA/blob/main/images/winform-timeline1.png?raw=true)
+![跨机构居民健康档案数据展示界面 丨 Cross-institution resident health record data display interface](https://github.com/dcsoft-yyf/MWGA/blob/main/images/timeline-winform1.png?raw=true)
 
 这个界面很复杂，将门诊、社区医院、住院、手术等数据串联在一起，形成不同的时间区域，时间区域可以展开和收缩，里面还有超连接文本。用户可以点击左边的坐标尺来显示和隐藏线条，当体温值过高和过低时会有小箭头并伴随纵向文本。
 
@@ -44,13 +44,13 @@ This interface is complex: it strings together outpatient, community hospital, i
 
 The figure below shows the in-hospital operating room scheduling interface. White areas represent surgeries that have started, gray areas represent planned surgeries, and red blocks indicate surgeries that encountered unexpected events.
 
-![手术室排程界面 丨 Operating room scheduling interface](https://github.com/dcsoft-yyf/MWGA/blob/main/images/winform-timeline2.png?raw=true)
+![手术室排程界面 丨 Operating room scheduling interface](https://github.com/dcsoft-yyf/MWGA/blob/main/images/timeline-winform2.png?raw=true)
 
 这个软件产品还卖到台湾医院了，下图为台湾医院中的住院患者数据展示界面，这里的阴影区域，上边缘是血压的收缩压，下边缘是舒张压，还有一个红色折线表示疼痛指数，上面的表格显示了住院时间，下面的表格显示了用药情况，可以明确展示出用药和血压及疼痛指数之间时间上的先后关系。
 
 The software has also been sold to hospitals in Taiwan. The figure below shows the inpatient data display interface in a Taiwanese hospital. The shaded area has the upper edge as systolic blood pressure and the lower edge as diastolic blood pressure; a red polyline represents the pain index. The upper table shows length of stay and the lower table shows medication records, clearly showing the temporal relationship between medication, blood pressure, and pain index.
 
-![台湾医院住院患者数据展示 丨 Inpatient data display in Taiwan hospital](image-placeholder-taiwan-inpatient.png)
+![台湾医院住院患者数据展示 丨 Inpatient data display in Taiwan hospital](https://github.com/dcsoft-yyf/MWGA/blob/main/images/timeline-winform3.png?raw=true)
 
 这个软件紧密贴合医院临床需求，功能强大，是一个经过市场考验的软件产品。
 
@@ -58,7 +58,7 @@ The software is closely aligned with hospital clinical needs, powerful in functi
 
 ---
 
-## 3. 迁移过程与成果 丨 3. Migration Process and Results
+## 3. 迁移过程与成果 丨Migration Process and Results
 
 借助 MWGA，我们以极低的成本完成了这个庞大项目的 Web 化迁移。整个过程遵循高度标准化的流程，核心环节如下：
 
@@ -140,23 +140,23 @@ After migration, this 70,000-line WinForms application was successfully transfor
 
 - **在谷歌浏览器中运行界面** / *Running in Google Chrome*
 
-![Chrome 运行效果 丨 Running in Chrome](image-placeholder-chrome.png)
+![Chrome 运行效果 丨 Running in Chrome](https://github.com/dcsoft-yyf/MWGA/blob/main/images/timeline-chrome.png?raw=true)
 
 - **在 FireFox 中运行的效果** / *Running in Firefox*
 
-![Firefox 运行效果 丨 Running in Firefox](image-placeholder-firefox.png)
+![Firefox 运行效果 丨 Running in Firefox](https://github.com/dcsoft-yyf/MWGA/blob/main/images/timeline-firefox.png?raw=true)
 
 - **在 iPad 中的运行效果** / *Running on iPad*
 
-![iPad 运行效果 丨 Running on iPad](image-placeholder-ipad.png)
+![iPad 运行效果 丨 Running on iPad](https://github.com/dcsoft-yyf/MWGA/blob/main/images/timeline-ipad.png?raw=true)
 
 - **在安卓平板中的运行效果** / *Running on Android tablet*
 
-![安卓平板运行效果 丨 Running on Android tablet](image-placeholder-android.png)
+![安卓平板运行效果 丨 Running on Android tablet](https://github.com/dcsoft-yyf/MWGA/blob/main/images/timeline-android.png?raw=true)
 
 - **该软件在统信操作系统中的运行效果** / *Running on UnionTech OS*
 
-![统信 UOS 运行效果 丨 Running on UnionTech UOS](image-placeholder-uniontech.png)
+![统信 UOS 运行效果 丨 Running on UnionTech UOS](https://github.com/dcsoft-yyf/MWGA/blob/main/images/timeline-uos.png?raw=true)
 
 迁移后的 Web 应用完整保留了原桌面版的所有交互逻辑和界面效果，包括复杂的 GDI+ 绘图、鼠标拖拽、点击响应等行为，用户体验与原生版本高度一致。
 
@@ -168,7 +168,7 @@ For easy trial, we provide an online demo of this case at: [https://dcsoft-yyf.g
 
 ---
 
-## 4. 结论与价值 丨 4. Conclusions and Value
+## 4. 结论与价值 丨 Conclusions and Value
 
 本次迁移工作验证了以下结论：
 
