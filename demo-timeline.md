@@ -162,7 +162,7 @@ After migration, this 70,000-line WinForms application was successfully transfor
 
 The migrated web application fully preserves all interaction logic and UI effects of the original desktop version, including complex GDI+ drawing, mouse drag, click response, and other behaviors. The user experience is highly consistent with the native version.
 
-**公开演示地址** / **Public demo**: 为方便体验，我们提供了该案例的在线演示，大家可通过以下链接访问：【https://dcsoft-yyf.github.io/MWGA/dctimeline.html】
+**公开演示地址** / **Public demo**: 为方便体验，我们提供了该案例的在线演示，大家可通过以下链接访问：【 https://dcsoft-yyf.github.io/MWGA/dctimeline.html 】
 
 For easy trial, we provide an online demo of this case at: [https://dcsoft-yyf.github.io/MWGA/dctimeline.html](https://dcsoft-yyf.github.io/MWGA/dctimeline.html)
 
