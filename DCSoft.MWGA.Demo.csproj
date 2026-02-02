@@ -83,7 +83,6 @@
     <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\TemperatureChart\TimeLineDesignerControl.Designer.cs" />
     <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\WindowsFormsApp\frmPicture.cs" />
     <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\WindowsFormsApp\frmPicture.Designer.cs" />
-    <Compile Remove="WinForms\OpenSource.DCTimeLineForWinForm\WindowsFormsApp\Program.cs" />
     <Compile Remove="WinForms\Program.cs" />
   </ItemGroup>
 
