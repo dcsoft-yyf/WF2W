@@ -4,7 +4,7 @@
 
 ---
 
-## 1. 前言 丨 1. Introduction
+## 1. 前言 丨 Introduction
 
 MWGA，是 Make Winforms Great Again 的缩写，是一个帮助 WinForms 程序快速迁移到 Blazor WASM 平台的高效工具软件。近期，我们借助 MWGA 成功将一个约 7 万行 C# 代码的成熟商业 WinForms 程序迁移至 Web 前端，整个过程快速且代码改动量极小，验证了其在复杂项目迁移中的不可思议的迁移能力。本文将以该案例为基础，概述迁移的核心思路与显著成果。
 
@@ -12,7 +12,7 @@ MWGA stands for "Make WinForms Great Again". It is an efficient tool that helps 
 
 ---
 
-## 2. 案例程序说明 丨 2. Case Application Overview
+## 2. 案例程序说明 丨 Case Application Overview
 
 本次迁移的对象是一款面向医院行业的商业软件——“时间轴”，主要用于患者体温单曲线图、跨机构居民健康档案数据可视化、手术室排程及住院患者数据分析。该软件功能复杂，紧密贴合医疗临床需求，具有以下特点：
 
@@ -34,7 +34,7 @@ The migration target is a commercial healthcare software product called "Timelin
 
 The following is the interface for displaying cross-institution resident health record data:
 
-![跨机构居民健康档案数据展示界面 丨 Cross-institution resident health record data display interface](image-placeholder-cross-institution.png)
+![跨机构居民健康档案数据展示界面 丨 Cross-institution resident health record data display interface](https://github.com/dcsoft-yyf/MWGA/blob/main/images/winform-timeline1.png?raw=true)
 
 这个界面很复杂，将门诊、社区医院、住院、手术等数据串联在一起，形成不同的时间区域，时间区域可以展开和收缩，里面还有超连接文本。用户可以点击左边的坐标尺来显示和隐藏线条，当体温值过高和过低时会有小箭头并伴随纵向文本。
 
@@ -44,7 +44,7 @@ This interface is complex: it strings together outpatient, community hospital, i
 
 The figure below shows the in-hospital operating room scheduling interface. White areas represent surgeries that have started, gray areas represent planned surgeries, and red blocks indicate surgeries that encountered unexpected events.
 
-![手术室排程界面 丨 Operating room scheduling interface](image-placeholder-surgery-schedule.png)
+![手术室排程界面 丨 Operating room scheduling interface](https://github.com/dcsoft-yyf/MWGA/blob/main/images/winform-timeline2.png?raw=true)
 
 这个软件产品还卖到台湾医院了，下图为台湾医院中的住院患者数据展示界面，这里的阴影区域，上边缘是血压的收缩压，下边缘是舒张压，还有一个红色折线表示疼痛指数，上面的表格显示了住院时间，下面的表格显示了用药情况，可以明确展示出用药和血压及疼痛指数之间时间上的先后关系。
 
