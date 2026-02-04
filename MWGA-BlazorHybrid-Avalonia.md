@@ -1,4 +1,4 @@
-﻿# MWGA-Centric WinForms Migration — vs Blazor Hybrid & Avalonia
+﻿# MWGA vs Blazor Hybrid & Avalonia
 
 > *This document clarifies the positioning, key differences, and use cases of the three options to support WinForms migration and technology upgrade decisions.*
 >
@@ -154,7 +154,7 @@
 ---
 
 
-# MWGA 为核心的 WinForms 迁移选型：与 Blazor Hybrid、Avalonia 对比
+# MWGA 与 Blazor Hybrid、Avalonia 对比
 
 > 本文清晰区分三者的定位、核心差异与适用场景，助力 WinForms 项目迁移与技术升级选型。
 >
