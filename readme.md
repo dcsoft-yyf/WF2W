@@ -9,6 +9,7 @@
 - [https://dcsoft-yyf.github.io/MWGA](https://dcsoft-yyf.github.io/MWGA)
 - Timeline demo at [https://dcsoft-yyf.github.io/MWGA/dctimeline.html](https://dcsoft-yyf.github.io/MWGA/dctimeline.html)
 ## Update Log
+- 2026-2-4 : Upload document [MWGA vs Blazor Hybrid & Avalonia](https://github.com/dcsoft-yyf/MWGA/blob/main/MWGA-BlazorHybrid-Avalonia.md)
 - 2026-2-2 : Upload demo Time line. [How MWGA Can Help Quickly Migrate 70,000 Lines of C# Source Code WinForms Program to Web Frontend](https://github.com/dcsoft-yyf/MWGA/blob/main/demo-timeline.md).
 - 2026-1-19 : Update demo calculator.
 - 2026-1-19 : Update demo Mimesweeper at 
