@@ -408,6 +408,9 @@ Demo projects are open-source examples used to demonstrate migration processes a
 For any questions, please contact: 28348092@qq.com or leave a message at [https://github.com/dcsoft-yyf/MWGA](https://github.com/dcsoft-yyf/MWGA).
 
 ---
+## 14. Our team
+Stable and reliable, young and full of vitality.
+<img src="https://github.com/dcsoft-yyf/MWGA/blob/main/images/dcsoft-team.jpg?raw=true"/>
 
 **Nanjing Duchang Information Technology Co., Ltd.**  
 **January 28, 2026**
