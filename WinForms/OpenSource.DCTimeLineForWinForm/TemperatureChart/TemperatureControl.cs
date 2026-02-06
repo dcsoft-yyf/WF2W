@@ -1770,14 +1770,10 @@ namespace DCSoft.TemperatureChart
           
         private void cboPageIndex_SelectedIndexChanged(object sender, EventArgs e)
         {
-#if MWGA
-            MessageBox.Show("Not supported in MWGA version.");
-#else
 
             OnSelectPageIndexChanged(new SelectPageIndexChangeArgs(cboPageIndex.SelectedIndex));
             pnlView.CurrentPageIndex = cboPageIndex.SelectedIndex;
             pnlView.Invalidate();
-#endif
         }
 
         private void btnPrintCurrentPage_Click(object sender, EventArgs e)

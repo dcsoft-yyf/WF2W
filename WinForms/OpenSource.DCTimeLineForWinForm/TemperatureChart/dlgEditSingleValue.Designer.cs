@@ -40,38 +40,38 @@
             // lblTitle
             // 
             resources.ApplyResources(this.lblTitle, "lblTitle");
-            //this.$1.Name = "lblTitle";
+            this.lblTitle.Name = "lblTitle";
             // 
             // txtValue
             // 
             resources.ApplyResources(this.txtValue, "txtValue");
-            //this.$1.Name = "txtValue";
+            this.txtValue.Name = "txtValue";
             // 
             // btnOK
             // 
             resources.ApplyResources(this.btnOK, "btnOK");
-            //this.$1.Name = "btnOK";
+            this.btnOK.Name = "btnOK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.btnCancel, "btnCancel");
-            //this.$1.Name = "btnCancel";
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.Name = "btnCancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
-            //this.$1.Name = "label1";
+            this.label1.Name = "label1";
             // 
             // dateTimePicker1
             // 
             resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            //this.$1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Name = "dateTimePicker1";
             // 
             // dlgEditSingleValue
             // 
@@ -88,7 +88,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-//            //this.$1.Name = "dlgEditSingleValue";
+            this.Name = "dlgEditSingleValue";
             this.ShowInTaskbar = false;
             this.Load += new System.EventHandler(this.dlgEditSingleValue_Load);
             this.ResumeLayout(false);

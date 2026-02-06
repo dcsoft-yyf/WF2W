@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dlgTitleValues));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvLabels = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,6 +40,7 @@
             // 
             // dgvLabels
             // 
+            resources.ApplyResources(this.dgvLabels, "dgvLabels");
             this.dgvLabels.AllowUserToAddRows = false;
             this.dgvLabels.AllowUserToDeleteRows = false;
             this.dgvLabels.AllowUserToOrderColumns = true;
@@ -48,64 +50,49 @@
             this.dgvLabels.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dgvLabels.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dgvLabels.Location = new System.Drawing.Point(0, 0);
-            //this.$1.Name = "dgvLabels";
+            this.dgvLabels.Name = "dgvLabels";
             this.dgvLabels.RowHeadersVisible = false;
             this.dgvLabels.RowTemplate.Height = 23;
-            this.dgvLabels.Size = new System.Drawing.Size(459, 307);
-            this.dgvLabels.TabIndex = 0;
             // 
             // Column1
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column1.HeaderText = "标题";
-            //this.$1.Name = "Column1";
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 150;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "内容";
-            //this.$1.Name = "Column2";
-            this.Column2.Width = 280;
+            resources.ApplyResources(this.Column2, "Column2");
+            this.Column2.Name = "Column2";
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(120, 328);
-            //this.$1.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(103, 23);
-            this.btnOK.TabIndex = 1;
-            this.btnOK.Text = "确定(&O)";
+            resources.ApplyResources(this.btnOK, "btnOK");
+            this.btnOK.Name = "btnOK";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(256, 328);
-            //this.$1.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(103, 23);
-            this.btnCancel.TabIndex = 2;
-            this.btnCancel.Text = "取消(&C)";
+            resources.ApplyResources(this.btnCancel, "btnCancel");
+            this.btnCancel.Name = "btnCancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // dlgTitleValues
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(459, 363);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.dgvLabels);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-//            //this.$1.Name = "dlgTitleValues";
+            this.Name = "dlgTitleValues";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "编辑标题";
             this.Load += new System.EventHandler(this.dlgEditHeaderLabels_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLabels)).EndInit();
             this.ResumeLayout(false);
@@ -115,9 +102,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvLabels;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }

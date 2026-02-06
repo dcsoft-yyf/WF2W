@@ -8,3 +8,4 @@ docs/_framework/
 WinForms/OpenSource.DCTimeLineForWinForm/bin/
 WinForms/OpenSource.DCTimeLineForWinForm/obj/
 WinForms/OpenSource.DCTimeLineForWinForm/.vs/
+*.user

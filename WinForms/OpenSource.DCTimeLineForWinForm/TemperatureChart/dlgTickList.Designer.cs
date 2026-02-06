@@ -47,6 +47,7 @@
             // 
             // toolStrip1
             // 
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnDelete,
             this.toolStripSeparator1,
@@ -55,61 +56,60 @@
             this.toolStripSeparator2,
             this.btnOK,
             this.btnCancel});
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.ShowItemToolTips = false;
             // 
             // btnDelete
             // 
-            this.btnDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.btnDelete, "btnDelete");
+            this.btnDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // txtSeconds
             // 
-            this.txtSeconds.Name = "txtSeconds";
             resources.ApplyResources(this.txtSeconds, "txtSeconds");
+            this.txtSeconds.Name = "txtSeconds";
             // 
             // btnSetTickBySeconds
             // 
-            this.btnSetTickBySeconds.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.btnSetTickBySeconds, "btnSetTickBySeconds");
+            this.btnSetTickBySeconds.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnSetTickBySeconds.Name = "btnSetTickBySeconds";
             this.btnSetTickBySeconds.Click += new System.EventHandler(this.btnSetTickBySeconds_Click);
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
             // 
             // btnOK
             // 
-            this.btnOK.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.btnOK, "btnOK");
+            this.btnOK.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnOK.Name = "btnOK";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             resources.ApplyResources(this.btnCancel, "btnCancel");
+            this.btnCancel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnCancel.Name = "btnCancel";
             // 
             // dgvTicks
             // 
+            resources.ApplyResources(this.dgvTicks, "dgvTicks");
             this.dgvTicks.AllowUserToResizeRows = false;
             this.dgvTicks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTicks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            resources.ApplyResources(this.dgvTicks, "dgvTicks");
             this.dgvTicks.Name = "dgvTicks";
             this.dgvTicks.RowTemplate.Height = 23;
             this.dgvTicks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTicks_CellContentClick);

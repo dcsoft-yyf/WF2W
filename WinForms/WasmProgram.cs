@@ -9,6 +9,25 @@ namespace MWGAWinFormDemo
 {
     public static class WasmProgram
     {
+
+        [JSInvokable]
+        public static void TestCustomCompoundControl()
+        {
+            try
+            {
+                var frm = new Form();
+                var customctl = new CompoundControl1();
+                customctl.Dock = DockStyle.Fill;
+                frm.Controls.Add(customctl);
+                Application.Run(frm);
+            }
+            catch (Exception ext)
+            {
+                Console.WriteLine(ext.ToString());
+                throw ext;
+            }
+        }
+
         [JSInvokable]
         public static void RunDCTimeLine()
         {

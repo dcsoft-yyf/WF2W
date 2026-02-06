@@ -24,50 +24,18 @@ namespace WindowsFormsApp
             //temperatureControl1.EventValuePointClick += TemperatureControl1_EventValuePointClick;
             //temperatureControl1.EventSelectPageIndexChanged += TemperatureControl1_EventSelectPageIndexChanged;
             //temperatureControl1.EventAfterRefreshView += TemperatureControl1_EventAfterRefreshView;
-#if MWGA
-            toolStripDropDownButton1.DropDownItemClickedAsync += ToolStripDropDownButton1_DropDownItemClicked;
-#else
             toolStripDropDownButton1.DropDownItemClicked += ToolStripDropDownButton1_DropDownItemClicked;
-#endif
             temperatureControl1.EventLinkClick += TemperatureControl1_EventLinkClick;
         }
 
-        /// <summary>
-        /// 将基础URL和相对路径合并为完整的绝对URL（兼容反斜杠\）
-        /// </summary>
-        /// <param name="baseUrl">基础URL（如 https://www.example.com/api/）</param>
-        /// <param name="relativePath">相对路径（支持\和/混合，如 user\123、..\data）</param>
-        /// <returns>合并后的绝对URL</returns>
-        /// <exception cref="ArgumentNullException">基础URL或相对路径为null/空时抛出</exception>
-        /// <exception cref="UriFormatException">URL格式不合法时抛出</exception>
-        public static string MergeUrl(string baseUrl, string relativePath)
-        {
-            // 空值校验
-            if (string.IsNullOrEmpty(baseUrl))
-                throw new ArgumentNullException(nameof(baseUrl), "基础URL不能为空");
-            if (string.IsNullOrEmpty(relativePath))
-                throw new ArgumentNullException(nameof(relativePath), "相对路径不能为空");
 
-            // 关键优化：将所有反斜杠\替换为URL标准的正斜杠/
-            string normalizedRelativePath = relativePath.Replace('\\', '/');
-
-            // 解析基础URL（确保是合法的绝对URL）
-            if (!Uri.TryCreate(baseUrl, UriKind.Absolute, out Uri baseUri))
-                throw new UriFormatException($"基础URL格式不合法：{baseUrl}，请确保包含协议（http/https）和域名");
-
-            // 合并URL（此时相对路径已统一为/分隔符）
-            Uri absoluteUri = new Uri(baseUri, normalizedRelativePath);
-
-            return absoluteUri.ToString();
-        }
 
 
         private void TemperatureControl1_EventLinkClick(object eventSender, DocumentLinkClickEventArgs args)
         {
 #if MWGA
-            string filename = MergeUrl(Application.StartupPath, args.Link);
-            Application.OpenUrl(filename, "_blank");
-           
+            Application.OpenUrl(Application.StartupPath, args.Link, "_blank");
+
 #else
             string filename = Path.Combine(Application.StartupPath, args.Link);
             if (File.Exists (filename) == true)
@@ -81,40 +49,47 @@ namespace WindowsFormsApp
             }
 #endif
         }
-#if MWGA
-private async Task ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
-#else
-private void ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
-#endif
-{
-    if (e.ClickedItem.Text == "打开本地时间轴文档")
-    {
-        using (OpenFileDialog ofd = new OpenFileDialog())
+        private void ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            if (
-#if MWGA
-                await
-#endif
-                ofd.ShowDialog() == DialogResult.OK)
+            if (e.ClickedItem.Text == "打开本地时间轴文档")
             {
-                var stream =
 #if MWGA
-                    await
+                Application.InvokeAsync(async delegate ()
+                {
+                    // 将同步方法改为异步方法
+                    using (OpenFileDialog ofd = new OpenFileDialog())
+                    {
+                        if (await ofd.ShowDialog() == DialogResult.OK)
+                        {
+                            var stream = await ofd.OpenFile();
+                            var reader = new StreamReader(stream, Encoding.UTF8, true);
+                            var strXml = reader.ReadToEnd();
+                            temperatureControl1.LoadDocumentFormString(strXml);
+                            reader.Close();
+                            //temperatureControl1.LoadDocumentFromFile(ofd.FileName);
+                        }
+                    }
+                });
+#else
+                using (OpenFileDialog ofd = new OpenFileDialog())
+                {
+                    if (ofd.ShowDialog() == DialogResult.OK)
+                    {
+                        var stream = ofd.OpenFile();
+                        var reader = new StreamReader(stream, Encoding.UTF8, true);
+                        var strXml = reader.ReadToEnd();
+                        temperatureControl1.LoadDocumentFormString(strXml);
+                        reader.Close();
+                        //temperatureControl1.LoadDocumentFromFile(ofd.FileName);
+                    }
+                }
 #endif
-                    ofd.OpenFile();
-                var reader = new StreamReader(stream, Encoding.UTF8, true);
-                var strXml = reader.ReadToEnd();
-                temperatureControl1.LoadDocumentFormString(strXml);
-                reader.Close();
-                //temperatureControl1.LoadDocumentFromFile(ofd.FileName);
             }
-        }
-    }
             else
             {
                 var name = e.ClickedItem.Name;
                 var stream = this.GetType().Assembly.GetManifestResourceStream(name);
-                if( stream != null )
+                if (stream != null)
                 {
                     var reader = new StreamReader(stream, Encoding.UTF8, true);
                     var strXml = reader.ReadToEnd();
@@ -159,11 +134,11 @@ private void ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStr
         private void Document_EventDrawValuePointSymbol(object eventSender, DrawValuePointSymbolEventArgs args)
         {
             args.DrawString(
-                "不升", 
-                new Font("微软雅黑", 9, FontStyle.Regular), 
-                new SolidBrush(Color.Black), 
-                args.ReferRect.X, 
-                args.ReferRect.Y, 
+                "不升",
+                new Font("微软雅黑", 9, FontStyle.Regular),
+                new SolidBrush(Color.Black),
+                args.ReferRect.X,
+                args.ReferRect.Y,
                 new StringFormat(StringFormatFlags.DirectionVertical));
         }
 
@@ -174,9 +149,9 @@ private void ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStr
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-            using(SaveFileDialog sfd = new SaveFileDialog())
+            using (SaveFileDialog sfd = new SaveFileDialog())
             {
-                if(sfd.ShowDialog()== DialogResult.OK)
+                if (sfd.ShowDialog() == DialogResult.OK)
                 {
                     temperatureControl1.SaveDocumentToFile(sfd.FileName);
                 }
@@ -203,7 +178,7 @@ private void ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStr
         {
             using (frmAddPoint fap = new frmAddPoint())
             {
-                if(
+                if (
 #if MWGA
                     await
 #endif
@@ -218,7 +193,7 @@ private void ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStr
 
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void AddStartDayIndex(string titlelineName, DateTime startDate, int startIndex = 0)
@@ -227,7 +202,7 @@ private void ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStr
             //line.UpAndDownTextType = UpAndDownTextType.ShowByTick;
 
             DCSoft.TemperatureChart.DocumentData dd = temperatureControl1.Document.Datas.GetDataByName(titlelineName, false);
-            if(dd == null)
+            if (dd == null)
             {
                 return;
             }
@@ -238,7 +213,7 @@ private void ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStr
             startDT = new DateTime(startDate.Year, startDate.Month, startDate.Day, 0, 0, 0);
             endDT = new DateTime(endDT.Year, endDT.Month, endDT.Day, 0, 0, 0);
 
-            while(startDT <= endDT)
+            while (startDT <= endDT)
             {
                 temperatureControl1.AddPointByTimeText(
                     titlelineName,
@@ -255,21 +230,24 @@ private void ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStr
             toolStripDropDownButton1.DropDownItems.Add("-");
             string[] resourceNames = this.GetType().Assembly.GetManifestResourceNames();
             string resName = null;
+            string CurrentUICultureName = System.Globalization.CultureInfo.CurrentUICulture.Name;
+            bool IsEng = CurrentUICultureName.StartsWith("en");
             foreach (var name in resourceNames)
             {
                 var index = name.IndexOf("timeline_");
-                if(index > 0 )
+                if (index > 0)
                 {
-                    if (name.IndexOf("timeline_HealthRecord") > 0)
+                    if ( (IsEng == false && name.IndexOf("timeline_HealthRecord") > 0) ||
+                        (IsEng == true && name.IndexOf("timeline_TimeZoneTest_ENG") > 0))
                     {
                         resName = name;
                     }
-                    var strShortName = name.Substring(index +9);
+                    var strShortName = name.Substring(index + 9);
                     var item = this.toolStripDropDownButton1.DropDownItems.Add(strShortName);
                     item.Name = name;
                 }
 
-                
+
             }
 
             if (resourceNames.Length > 0 && resName != null)
@@ -284,5 +262,5 @@ private void ToolStripDropDownButton1_DropDownItemClicked(object sender, ToolStr
             }
         }
     }
-    
+
 }

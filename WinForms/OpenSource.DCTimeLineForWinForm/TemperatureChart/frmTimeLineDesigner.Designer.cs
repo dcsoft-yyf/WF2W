@@ -35,7 +35,7 @@
             // myDesignerControl
             // 
             resources.ApplyResources(this.myDesignerControl, "myDesignerControl");
-            //this.$1.Name = "myDesignerControl";
+            this.myDesignerControl.Name = "myDesignerControl";
             // 
             // frmTimeLineDesigner
             // 
@@ -43,7 +43,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.myDesignerControl);
             this.MinimizeBox = false;
-//            //this.$1.Name = "frmTimeLineDesigner";
+            this.Name = "frmTimeLineDesigner";
             this.ShowInTaskbar = false;
             this.ResumeLayout(false);
 

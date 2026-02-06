@@ -9,6 +9,7 @@
 - [https://dcsoft-yyf.github.io/MWGA](https://dcsoft-yyf.github.io/MWGA)
 - Timeline demo at [https://dcsoft-yyf.github.io/MWGA/dctimeline.html](https://dcsoft-yyf.github.io/MWGA/dctimeline.html)
 ## Update Log
+- 2026-2-6 : Fix bug for Graphcis.DrawString(). Start the Chinese New Year holiday!!
 - 2026-2-5 : Upload document [MWGA Dual-Build: One Codebase, Two Targets( .exe and .wasm ) — Value Proposition | MWGA 双线编译功能( .exe和.wasm )优势说明](https://github.com/dcsoft-yyf/MWGA/blob/main/MWGA-dual-line-compilation.md)
 - 2026-2-4 : Upload document [MWGA vs Blazor Hybrid & Avalonia | MWGA 与 Blazor Hybrid、Avalonia 对比](https://github.com/dcsoft-yyf/MWGA/blob/main/MWGA-BlazorHybrid-Avalonia.md)
 - 2026-2-2 : Upload demo Time line and document [How MWGA Can Help Quickly Migrate 70,000 Lines of C# Source Code WinForms Program to Web Frontend | MWGA 如何帮助 7 万行C#源代码 WinForms 程序快速迁移到 WEB 前端](https://github.com/dcsoft-yyf/MWGA/blob/main/demo-timeline.md).
