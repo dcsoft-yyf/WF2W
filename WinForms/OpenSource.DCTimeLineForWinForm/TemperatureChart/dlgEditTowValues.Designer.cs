@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dlgEditTowValues));
             this.lblTitle = new System.Windows.Forms.Label();
             this.txtValue = new System.Windows.Forms.TextBox();
             this.btnOK = new System.Windows.Forms.Button();
@@ -41,56 +40,82 @@
             // 
             // lblTitle
             // 
-            resources.ApplyResources(this.lblTitle, "lblTitle");
-            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Location = new System.Drawing.Point(13, 42);
+            //this.$1.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(41, 12);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "label1";
             // 
             // txtValue
             // 
-            resources.ApplyResources(this.txtValue, "txtValue");
-            this.txtValue.Name = "txtValue";
+            this.txtValue.Location = new System.Drawing.Point(13, 61);
+            //this.$1.Name = "txtValue";
+            this.txtValue.Size = new System.Drawing.Size(224, 21);
+            this.txtValue.TabIndex = 1;
             // 
             // btnOK
             // 
-            resources.ApplyResources(this.btnOK, "btnOK");
-            this.btnOK.Name = "btnOK";
+            this.btnOK.Location = new System.Drawing.Point(32, 153);
+            //this.$1.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.TabIndex = 4;
+            this.btnOK.Text = "确定(&O)";
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
-            resources.ApplyResources(this.btnCancel, "btnCancel");
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Location = new System.Drawing.Point(144, 153);
+            //this.$1.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 5;
+            this.btnCancel.Text = "取消(&C)";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // textBox1
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            this.textBox1.Location = new System.Drawing.Point(13, 115);
+            //this.$1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(224, 21);
+            this.textBox1.TabIndex = 3;
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 96);
+            //this.$1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
             // 
             // dateTimePicker1
             // 
-            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm:ss";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Location = new System.Drawing.Point(52, 9);
+            //this.$1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(184, 21);
+            this.dateTimePicker1.TabIndex = 7;
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 13);
+            //this.$1.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "时刻：";
             // 
             // dlgEditTowValues
             // 
             this.AcceptButton = this.btnOK;
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
+            this.ClientSize = new System.Drawing.Size(253, 188);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
@@ -102,8 +127,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "dlgEditTowValues";
+//            //this.$1.Name = "dlgEditTowValues";
             this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "编辑";
             this.Load += new System.EventHandler(this.dlgEditSingleValue_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

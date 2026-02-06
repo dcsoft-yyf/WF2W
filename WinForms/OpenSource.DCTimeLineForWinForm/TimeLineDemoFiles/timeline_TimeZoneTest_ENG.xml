@@ -36,13 +36,13 @@
       <Line Title="HOSPITALDAY" ValueType="GlobalDayIndex">
         <Scales />
       </Line>
-      <Line Title="OPERATIONDAY" StartDateKeyword="手術" ValueType="DayIndex">
+      <Line Title="手術天數" StartDateKeyword="手術" ValueType="DayIndex">
         <Scales />
       </Line>
-      <Line LayoutType="Free" TickStep="6" Title="HEIGHT/WEIGHT" Name="HW" ValueType="Data">
+      <Line LayoutType="Free" TickStep="6" Title="身高/體重" Name="HW" ValueType="Data">
         <Scales />
       </Line>
-      <Line Title="TIMEDEGREE" ValueType="HourTick">
+      <Line Title="時間" ValueType="HourTick">
         <Scales />
       </Line>
     </HeaderLines>
@@ -55,7 +55,7 @@
       <Tick Value="22" ColorValue="#FF0000" Text="22" />
     </Ticks>
     <GridYSplitInfo />
-    <FooterDescription>MARK: Pulse（●）、Temperature（Mouth°，Axilla×，Anus○）</FooterDescription>
+    <FooterDescription>說明：脈搏（●）、體溫（口溫°，腋溫×，肛溫○）</FooterDescription>
     <BigVerticalGridLineColorValue>#000000</BigVerticalGridLineColorValue>
     <SpecifyEndDate />
     <YAxisInfos>
@@ -378,12 +378,12 @@
         <Value Link="#" Time="2014-07-15T00:00:00" Text="MICTURATE:1100cc" />
         <Value Link="#" Time="2014-07-16T00:00:00" Text="MICTURATE:1550cc" />
         <Value Link="#" Time="2014-07-17T00:00:00" Text="MICTURATE:1450cc" />
-        <Value Link="#" Time="2014-07-18T00:00:00" Text="TUBE:720cc" />
+        <Value Link="#" Time="2014-07-18T00:00:00" Text="單導：720cc" />
         <Value Link="#" Time="2014-07-19T00:00:00" Text="MICTURATE:500cc" />
         <Value Link="#" Time="2014-07-20T00:00:00" Text="MICTURATE:1000cc" />
         <Value Link="#" Time="2014-07-21T00:00:00" Text="MICTURATE:1200cc" />
         <Value Link="#" Time="2014-07-22T00:00:00" Text="MICTURATE:1070cc" />
-        <Value Link="#" Time="2014-07-23T00:00:00" Text="TUBE:360cc" />
+        <Value Link="#" Time="2014-07-23T00:00:00" Text="單導：360cc" />
         <Value Link="#" Time="2014-07-24T00:00:00" Text="Foley：970cc" />
         <Value Link="#" Time="2014-07-25T00:00:00" Text="Foley：550cc" />
         <Value Link="#" Time="2014-07-26T00:00:00" Text="Foley：270cc" />
@@ -393,7 +393,7 @@
       <Values>
         <Value Link="#" Time="2014-06-24T00:00:00" Text="LIQUID:150cc" />
         <Value Link="#" Time="2014-06-25T00:00:00" Text="LIQUID:0cc" />
-        <Value Link="#" Time="2014-06-25T00:00:01" Text="TUBE:0cc" />
+        <Value Link="#" Time="2014-06-25T00:00:01" Text="管灌：0cc" />
         <Value Link="#" Time="2014-06-26T00:00:00" Text="SOLID:530cc" />
         <Value Link="#" Time="2014-06-27T00:00:00" Text="SOLID:1330cc" />
         <Value Link="#" Time="2014-06-27T00:00:01" Text="LIQUID:300cc" />
@@ -409,7 +409,7 @@
         <Value Link="#" Time="2014-07-04T00:00:00" Text="LIQUID:490cc" />
         <Value Link="#" Time="2014-07-05T00:00:00" Text="LIQUID:490cc" />
         <Value Link="#" Time="2014-07-06T00:00:00" Text="LIQUID:220cc" />
-        <Value Link="#" Time="2014-07-06T00:00:01" Text="TUBE:20cc" />
+        <Value Link="#" Time="2014-07-06T00:00:01" Text="管灌：20cc" />
         <Value Link="#" Time="2014-07-07T00:00:00" Text="LIQUID:850cc" />
         <Value Link="#" Time="2014-07-08T00:00:00" Text="SOLID:35cc" />
         <Value Link="#" Time="2014-07-08T00:00:01" Text="LIQUID:720cc" />
@@ -434,42 +434,42 @@
     </Data>
     <Data Name="INJECT">
       <Values>
-        <Value Link="#" Time="2014-06-24T00:00:00" Text="VEIN:900" />
-        <Value Link="#" Time="2014-06-25T00:00:00" Text="VEIN:2200" />
-        <Value Link="#" Time="2014-06-26T00:00:00" Text="VEIN:2260" />
-        <Value Link="#" Time="2014-06-27T00:00:00" Text="VEIN:2050" />
-        <Value Link="#" Time="2014-06-28T00:00:00" Text="VEIN:1680" />
-        <Value Link="#" Time="2014-06-29T00:00:00" Text="VEIN:1760" />
-        <Value Link="#" Time="2014-06-30T00:00:00" Text="VEIN:1650" />
-        <Value Link="#" Time="2014-07-01T00:00:00" Text="VEIN:2700" />
-        <Value Link="#" Time="2014-07-02T00:00:00" Text="VEIN:2870" />
-        <Value Link="#" Time="2014-07-03T00:00:00" Text="VEIN:2300" />
-        <Value Link="#" Time="2014-07-04T00:00:00" Text="VEIN:2000" />
-        <Value Link="#" Time="2014-07-05T00:00:00" Text="VEIN:2220" />
-        <Value Link="#" Time="2014-07-06T00:00:00" Text="VEIN:2220" />
-        <Value Link="#" Time="2014-07-07T00:00:00" Text="VEIN:1910" />
-        <Value Link="#" Time="2014-07-08T00:00:00" Text="VEIN:1500" />
-        <Value Link="#" Time="2014-07-08T00:00:01" Text="LITTLE:IV：80" />
-        <Value Link="#" Time="2014-07-09T00:00:00" Text="VEIN:900" />
-        <Value Link="#" Time="2014-07-09T00:00:01" Text="LITTLE:IV：80" />
-        <Value Link="#" Time="2014-07-10T00:00:00" Text="METACHYSIS:350" />
-        <Value Link="#" Time="2014-07-10T00:00:01" Text="VEIN:1230" />
-        <Value Link="#" Time="2014-07-11T00:00:00" Text="VEIN:1420" />
-        <Value Link="#" Time="2014-07-12T00:00:00" Text="VEIN:1320" />
-        <Value Link="#" Time="2014-07-13T00:00:00" Text="VEIN:1400" />
-        <Value Link="#" Time="2014-07-14T00:00:00" Text="VEIN:2210" />
-        <Value Link="#" Time="2014-07-15T00:00:00" Text="VEIN:2080" />
-        <Value Link="#" Time="2014-07-16T00:00:00" Text="VEIN:2430" />
-        <Value Link="#" Time="2014-07-17T00:00:00" Text="VEIN:2190" />
-        <Value Link="#" Time="2014-07-18T00:00:00" Text="VEIN:2100" />
-        <Value Link="#" Time="2014-07-19T00:00:00" Text="VEIN:1800" />
-        <Value Link="#" Time="2014-07-20T00:00:00" Text="VEIN:1850" />
-        <Value Link="#" Time="2014-07-21T00:00:00" Text="VEIN:1500" />
-        <Value Link="#" Time="2014-07-22T00:00:00" Text="VEIN:1800" />
-        <Value Link="#" Time="2014-07-23T00:00:00" Text="VEIN:1300" />
-        <Value Link="#" Time="2014-07-24T00:00:00" Text="VEIN:1300" />
-        <Value Link="#" Time="2014-07-25T00:00:00" Text="VEIN:1300" />
-        <Value Link="#" Time="2014-07-26T00:00:00" Text="VEIN:700" />
+        <Value Link="#" Time="2014-06-24T00:00:00" Text="靜脈灌注：900" />
+        <Value Link="#" Time="2014-06-25T00:00:00" Text="靜脈灌注：2200" />
+        <Value Link="#" Time="2014-06-26T00:00:00" Text="靜脈灌注：2260" />
+        <Value Link="#" Time="2014-06-27T00:00:00" Text="靜脈灌注：2050" />
+        <Value Link="#" Time="2014-06-28T00:00:00" Text="靜脈灌注：1680" />
+        <Value Link="#" Time="2014-06-29T00:00:00" Text="靜脈灌注：1760" />
+        <Value Link="#" Time="2014-06-30T00:00:00" Text="靜脈灌注：1650" />
+        <Value Link="#" Time="2014-07-01T00:00:00" Text="靜脈灌注：2700" />
+        <Value Link="#" Time="2014-07-02T00:00:00" Text="靜脈灌注：2870" />
+        <Value Link="#" Time="2014-07-03T00:00:00" Text="靜脈灌注：2300" />
+        <Value Link="#" Time="2014-07-04T00:00:00" Text="靜脈灌注：2000" />
+        <Value Link="#" Time="2014-07-05T00:00:00" Text="靜脈灌注：2220" />
+        <Value Link="#" Time="2014-07-06T00:00:00" Text="靜脈灌注：2220" />
+        <Value Link="#" Time="2014-07-07T00:00:00" Text="靜脈灌注：1910" />
+        <Value Link="#" Time="2014-07-08T00:00:00" Text="靜脈灌注：1500" />
+        <Value Link="#" Time="2014-07-08T00:00:01" Text="小量IV：80" />
+        <Value Link="#" Time="2014-07-09T00:00:00" Text="靜脈灌注：900" />
+        <Value Link="#" Time="2014-07-09T00:00:01" Text="小量IV：80" />
+        <Value Link="#" Time="2014-07-10T00:00:00" Text="輸血量：350" />
+        <Value Link="#" Time="2014-07-10T00:00:01" Text="靜脈灌注：1230" />
+        <Value Link="#" Time="2014-07-11T00:00:00" Text="靜脈灌注：1420" />
+        <Value Link="#" Time="2014-07-12T00:00:00" Text="靜脈灌注：1320" />
+        <Value Link="#" Time="2014-07-13T00:00:00" Text="靜脈灌注：1400" />
+        <Value Link="#" Time="2014-07-14T00:00:00" Text="靜脈灌注：2210" />
+        <Value Link="#" Time="2014-07-15T00:00:00" Text="靜脈灌注：2080" />
+        <Value Link="#" Time="2014-07-16T00:00:00" Text="靜脈灌注：2430" />
+        <Value Link="#" Time="2014-07-17T00:00:00" Text="靜脈灌注：2190" />
+        <Value Link="#" Time="2014-07-18T00:00:00" Text="靜脈灌注：2100" />
+        <Value Link="#" Time="2014-07-19T00:00:00" Text="靜脈灌注：1800" />
+        <Value Link="#" Time="2014-07-20T00:00:00" Text="靜脈灌注：1850" />
+        <Value Link="#" Time="2014-07-21T00:00:00" Text="靜脈灌注：1500" />
+        <Value Link="#" Time="2014-07-22T00:00:00" Text="靜脈灌注：1800" />
+        <Value Link="#" Time="2014-07-23T00:00:00" Text="靜脈灌注：1300" />
+        <Value Link="#" Time="2014-07-24T00:00:00" Text="靜脈灌注：1300" />
+        <Value Link="#" Time="2014-07-25T00:00:00" Text="靜脈灌注：1300" />
+        <Value Link="#" Time="2014-07-26T00:00:00" Text="靜脈灌注：700" />
       </Values>
     </Data>
     <Data Name="TEMP">

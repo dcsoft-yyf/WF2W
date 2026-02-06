@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "DCSoft.MWGA/1.0.0": {
+        "dependencies": {
+          "System.Formats.Nrbf": "9.0.11"
+        },
+        "runtime": {
+          "DCSoft.MWGA.dll": {}
+        }
+      },
+      "System.Formats.Nrbf/9.0.11": {
+        "runtime": {
+          "lib/net9.0/System.Formats.Nrbf.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.1125.51716"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DCSoft.MWGA/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Formats.Nrbf/9.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E9NND4jfFVAl+vrUIsIM/D3h2ExcbqoWfFcxw8yZF41CVP28CPMIde6M7l+NmgsttHIlQrJvD6v1ldFQYrTibw==",
+      "path": "system.formats.nrbf/9.0.11",
+      "hashPath": "system.formats.nrbf.9.0.11.nupkg.sha512"
+    }
+  }
+}

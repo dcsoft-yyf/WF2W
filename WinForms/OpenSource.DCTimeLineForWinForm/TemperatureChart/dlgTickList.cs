@@ -49,40 +49,20 @@ namespace DCSoft.TemperatureChart
         {
             if (e.ColumnIndex == 2)
             {
-#if MWGA
-                Application.InvokeAsync(async delegate ()
+                dgvTicks.CancelEdit();
+                dgvTicks.EndEdit();
+                using (ColorDialog dlg = new ColorDialog())
                 {
-                    dgvTicks.CancelEdit();
-                    dgvTicks.EndEdit();
-                    using (ColorDialog dlg = new ColorDialog())
+                    string txt = Convert.ToString( dgvTicks.Rows[e.RowIndex].Cells[e.ColumnIndex].Value );
+                    if (txt != null)
                     {
-                        string txt = Convert.ToString(dgvTicks.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-                        if (txt != null)
-                        {
-                            dlg.Color = ColorTranslator.FromHtml(txt);
-                        }
-                        if (await dlg.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
-                        {
-                            dgvTicks.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = ColorTranslator.ToHtml(dlg.Color);
-                        }
+                        dlg.Color = ColorTranslator.FromHtml(txt);
                     }
-                });
-#else
-                    dgvTicks.CancelEdit();
-                    dgvTicks.EndEdit();
-                    using (ColorDialog dlg = new ColorDialog())
+                    if (dlg.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
                     {
-                        string txt = Convert.ToString(dgvTicks.Rows[e.RowIndex].Cells[e.ColumnIndex].Value);
-                        if (txt != null)
-                        {
-                            dlg.Color = ColorTranslator.FromHtml(txt);
-                        }
-                        if (dlg.ShowDialog(this) == System.Windows.Forms.DialogResult.OK)
-                        {
-                            dgvTicks.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = ColorTranslator.ToHtml(dlg.Color);
-                        }
+                        dgvTicks.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = ColorTranslator.ToHtml(dlg.Color);
                     }
-#endif
+                }
             }
         }
 
