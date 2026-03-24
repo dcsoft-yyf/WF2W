@@ -1,26 +1,24 @@
-# MWGA - To Revive 100 Billion Lines of C# Code| [简体中文版](https://github.com/dcsoft-yyf/MWGA/blob/main/readme-zh-cn.md)
+# WF2W - To Revive 100 Billion Lines of C# Code| [简体中文版](https://github.com/dcsoft-yyf/WF2W/blob/main/readme-zh-cn.md)
 **Nanjing Duchang Information Technology Co., Ltd.**  
 **January 28, 2026**
 
-<img src="https://github.com/dcsoft-yyf/MWGA/blob/main/MWGA.jpg?raw=true"/>
-
 ---
 ## Online demo
-- [https://dcsoft-yyf.github.io/MWGA](https://dcsoft-yyf.github.io/MWGA)
-- Timeline demo at [https://dcsoft-yyf.github.io/MWGA/dctimeline.html](https://dcsoft-yyf.github.io/MWGA/dctimeline.html)
+- [https://dcsoft-yyf.github.io/WF2W](https://dcsoft-yyf.github.io/WF2W)
+- Timeline demo at [https://dcsoft-yyf.github.io/WF2W/dctimeline.html](https://dcsoft-yyf.github.io/WF2W/dctimeline.html)
 ## Update Log
-- 2026-2-7 : Upload document [AI Code "Free Riding": The Open Source Dilemma and Breakthrough Path for Small and Medium-Sized Development Organizations | AI 白嫖代码：中小型开发组织的开源困境与破局之道](https://github.com/dcsoft-yyf/MWGA/blob/main/MWGA-AI-assisted-programming.md)
+- 2026-2-7 : Upload document [AI Code "Free Riding": The Open Source Dilemma and Breakthrough Path for Small and Medium-Sized Development Organizations | AI 白嫖代码：中小型开发组织的开源困境与破局之道](https://github.com/dcsoft-yyf/WF2W/blob/main/MWGA-AI-assisted-programming.md)
 - 2026-2-6 : Fix bug for Graphcis.DrawString() , Start the Chinese New Year holiday.
-- 2026-2-5 : Upload document [MWGA Dual-Build: One Codebase, Two Targets( .exe and .wasm ) — Value Proposition | MWGA 双线编译功能( .exe和.wasm )优势说明](https://github.com/dcsoft-yyf/MWGA/blob/main/MWGA-dual-line-compilation.md)
-- 2026-2-4 : Upload document [MWGA vs Blazor Hybrid & Avalonia | MWGA 与 Blazor Hybrid、Avalonia 对比](https://github.com/dcsoft-yyf/MWGA/blob/main/MWGA-BlazorHybrid-Avalonia.md)
-- 2026-2-2 : Upload demo Time line and document [How MWGA Can Help Quickly Migrate 70,000 Lines of C# Source Code WinForms Program to Web Frontend | MWGA 如何帮助 7 万行C#源代码 WinForms 程序快速迁移到 WEB 前端](https://github.com/dcsoft-yyf/MWGA/blob/main/demo-timeline.md).
+- 2026-2-5 : Upload document [WF2W Dual-Build: One Codebase, Two Targets( .exe and .wasm ) — Value Proposition | WF2W 双线编译功能( .exe和.wasm )优势说明](https://github.com/dcsoft-yyf/WF2W/blob/main/WF2W-dual-line-compilation.md)
+- 2026-2-4 : Upload document [WF2W vs Blazor Hybrid & Avalonia | WF2W 与 Blazor Hybrid、Avalonia 对比](https://github.com/dcsoft-yyf/WF2W/blob/main/WF2W-BlazorHybrid-Avalonia.md)
+- 2026-2-2 : Upload demo Time line and document [How WF2W Can Help Quickly Migrate 70,000 Lines of C# Source Code WinForms Program to Web Frontend | WF2W 如何帮助 7 万行C#源代码 WinForms 程序快速迁移到 WEB 前端](https://github.com/dcsoft-yyf/WF2W/blob/main/demo-timeline.md).
 - 2026-1-19 : Update demo calculator.
 - 2026-1-19 : Update demo Mimesweeper at 
 ---
 
 ## 1. One-Sentence Introduction
 
-MWGA stands for "Make WinForms Great Again". It is a tool that quickly migrates WinForm.NET programs using GDI+ to the Blazor WASM platform, keeping program code modifications below 10%, thereby reviving 100 billion lines of C# code worldwide.
+WF2W stands for "Make WinForms Great Again". It is a tool that quickly migrates WinForm.NET programs using GDI+ to the Blazor WASM platform, keeping program code modifications below 10%, thereby reviving 100 billion lines of C# code worldwide.
 
 ## 2. Project Background
 
@@ -30,19 +28,19 @@ However, a large number of WinForms applications use the System.Drawing module t
 
 ## 3. Our Goals
 
-MWGA is specifically designed to help migrate WinForms applications to the Blazor WASM platform. Even for programs using GDI+ features, we expect source code modifications to be no more than 10%, greatly reducing the cost and risk of WinForms software modernization.
+WF2W is specifically designed to help migrate WinForms applications to the Blazor WASM platform. Even for programs using GDI+ features, we expect source code modifications to be no more than 10%, greatly reducing the cost and risk of WinForms software modernization.
 
-Our long-term goal is to revive 100 billion lines of market-validated C# code, enabling them to continue providing value on modern web frontend platforms. MWGA helps developers compile the same C# code into both .exe and .wasm files, with highly consistent running effects.
+Our long-term goal is to revive 100 billion lines of market-validated C# code, enabling them to continue providing value on modern web frontend platforms. WF2W helps developers compile the same C# code into both .exe and .wasm files, with highly consistent running effects.
 
-From another perspective, MWGA can be seen as a general-purpose frontend framework that adopts the distinctive WinForms programming model—a kind of "overseas colony" of the WinForms technology stack in the frontend domain. This major cross-domain integration allows millions of WinForms developers worldwide to work in the pure frontend space without switching technology stacks. Moreover, C#'s strong typing and GDI+'s rigorous programming model help reduce hidden bugs introduced by AI-assisted programming.
+From another perspective, WF2W can be seen as a general-purpose frontend framework that adopts the distinctive WinForms programming model—a kind of "overseas colony" of the WinForms technology stack in the frontend domain. This major cross-domain integration allows millions of WinForms developers worldwide to work in the pure frontend space without switching technology stacks. Moreover, C#'s strong typing and GDI+'s rigorous programming model help reduce hidden bugs introduced by AI-assisted programming.
 
-**Download**: [https://github.com/dcsoft-yyf/MWGA](https://github.com/dcsoft-yyf/MWGA)
+**Download**: [https://github.com/dcsoft-yyf/WF2W](https://github.com/dcsoft-yyf/WF2W)
 
 ## 4. Use Case One: Timeline Product, 1% Code Modification
 
 The Timeline product is a WinForms software product of Nanjing Duchang, now open source. It is a professional software product for hospitals, which can be regarded as an enhanced version of temperature chart software. It contains 70,000 lines of C# code, including tens of thousands of lines of GDI+ drawing-related code. Its running interface is shown below:
 
-![Timeline Product WinForms Version](https://github.com/dcsoft-yyf/MWGA/blob/main/images/winform-timeline.png?raw=true)
+![Timeline Product WinForms Version](https://github.com/dcsoft-yyf/WF2W/blob/main/images/winform-timeline.png?raw=true)
 
 We created a Blazor WASM 9.0 program, copied the Timeline code over, and made some adaptations. The code modification did not exceed 700 lines, i.e., less than 1%, for example:
 
@@ -52,13 +50,13 @@ if (e.ClickedItem.Text == "打开本地时间轴文档")
     using (OpenFileDialog ofd = new OpenFileDialog())
     {
         if (
-#if MWGA
+#if WF2W
             await
 #endif
             ofd.ShowDialog() == DialogResult.OK)
         {
             var stream =
-#if MWGA
+#if WF2W
                 await
 #endif
                 ofd.OpenFile();
@@ -73,7 +71,7 @@ if (e.ClickedItem.Text == "打开本地时间轴文档")
 
 Since Blazor WASM uses a browser non-blocking thread mode, we implemented an asynchronous `ShowDialog()` function and use `await` to pause current code execution, thus reducing modifications to the old code. We also use conditional compilation so that the same C# code can be compiled into .exe and .wasm files without modification. The program compiled to .wasm runs in Google Chrome as shown below:
 
-![Timeline Product Blazor WASM Version](https://github.com/dcsoft-yyf/MWGA/blob/main/images/mwga-timeline.png?raw=true)
+![Timeline Product Blazor WASM Version](https://github.com/dcsoft-yyf/WF2W/blob/main/images/mwga-timeline.png?raw=true)
 
 Tens of thousands of lines of layout and drawing code in the program were not modified, for example:
 
@@ -104,20 +102,20 @@ if (this.ViewMode == DocumentViewMode.Page)
     }
 ```
 
-This use case demonstrates MWGA's ability to handle complex graphics software, bringing it one step closer to the ultimate goal of reviving 100 billion lines of C# code.
+This use case demonstrates WF2W's ability to handle complex graphics software, bringing it one step closer to the ultimate goal of reviving 100 billion lines of C# code.
 
 ## 5. Use Case Two: Minesweeper Game, 2% Code Modification
 
 Minesweeper is a classic Windows game. We downloaded a Minesweeper program based on MS .NET Framework 2.0 from [https://gitee.com/dingxiaowei/MineGame](https://gitee.com/dingxiaowei/MineGame). This is a WinForms program written 10 years ago, containing approximately 2,500 lines of C# code and several image resource files. The compiled .exe runs as shown below:
 
-![Minesweeper WinForms Version](https://github.com/dcsoft-yyf/MWGA/blob/main/images/winform-mine.png?raw=true)
+![Minesweeper WinForms Version](https://github.com/dcsoft-yyf/WF2W/blob/main/images/winform-mine.png?raw=true)
 
 This program extensively uses `System.Drawing.Graphics.DrawLine()`/`DrawImage()`/`FillRectangle()` interfaces to draw the game interface. It also uses Panel, IMessageFilter, Timer, Button, MainMenu, MessageBox, ImageList and other components.
 
 We created a Blazor WASM 9.0 program, copied the Minesweeper source files, and made some compatibility modifications, as shown below:
 
 ```csharp
-#if MWGA
+#if WF2W
     public static async ValueTask<ShowSelfResult> ShowSelf(...)
 #else
     public static ShowSelfResult ShowSelf(...)
@@ -129,7 +127,7 @@ We created a Blazor WASM 9.0 program, copied the Minesweeper source files, and m
     cg.tbWidth.Text = width.ToString();
     cg.tbMineCount.Text = mineCount.ToString();
     cg.Location = location;
-#if MWGA
+#if WF2W
     if (await cg.ShowDialog(parent) == DialogResult.OK)
 #else
     if (cg.ShowDialog(parent) == DialogResult.OK)
@@ -142,7 +140,7 @@ We created a Blazor WASM 9.0 program, copied the Minesweeper source files, and m
 
 We modified no more than 50 lines (2%) of the old code, allowing the same code to compile into both .exe and .wasm files without modification. The Minesweeper program compiled to .wasm runs in Google Chrome as shown below:
 
-![Minesweeper Blazor WASM Version](https://github.com/dcsoft-yyf/MWGA/blob/main/images/minesweeper.png?raw=true)
+![Minesweeper Blazor WASM Version](https://github.com/dcsoft-yyf/WF2W/blob/main/images/minesweeper.png?raw=true)
 
 Thousands of lines of graphics drawing code and game logic in the program were not modified at all, as shown below:
 
@@ -170,7 +168,7 @@ protected override void OnPaint(PaintEventArgs e)
 
 We developed a Winform.NET calculator program containing 460 lines of C# code. Its running interface is shown below:
 
-![Calculator WinForms Version](https://github.com/dcsoft-yyf/MWGA/blob/main/images/winform-calculator.png?raw=true)
+![Calculator WinForms Version](https://github.com/dcsoft-yyf/WF2W/blob/main/images/winform-calculator.png?raw=true)
 
 It responds to form resize events to set the position and size of buttons and text boxes. The code is as follows:
 
@@ -197,15 +195,15 @@ private void UpdateControlLayout()
 }
 ```
 
-This C# code was not modified at all. With MWGA, it runs in Blazor WASM as shown below:
+This C# code was not modified at all. With WF2W, it runs in Blazor WASM as shown below:
 
-![Calculator Blazor WASM Version](https://github.com/dcsoft-yyf/MWGA/blob/main/images/calculator.png?raw=true)
+![Calculator Blazor WASM Version](https://github.com/dcsoft-yyf/WF2W/blob/main/images/calculator.png?raw=true)
 
 ## 7. Basic Principles
 
-MWGA's basic principle is to simulate `System.Windows.Forms.Control` types and `System.Drawing.Graphics` types to achieve low-modification migration of WinForms code. MWGA establishes the following functional module mappings:
+WF2W's basic principle is to simulate `System.Windows.Forms.Control` types and `System.Drawing.Graphics` types to achieve low-modification migration of WinForms code. WF2W establishes the following functional module mappings:
 
-| HTML Functional Module | MWGA Functional Module |
+| HTML Functional Module | WF2W Functional Module |
 |----------------------|----------------------|
 | `<canvas>` | `System.Drawing.Graphics` |
 | `<button>` | `System.Windows.Forms.Button` |
@@ -219,9 +217,9 @@ MWGA's basic principle is to simulate `System.Windows.Forms.Control` types and `
 | `window.setTimeout()` | `System.Windows.Forms.Timer` |
 | `MouseEvent`, `KeyEvent` | Win32 Messages, including `WM_KEYUP`, `WM_KEYDOWN`, `WM_LBUTTONDOWN`, `WM_LBUTTONUP`, etc. |
 
-MWGA internally also simulates Win32 Message loop and message queue, constructing a WinForms underlying runtime framework, enabling user's WinForms-based C# code to run on Blazor WASM after recompilation.
+WF2W internally also simulates Win32 Message loop and message queue, constructing a WinForms underlying runtime framework, enabling user's WinForms-based C# code to run on Blazor WASM after recompilation.
 
-## 8. Key Features Supported by MWGA (January 28, 2026)
+## 8. Key Features Supported by WF2W (January 28, 2026)
 
 - **System.Drawing.Bitmap**
 - **System.Drawing.Brush**
@@ -271,7 +269,7 @@ MWGA internally also simulates Win32 Message loop and message queue, constructin
 
 ## 9. Multi-Language Support
 
-MWGA supports multi-language development. All strings inside MWGA are extracted to form a string resource JS file, as shown below:
+WF2W supports multi-language development. All strings inside WF2W are extracted to form a string resource JS file, as shown below:
 
 ```javascript
 window.__DCResourceStrings = {
@@ -296,7 +294,7 @@ window.__DCResourceStrings = {
 
 We currently provide Simplified Chinese and English versions. Users can modify this JS file to use their own language.
 
-Additionally, MWGA supports the `ComponentResourceManager` type, as shown below:
+Additionally, WF2W supports the `ComponentResourceManager` type, as shown below:
 
 ```csharp
 private void InitializeComponent()
@@ -319,68 +317,68 @@ Users can set program resources in the `Form.resx` file and use form resource fi
 
 ## 10. Development and Deployment
 
-MWGA contains only one 4MB file `DCSoft.MWGA.dll`, which includes all functionality and does not depend on any other third-party components.
+WF2W contains only one 4MB file `DCSoft.WF2W.dll`, which includes all functionality and does not depend on any other third-party components.
 
-Developers can refer to the demo programs provided at [https://github.com/dcsoft-yyf/MWGA](https://github.com/dcsoft-yyf/MWGA) for MWGA-based development. The main steps are:
+Developers can refer to the demo programs provided at [https://github.com/dcsoft-yyf/WF2W](https://github.com/dcsoft-yyf/WF2W) for WF2W-based development. The main steps are:
 
 ### Step 1: Create Blazor WASM Project
-Create a Blazor WASM 9.0/10.0 program and add a reference to the `DCSoft.MWGA.dll` assembly. **Currently, Blazor WASM 7.0/8.0 is not supported**.
+Create a Blazor WASM 9.0/10.0 program and add a reference to the `DCSoft.WF2W.dll` assembly. **Currently, Blazor WASM 7.0/8.0 is not supported**.
 
 ### Step 2: Copy Source Code
 Copy all source code files and resource files of the WinForms program to be migrated to the project.
 
 ### Step 3: Add Bootstrap Code
-Add standardized MWGA bootstrap code and HTML files for the program interface.
+Add standardized WF2W bootstrap code and HTML files for the program interface.
 
 ### Step 4: Compatibility Modifications
 Perform necessary compatibility checks and modifications to user program code. Main modification points are:
 
-| Standard WinForms Feature | MWGA Modification Instructions |
+| Standard WinForms Feature | WF2W Modification Instructions |
 |--------------------------|-------------------------------|
 | Display dialog can use `Form.ShowDialog()` directly | Convert user function to async mode, then use `await Form.ShowDialog()` |
 | Support P/Invoke, can use `[DllImport]` to import external API functions | P/Invoke is not supported, must modify user code to remove P/Invoke functionality. However, if P/Invoke is not triggered, the program can still run normally. |
-| Form resource file `.resx` | Due to changes in source file directory structure causing `.resx` file renaming, need to adjust user code to set correct names.<br>MWGA's own `ComponentResourceManager` and `ResourceManager` can automatically handle this `.resx` renaming. |
-| Can directly override `Control.OnPaint` method | By default, all WinForms controls in MWGA do not enable custom drawing; they use HTML DOM to simulate WinForms control appearance and behavior, because enabling the Graphics submodule consumes resources.<br>Only when custom drawing is required, call `SetStyle(ControlStyles.UserPaint, true)` in the control constructor to enable the Graphics submodule. |
+| Form resource file `.resx` | Due to changes in source file directory structure causing `.resx` file renaming, need to adjust user code to set correct names.<br>WF2W's own `ComponentResourceManager` and `ResourceManager` can automatically handle this `.resx` renaming. |
+| Can directly override `Control.OnPaint` method | By default, all WinForms controls in WF2W do not enable custom drawing; they use HTML DOM to simulate WinForms control appearance and behavior, because enabling the Graphics submodule consumes resources.<br>Only when custom drawing is required, call `SetStyle(ControlStyles.UserPaint, true)` in the control constructor to enable the Graphics submodule. |
 | `MessageBox.Show()` | Can continue to use `MessageBox.Show()`, but the underlying implementation calls `window.Alert()` for simulation, and the user interface is poor.<br>If high-fidelity is needed, use `await MessageBox.ShowAsync()`, and convert user function to async mode. |
 | `OpenFileDialog.ShowDialog()` | `await OpenFileDialog.ShowDialog()` |
 | `OpenFileDialog.OpenFile()` | `await OpenFileDialog.OpenFile()` |
-| Local file access | MWGA does not support opening local files via `new FileStream(fileName)`; only `OpenFileDialog.OpenFile()` can be used to open local files for reading. |
+| Local file access | WF2W does not support opening local files via `new FileStream(fileName)`; only `OpenFileDialog.OpenFile()` can be used to open local files for reading. |
 | `Button`, `MenuItem`, `ToolStripItem.Click` event | Can continue to use; a new `ClickAsync` event is also provided that runs asynchronously and can be safely used with `await`. |
-| Form designer | MWGA is a lightweight frontend framework and does not support a visual form designer. Developers need to use traditional form designers (e.g. VS.NET or SharpDevelop) to design forms. |
-| Step and breakpoint debugging | MWGA can perform step and breakpoint debugging via Blazor WASM, but the experience is not as good as traditional WinForms development tools. Developers are advised to finalize the application flow using traditional WinForms debugging tools, then port to MWGA. |
-| Memory and CPU performance tuning | MWGA has no performance tuning tools. Developers are advised to do performance tuning in traditional WinForms development tools, then port to MWGA. |
-| Client large memory | MWGA runs in the browser sandbox with limited memory for the user (recommended not to exceed 1GB). Developers should use traditional WinForms tools to carefully optimize memory usage and avoid wasting every byte. |
+| Form designer | WF2W is a lightweight frontend framework and does not support a visual form designer. Developers need to use traditional form designers (e.g. VS.NET or SharpDevelop) to design forms. |
+| Step and breakpoint debugging | WF2W can perform step and breakpoint debugging via Blazor WASM, but the experience is not as good as traditional WinForms development tools. Developers are advised to finalize the application flow using traditional WinForms debugging tools, then port to WF2W. |
+| Memory and CPU performance tuning | WF2W has no performance tuning tools. Developers are advised to do performance tuning in traditional WinForms development tools, then port to WF2W. |
+| Client large memory | WF2W runs in the browser sandbox with limited memory for the user (recommended not to exceed 1GB). Developers should use traditional WinForms tools to carefully optimize memory usage and avoid wasting every byte. |
 
 ### Step 5: Compile and Run
 Compile and run the program.
 
-MWGA supports mainstream browsers such as Chrome (v95 or later) and Firefox (v133 or later). Supports Windows, Linux, and Android operating systems. **Windows XP and other legacy operating systems are not supported**.
+WF2W supports mainstream browsers such as Chrome (v95 or later) and Firefox (v133 or later). Supports Windows, Linux, and Android operating systems. **Windows XP and other legacy operating systems are not supported**.
 
 When deploying to production, consider using [https://github.com/dcsoft-yyf/BlazorWASMPackager](https://github.com/dcsoft-yyf/BlazorWASMPackager) to package Blazor WASM program files into a single JS file for easy deployment and maintenance.
 
 ## 11. Security Statement
 
-MWGA is not open source software, but we take the following measures to ensure the software is secure:
+WF2W is not open source software, but we take the following measures to ensure the software is secure:
 
-1. **Usage Restrictions**: MWGA's only file `DCSoft.MWGA.dll` is restricted to Blazor WASM development only. For other software types, such as WinForms, ASP.NET CORE, command line, etc., it will have no effect.
+1. **Usage Restrictions**: WF2W's only file `DCSoft.WF2W.dll` is restricted to Blazor WASM development only. For other software types, such as WinForms, ASP.NET CORE, command line, etc., it will have no effect.
 
-2. **Pure Frontend Component**: MWGA is a pure frontend software component with no server-side program. It can only run in browser sandbox and has no access to databases, local file systems, registries, or hardware.
+2. **Pure Frontend Component**: WF2W is a pure frontend software component with no server-side program. It can only run in browser sandbox and has no access to databases, local file systems, registries, or hardware.
 
-3. **No Network Operations**: MWGA promises not to perform any network operations, including http, ftp, Web Socket, etc. Moreover, it is easy for users to monitor abnormal network behavior in browsers.
+3. **No Network Operations**: WF2W promises not to perform any network operations, including http, ftp, Web Socket, etc. Moreover, it is easy for users to monitor abnormal network behavior in browsers.
 
 4. **Packaging Recommendation**: We recommend users use [https://github.com/dcsoft-yyf/BlazorWASMPackager](https://github.com/dcsoft-yyf/BlazorWASMPackager) to package Blazor WASM software into a single JS file. This can reduce network operations for downloading program files and even run using local `file://` protocol, further reducing network security risks.
 
-5. **No Local Data Access**: MWGA promises not to access any local data, including browser cookies, localStorage, IndexDB, navigator objects, etc.
+5. **No Local Data Access**: WF2W promises not to access any local data, including browser cookies, localStorage, IndexDB, navigator objects, etc.
 
-6. **No High-Privilege Operations**: MWGA promises not to perform high-privilege risky operations, such as operating cameras, location information access, etc.
+6. **No High-Privilege Operations**: WF2W promises not to perform high-privilege risky operations, such as operating cameras, location information access, etc.
 
-7. **User Code Security Control**: For WinForms applications provided by users that request file access or database connections, MWGA will trigger JS events, allowing developers to write their own code to respond to events and handle such high-privilege behaviors. MWGA completely avoids security risks related to this. In the future, MWGA will provide a high-frequency changing security token mechanism to strengthen control over security behaviors of WinForms user code.
+7. **User Code Security Control**: For WinForms applications provided by users that request file access or database connections, WF2W will trigger JS events, allowing developers to write their own code to respond to events and handle such high-privilege behaviors. WF2W completely avoids security risks related to this. In the future, WF2W will provide a high-frequency changing security token mechanism to strengthen control over security behaviors of WinForms user code.
 
-8. **Error Isolation**: When MWGA or user code causes program errors and crashes due to bugs, since it is a pure frontend component, it can only affect the current terminal. Restarting the client browser can recover, and it will not affect the server, with low security risks.
+8. **Error Isolation**: When WF2W or user code causes program errors and crashes due to bugs, since it is a pure frontend component, it can only affect the current terminal. Restarting the client browser can recover, and it will not affect the server, with low security risks.
 
-9. **Xinchuang Certification**: MWGA's sister software DCWriter5 uses the same software architecture. DCWriter5 has obtained original factory adaptation certification from UOS, Kylin, and Fangde operating systems. This indirectly indicates that MWGA meets domestic Xinchuang requirements.
+9. **Xinchuang Certification**: WF2W's sister software DCWriter5 uses the same software architecture. DCWriter5 has obtained original factory adaptation certification from UOS, Kylin, and Fangde operating systems. This indirectly indicates that WF2W meets domestic Xinchuang requirements.
 
-10. **Security Reminder**: When MWGA exhibits high-privilege behaviors not described in this document, it can be suspected that `DCSoft.MWGA.dll` is not genuine or has been compromised by viruses or trojans. Even so, due to browser security sandbox restrictions, the user's runtime environment remains secure.
+10. **Security Reminder**: When WF2W exhibits high-privilege behaviors not described in this document, it can be suspected that `DCSoft.WF2W.dll` is not genuine or has been compromised by viruses or trojans. Even so, due to browser security sandbox restrictions, the user's runtime environment remains secure.
 
 ## 12. Competitive Comparison
 
@@ -390,9 +388,9 @@ Currently, there are the following solutions for migrating WinForms programs to 
 - **Manual Refactoring**: Reference the original WinForms program and write Blazor components from scratch, completely separate from the original WinForms program.
 - **Hybrid Bridging (WebView2)**: Embed a WebView2 browser component in the WinForms program and gradually migrate software functionality to a BS structure.
 
-The comparison between MWGA and other solutions with the same goal is as follows:
+The comparison between WF2W and other solutions with the same goal is as follows:
 
-| Comparison Dimension | MWGA | Code Generation Migration | Manual Refactoring | Hybrid Bridging |
+| Comparison Dimension | WF2W | Code Generation Migration | Manual Refactoring | Hybrid Bridging |
 |---------------------|------|---------------------------|-------------------|-----------------|
 | **Migration Efficiency** | Extremely fast (hours): Import project and render immediately, minimal coding adaptation, migration efficiency far exceeds other solutions. | Fast (days) | Very slow (weeks/months) | Medium (days/weeks) |
 | **Technical Threshold** | Very low (zero Blazor/frontend foundation required): Only need to be familiar with the original WinForms project, ordinary developers can quickly get started, greatly reducing migration learning costs. | Medium (requires basic Blazor knowledge, need to learn new Blazor technology stack) | High (proficient in Blazor ecosystem, need to fully master Blazor + frontend technology stack) | Medium-High (requires dual-stack knowledge, need to master both WinForms and frontend/backend technology stacks) |
@@ -404,16 +402,16 @@ The comparison between MWGA and other solutions with the same goal is as follows
 
 ## 13. Copyright Statement
 
-MWGA is a commercial closed-source product. Nanjing Duchang Information Technology Co., Ltd. owns all copyrights. Cracking and piracy are strictly prohibited.
+WF2W is a commercial closed-source product. Nanjing Duchang Information Technology Co., Ltd. owns all copyrights. Cracking and piracy are strictly prohibited.
 
 Demo projects are open-source examples used to demonstrate migration processes and verify compatibility.
 
-For any questions, please contact: 28348092@qq.com or leave a message at [https://github.com/dcsoft-yyf/MWGA](https://github.com/dcsoft-yyf/MWGA).
+For any questions, please contact: 28348092@qq.com or leave a message at [https://github.com/dcsoft-yyf/WF2W](https://github.com/dcsoft-yyf/WF2W).
 
 ---
 ## 14. Our team
 Stable and reliable, young and full of vitality.
-<img src="https://github.com/dcsoft-yyf/MWGA/blob/main/images/dcsoft-team.jpg?raw=true"/>
+<img src="https://github.com/dcsoft-yyf/WF2W/blob/main/images/dcsoft-team.jpg?raw=true"/>
 
 **Nanjing Duchang Information Technology Co., Ltd.**  
 **January 28, 2026**
