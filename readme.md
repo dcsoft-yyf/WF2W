@@ -18,7 +18,7 @@
 
 ## 1. One-Sentence Introduction
 
-WF2W stands for "Make WinForms Great Again". It is a tool that quickly migrates WinForm.NET programs using GDI+ to the Blazor WASM platform, keeping program code modifications below 10%, thereby reviving 100 billion lines of C# code worldwide.
+WF2W stands for "WinForms to Web Front-End". It is a tool that quickly migrates WinForm.NET programs using GDI+ to the Blazor WASM platform, keeping program code modifications below 10%, thereby reviving 100 billion lines of C# code worldwide.
 
 ## 2. Project Background
 
