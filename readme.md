@@ -7,7 +7,7 @@
 - [https://dcsoft-yyf.github.io/WF2W](https://dcsoft-yyf.github.io/WF2W)
 - Timeline demo at [https://dcsoft-yyf.github.io/WF2W/dctimeline.html](https://dcsoft-yyf.github.io/WF2W/dctimeline.html)
 ## Update Log
-- 2026-5-14 : Publish all source code.
+- 2026-5-14 : Publish all source code .
 - 2026-2-6 : Fix bug for Graphcis.DrawString() , Start the Chinese New Year holiday.
 - 2026-2-5 : Upload document [WF2W Dual-Build: One Codebase, Two Targets( .exe and .wasm ) — Value Proposition | WF2W 双线编译功能( .exe和.wasm )优势说明](https://github.com/dcsoft-yyf/WF2W/blob/main/WF2W-dual-line-compilation.md)
 - 2026-2-4 : Upload document [WF2W vs Blazor Hybrid & Avalonia | WF2W 与 Blazor Hybrid、Avalonia 对比](https://github.com/dcsoft-yyf/WF2W/blob/main/WF2W-BlazorHybrid-Avalonia.md)
