@@ -1,0 +1,320 @@
+<?xml version="1.0"?>
+<TemperatureDocument xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Config Version="1.0">
+    <IllegalTextEndCharForLinux>萍素三昌伊</IllegalTextEndCharForLinux>
+    <Images />
+    <Labels>
+      <Label Left="2180" Top="2485" Width="140" Height="660" />
+      <Label Text="天门县中心药房" ParameterName="jigou" Left="3" Width="2200" Height="70">
+        <Font>
+          <Size>14.25</Size>
+        </Font>
+      </Label>
+      <Label ParameterName="erwen" Left="2180" Top="2630" Width="90" Height="60" />
+      <Label ParameterName="xinlv" Left="2180" Top="2880" Width="90" Height="60" />
+      <Label ParameterName="sanjiaoxing" ColorValue="#0000FF" Left="2260" Top="2630" Width="50" Height="60" />
+      <Label ParameterName="chacha" ColorValue="#0000FF" Left="2260" Top="2690" Width="50" Height="60" />
+      <Label ParameterName="yuandian" ColorValue="#0000FF" Left="2260" Top="2570" Width="50" Height="60" />
+      <Label ParameterName="yuanquan" ColorValue="#0000FF" Left="2260" Top="2760" Width="50" Height="60" />
+      <Label ParameterName="yuandian" ColorValue="#FF0000" Left="2260" Top="2820" Width="50" Height="60" />
+      <Label ParameterName="yuanquan" ColorValue="#FF0000" Left="2260" Top="2880" Width="50" Height="60" />
+      <Label Text="体    温    单" Left="3" Top="70" Width="2200" Height="70">
+        <Font>
+          <Size>14.25</Size>
+        </Font>
+      </Label>
+      <Label Text="呼吸 (次/分)" MultiLine="true" BackColorValue="#FFFFFF" Left="10" Top="2080" PositionFixModeForAutoHeightLine="AboveAutoHeightLine">
+        <Font>
+          <Size>6.75</Size>
+        </Font>
+      </Label>
+      <Label Text="脉搏 (次/分)" MultiLine="true" BackColorValue="#FFFFFF" Left="135" Top="2082" PositionFixModeForAutoHeightLine="AboveAutoHeightLine">
+        <Font>
+          <Size>6.75</Size>
+        </Font>
+      </Label>
+      <Label Text="体温 (°C)" MultiLine="true" Left="255" Top="2080" PositionFixModeForAutoHeightLine="AboveAutoHeightLine">
+        <Font>
+          <Size>6.75</Size>
+        </Font>
+      </Label>
+      <Label MultiLine="true" BackColorValue="#FFFFFF" Top="2183" Width="250" Height="217" PositionFixModeForAutoHeightLine="AboveAutoHeightLine">
+        <ShowBorder>true</ShowBorder>
+      </Label>
+      <Label Text="疼" MultiLine="true" BackColorValue="#FFFFFF" Left="5" Top="2190" Width="230" Height="50" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" />
+      <Label Text="痛" MultiLine="true" BackColorValue="#FFFFFF" Left="5" Top="2240" Width="230" Height="50" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" />
+      <Label Text="强" MultiLine="true" BackColorValue="#FFFFFF" Left="5" Top="2295" Width="230" Height="50" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" />
+      <Label Text="度" MultiLine="true" BackColorValue="#FFFFFF" Left="5" Top="2350" Width="230" Height="50" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" />
+    </Labels>
+    <PageIndexText>第[%pageindex%]页</PageIndexText>
+    <PageSettings>
+      <LeftMargin>50</LeftMargin>
+      <TopMargin>25</TopMargin>
+      <RightMargin>50</RightMargin>
+      <BottomMargin>25</BottomMargin>
+    </PageSettings>
+    <GridYSplitNum>9</GridYSplitNum>
+    <GridYSplitInfo>
+      <GridYSplitNum>9</GridYSplitNum>
+    </GridYSplitInfo>
+    <Zones />
+    <Ticks>
+      <Tick Value="4" Text="4" ColorValue="#FF0000" />
+      <Tick Value="8" Text="8" />
+      <Tick Value="12" Text="12" />
+      <Tick Value="16" Text="16" />
+      <Tick Value="20" Text="20" ColorValue="#FF0000" />
+      <Tick Value="23" Text="24" ColorValue="#FF0000" />
+    </Ticks>
+    <FontName>宋体</FontName>
+    <BigVerticalGridLineColorValue>#000000</BigVerticalGridLineColorValue>
+    <DateFormatString>dd</DateFormatString>
+    <SpecifyTitleHeight>130</SpecifyTitleHeight>
+    <HeaderLabels>
+      <Label Title="姓名" ParameterName="name" SeperatorChar="58" />
+      <Label Title="年龄" ParameterName="age" Value=" " SeperatorChar="58" />
+      <Label Title="性别" ParameterName="sex" Value=" " SeperatorChar="58" />
+      <Label Title="入院日期" ParameterName="indate" Value=" " SeperatorChar="58" />
+      <Label Title="科室" ParameterName="keshi" Value=" " SeperatorChar="58" />
+      <Label Title="病区" ParameterName="bingqu" Value=" " SeperatorChar="58" />
+      <Label Title="床号" ParameterName="chuanghao" Value=" " SeperatorChar="58" />
+      <Label Title="住院号" ParameterName="id" Value=" " SeperatorChar="58" />
+    </HeaderLabels>
+    <HeaderLines>
+      <Line Title="日   期" SpecifyHeight="50" ValueType="NewSerialDate">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="zhuyuantianshu" Title="住院天数" SpecifyHeight="50" LayoutType="Free" ValueType="GlobalDayIndex">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line AfterOperaDaysFromZero="false" Title="术后天数" SpecifyHeight="50" StartDateKeyword="分娩" ValueType="DayIndex">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="NewLine" LoopTextList="上午,下午" Title="时   间" SpecifyHeight="50" TickStep="3" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line SpecifyHeight="50" ValueType="HourTick">
+        <DataSource />
+        <Scales />
+      </Line>
+    </HeaderLines>
+    <FooterLines>
+      <Line Name="dabian" Title="大       便(次)" SpecifyHeight="50" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="xiaobian" Title="小    便(ml/次)" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="shuruyeliang" Title="输 入 液 量(ml)" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="ruliang" Title="入       量(ml)" SpecifyHeight="50" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="shuchuyeliang" Title="出       量(ml)" SpecifyHeight="50" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="xueya" Title="  血       压(mmHg)" SpecifyHeight="50" TickStep="3" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="height" Title="  身       高（cm）" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="weight" Title="  体       重（kg）" SpecifyHeight="50" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="drugAllergy1" AutoHeight="true" Title="药   物  过  敏" SpecifyHeight="50" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="drugAllergy2" AutoHeight="true" SpecifyHeight="50" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="drugAllergy3" AutoHeight="true" SpecifyHeight="50" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="drugAllergy4" AutoHeight="true" SpecifyHeight="50" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="drugAllergy5" AutoHeight="true" SpecifyHeight="50" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="drugAllergy6" AutoHeight="true" SpecifyHeight="50" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Name="NewLine" AutoHeight="true" SpecifyHeight="50" TickStep="6" ValueType="Text">
+        <DataSource />
+        <Scales />
+      </Line>
+    </FooterLines>
+    <YAxisInfos>
+      <YAxis Name="huxi" SpecifyTitleWidth="120" AlertLineColorValue="#FF0000" MaxValue="80" ShowLegendInRule="false" ColorValueForPointValue="#000000" ColorValueForDownValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolStyle="HollowCicle" TitleColorValue="#0000FF" SymbolColorValue="#0000FF">
+        <TopPadding>0.008</TopPadding>
+        <BottomPadding>0.115</BottomPadding>
+        <DataSource />
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+      <YAxis Name="maibo" SpecifyTitleWidth="120" HollowCovertTargetName="tiwen" ShadowName="xinlv" AlertLineColorValue="#FF0000" MaxValue="180" MinValue="20" ShowLegendInRule="false" ColorValueForPointValue="#000000" ColorValueForDownValue="#FF0000" ColorValueForUpValue="#FF0000" TitleColorValue="#FF0000">
+        <TopPadding>0.007</TopPadding>
+        <BottomPadding>0.115</BottomPadding>
+        <DataSource />
+        <ShadowPointVisible>false</ShadowPointVisible>
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+      <YAxis Name="tiwen" SpecifyTitleWidth="120" AllowOutofRange="true" EnableLanternValue="true" AlertLineColorValue="#FF0000" RedLineValue="37" MaxValue="42" MinValue="34" ColorValueForPointValue="#000000" ColorValueForDownValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolStyle="None" TitleColorValue="#0000FF" SymbolColorValue="#0000FF">
+        <TopPadding>0.007</TopPadding>
+        <BottomPadding>0.111</BottomPadding>
+        <DataSource />
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+      <YAxis MergeIntoLeft="true" Name="tengtongqiangdu" SymbolSize="15" EnableLanternValue="true" YSplitNum="5" AlertLineColorValue="#FF0000" MaxValue="10" ShowLegendInRule="false" ColorValueForPointValue="#000000" ColorValueForDownValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolStyle="Character" TitleBackColorValue="#FFFFFF" SymbolColorValue="#00BFFF">
+        <TopPadding>0.895</TopPadding>
+        <BottomPadding>0</BottomPadding>
+        <DataSource />
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+      <YAxis Name="wenben" Style="Text" Title="文本" YSplitNum="7" AlertLineColorValue="#FF0000" MaxValue="42" MinValue="35" ColorValueForPointValue="#000000" ColorValueForDownValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#0000FF">
+        <TopPadding>0.13</TopPadding>
+        <BottomPadding>0.2</BottomPadding>
+        <DataSource />
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+    </YAxisInfos>
+  </Config>
+  <Parameters />
+  <Datas>
+    <Data Name="wenben">
+      <Values />
+    </Data>
+    <Data Name="tiwen">
+      <Values />
+    </Data>
+    <Data Name="maibo">
+      <Values />
+    </Data>
+    <Data Name="huxi">
+      <Values />
+    </Data>
+    <Data Name="dabian">
+      <Values />
+    </Data>
+    <Data Name="xiaobian">
+      <Values />
+    </Data>
+    <Data Name="shuruyeliang">
+      <Values />
+    </Data>
+    <Data Name="ruliang">
+      <Values />
+    </Data>
+    <Data Name="shuchuyeliang">
+      <Values />
+    </Data>
+    <Data Name="xueya">
+      <Values />
+    </Data>
+    <Data Name="height">
+      <Values />
+    </Data>
+    <Data Name="weight">
+      <Values />
+    </Data>
+    <Data Name="drugAllergy1">
+      <Values />
+    </Data>
+    <Data Name="drugAllergy2">
+      <Values />
+    </Data>
+    <Data Name="drugAllergy3">
+      <Values />
+    </Data>
+    <Data Name="drugAllergy4">
+      <Values />
+    </Data>
+    <Data Name="drugAllergy5">
+      <Values />
+    </Data>
+    <Data Name="drugAllergy6">
+      <Values />
+    </Data>
+    <Data Name="NewLine">
+      <Values />
+    </Data>
+    <Data>
+      <Values />
+    </Data>
+    <Data Name="zhuyuantianshu">
+      <Values />
+    </Data>
+    <Data Name="tengtongqiangdu">
+      <Values />
+    </Data>
+  </Datas>
+</TemperatureDocument>

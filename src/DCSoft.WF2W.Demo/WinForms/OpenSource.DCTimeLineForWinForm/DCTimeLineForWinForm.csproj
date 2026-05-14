@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CACB565D-B635-428F-A06C-90BDBB986F4B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>DCTimeLineForWinForm</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DCSoft</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>http://localhost/XWriterLib/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE;DEBUG;ComInterfaces WINFORMONLY XTextPartitionImageElement TemperatureChart SELECTION WebWriterControl2 COM HTMLATTRIBUTE3 NET20 HBCA WEBFORM2 WINFORM ALL NewMain EMR LICENSE ZKML2 NsoOffice USEWDINFO TimeLine TD FriedCure CA</DefineConstants>
+    <DocumentationFile>bin\debug\DCTimeLineForWinForm.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BinaryHelper.cs" />
+    <Compile Include="Common\DCDescriptionHelper.cs" />
+    <Compile Include="Common\DCEnumTypeInfo.cs" />
+    <Compile Include="Common\DCFastJsonTextWriter.cs" />
+    <Compile Include="Common\DCPublishAPIAttribute.cs" />
+    <Compile Include="Common\DCResourceManager.cs" />
+    <Compile Include="Common\DCXSDAttribute.cs" />
+    <Compile Include="Common\DebugHelper.cs" />
+    <Compile Include="Common\DoubleNaN.cs" />
+    <Compile Include="Common\EncryptResourceStringsHelper.cs" />
+    <Compile Include="Common\FastMemoryStreamForWrite.cs" />
+    <Compile Include="Common\FileHeaderHelper.cs" />
+    <Compile Include="Common\IDCPropertyWriter.cs" />
+    <Compile Include="Common\ImageHelper.cs" />
+    <Compile Include="Common\ListDebugView.cs" />
+    <Compile Include="Common\StringCommon.cs" />
+    <Compile Include="Common\StringFormatHelper.cs" />
+    <Compile Include="Common\TypeConverterSupportProperties.cs" />
+    <Compile Include="Common\ValueTypeHelper.cs" />
+    <Compile Include="Common\XMLHelper.cs" />
+    <Compile Include="Common\XMLSerializeHelper.cs" />
+    <Compile Include="Data\DCDataSource.cs" />
+    <Compile Include="Data\DCSingleDataSource.cs" />
+    <Compile Include="Drawing\DCBrushes.cs" />
+    <Compile Include="Drawing\DCGraphics.cs" />
+    <Compile Include="Drawing\DCMatrix.cs" />
+    <Compile Include="Drawing\DCStringFormat.cs" />
+    <Compile Include="Drawing\DefaultColorValueAttribute.cs" />
+    <Compile Include="Drawing\Design\SimpleImageValueEditor.cs" />
+    <Compile Include="Drawing\DrawerUtil.cs" />
+    <Compile Include="Drawing\DrawingResources.Designer.cs" />
+    <Compile Include="Drawing\DrawingStrings.Designer.cs" />
+    <Compile Include="Drawing\DrawStringFormatExt.cs" />
+    <Compile Include="Drawing\GraphicsObjectBuffer.cs" />
+    <Compile Include="Drawing\GraphicsUnitConvert.cs" />
+    <Compile Include="Drawing\MathCommon.cs" />
+    <Compile Include="Drawing\RectangleCommon.cs" />
+    <Compile Include="Drawing\SimpleRectangleTransform.cs" />
+    <Compile Include="Drawing\StandardPaperSizeInfo.cs" />
+    <Compile Include="Drawing\TransformBase.cs" />
+    <Compile Include="Drawing\XFontInfo.cs" />
+    <Compile Include="Drawing\XFontValue.cs" />
+    <Compile Include="Drawing\XImageValue.cs" />
+    <Compile Include="Drawing\XPenStyle.cs" />
+    <Compile Include="Drawing\XPenStyleTypeEditor.cs" />
+    <Compile Include="Printing\XPageSettings.cs" />
+    <Compile Include="TemperatureChart\AbNormalRangeSettings.cs" />
+    <Compile Include="TemperatureChart\AfterRunDesignerEventHandler.cs" />
+    <Compile Include="TemperatureChart\DateTimePrecisionMode.cs" />
+    <Compile Include="TemperatureChart\DCGraphicsForTimeLine.cs" />
+    <Compile Include="TemperatureChart\DCTimeLineBooleanValue.cs" />
+    <Compile Include="TemperatureChart\DCTimeLineControlEventMessage.cs" />
+    <Compile Include="TemperatureChart\DCTimeLineImage.cs" />
+    <Compile Include="TemperatureChart\DCTimeLineImageResources.Designer.cs" />
+    <Compile Include="TemperatureChart\DCTimeLineLabel.cs" />
+    <Compile Include="TemperatureChart\DCTimeLineParameter.cs" />
+    <Compile Include="TemperatureChart\DCTimeLineSelectionMode.cs" />
+    <Compile Include="TemperatureChart\DCTimeLineStrings.Designer.cs" />
+    <Compile Include="TemperatureChart\DCTimeLineUtils.cs" />
+    <Compile Include="TemperatureChart\DCTimeLineValueEditManager.cs" />
+    <Compile Include="TemperatureChart\DCTimeLineXmlSerializer.cs" />
+    <Compile Include="TemperatureChart\DCTimeUnit.cs" />
+    <Compile Include="TemperatureChart\dlgEditSingleValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemperatureChart\dlgEditSingleValue.Designer.cs">
+      <DependentUpon>dlgEditSingleValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemperatureChart\dlgEditTowValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemperatureChart\dlgEditTowValues.Designer.cs">
+      <DependentUpon>dlgEditTowValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemperatureChart\dlgSQLText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemperatureChart\dlgSQLText.Designer.cs">
+      <DependentUpon>dlgSQLText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemperatureChart\dlgTickList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemperatureChart\dlgTickList.Designer.cs">
+      <DependentUpon>dlgTickList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemperatureChart\dlgTitleValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemperatureChart\dlgTitleValues.Designer.cs">
+      <DependentUpon>dlgTitleValues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemperatureChart\DocumentBehaviorMode.cs" />
+    <Compile Include="TemperatureChart\DocumentData.cs" />
+    <Compile Include="TemperatureChart\DocumentDblClickEventHandler.cs" />
+    <Compile Include="TemperatureChart\DocumentLinkClickEventArgs.cs" />
+    <Compile Include="TemperatureChart\DocumentLinkVisualStyle.cs" />
+    <Compile Include="TemperatureChart\DocumentMouseMoveEventHandler.cs" />
+    <Compile Include="TemperatureChart\DocumentPageSettings.cs" />
+    <Compile Include="TemperatureChart\DocumentViewMode.cs" />
+    <Compile Include="TemperatureChart\DocumentViewParty.cs" />
+    <Compile Include="TemperatureChart\DrawValuePointSymbolEventHandler.cs" />
+    <Compile Include="TemperatureChart\EditNameUITypeEditor.cs" />
+    <Compile Include="TemperatureChart\EditTitleUITypeEditor.cs" />
+    <Compile Include="TemperatureChart\EditValuePointEventArgs.cs" />
+    <Compile Include="TemperatureChart\EditValuePointEventHandleMode.cs" />
+    <Compile Include="TemperatureChart\EditValuePointManager.cs" />
+    <Compile Include="TemperatureChart\frmConfigXML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemperatureChart\frmConfigXML.Designer.cs">
+      <DependentUpon>frmConfigXML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemperatureChart\frmTimeLineData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemperatureChart\frmTimeLineData.Designer.cs">
+      <DependentUpon>frmTimeLineData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemperatureChart\frmTimeLineDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemperatureChart\frmTimeLineDesigner.Designer.cs">
+      <DependentUpon>frmTimeLineDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemperatureChart\GridYSplitInfo.cs" />
+    <Compile Include="TemperatureChart\HeaderLabelInfo.cs" />
+    <Compile Include="TemperatureChart\RuntimeTickInfo.cs" />
+    <Compile Include="TemperatureChart\SimpleReversibleDrawer.cs" />
+    <Compile Include="TemperatureChart\TemperatureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TemperatureChart\TemperatureControl.Designer.cs">
+      <DependentUpon>TemperatureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemperatureChart\TemperatureDocument.cs" />
+    <Compile Include="TemperatureChart\TemperatureDocumentConfig.cs" />
+    <Compile Include="TemperatureChart\TemperatureDocumentLoadEventArgs.cs" />
+    <Compile Include="TemperatureChart\TemperatureDocumentSaveEventArgs.cs" />
+    <Compile Include="TemperatureChart\TemperatureDocument_Data.cs" />
+    <Compile Include="TemperatureChart\TemperatureDocument_IO.cs" />
+    <Compile Include="TemperatureChart\TemperatureDocument_Layout.cs" />
+    <Compile Include="TemperatureChart\TemperatureDocument_Paint.cs" />
+    <Compile Include="TemperatureChart\TemperaturePrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TemperatureChart\TemperatureViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TemperatureChart\TickInfo.cs" />
+    <Compile Include="TemperatureChart\TickInfoListUITypeEditor.cs" />
+    <Compile Include="TemperatureChart\TimeLineDesignerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TemperatureChart\TimeLineDesignerControl.Designer.cs">
+      <DependentUpon>TimeLineDesignerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TemperatureChart\TimeLineUtils.cs" />
+    <Compile Include="TemperatureChart\TimeLineZoneEventArgs.cs" />
+    <Compile Include="TemperatureChart\TimeLineZoneInfo.cs" />
+    <Compile Include="TemperatureChart\TitleLineInfo.cs" />
+    <Compile Include="TemperatureChart\TitleLineLayoutType.cs" />
+    <Compile Include="TemperatureChart\ValuePoint.cs" />
+    <Compile Include="TemperatureChart\ValuePointClickEventHandler.cs" />
+    <Compile Include="TemperatureChart\ValuePointDataSourceInfo.cs" />
+    <Compile Include="TemperatureChart\ValuePointSymbolStyle.cs" />
+    <Compile Include="TemperatureChart\ValuePointUpAndDown.cs" />
+    <Compile Include="TemperatureChart\Win32Caret.cs" />
+    <Compile Include="TemperatureChart\YAxisInfo.cs" />
+    <Compile Include="TemperatureChart\YAxisInfoStyle.cs" />
+    <Compile Include="TemperatureChart\YAxisScaleInfo.cs" />
+    <Compile Include="WindowsFormsApp\frmDCTimlineDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApp\frmDCTimlineDemo.Designer.cs">
+      <DependentUpon>frmDCTimlineDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp\frmAddPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApp\frmAddPoint.Designer.cs">
+      <DependentUpon>frmAddPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp\frmPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApp\frmPicture.Designer.cs">
+      <DependentUpon>frmPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp\Program.cs" />
+    <Compile Include="WinForms\WinFormUtils.cs" />
+    <EmbeddedResource Include="TimeLineDemoFiles\timeline_TimeZoneTest_ENG.xml" />
+    <EmbeddedResource Include="TimeLineDemoFiles\timeline_CustomTable.xml" />
+    <EmbeddedResource Include="TimeLineDemoFiles\timeline_HealthRecord.xml" />
+    <EmbeddedResource Include="TimeLineDemoFiles\timeline_PainScore.xml" />
+    <EmbeddedResource Include="TimeLineDemoFiles\timeline_Perioperative.xml" />
+    <EmbeddedResource Include="TimeLineDemoFiles\timeline_SurgicalSchedule.xml" />
+    <EmbeddedResource Include="TimeLineDemoFiles\timeline_TimeZoneTest.xml" />
+    <EmbeddedResource Include="TimeLineDemoFiles\timeline_ValuePointOverlapTest.xml" />
+    <EmbeddedResource Include="Drawing\DrawingResources.resx" />
+    <EmbeddedResource Include="Drawing\DrawingStrings.resx" />
+    <EmbeddedResource Include="TemperatureChart\DCTimeLineImageResources.resx" />
+    <EmbeddedResource Include="TemperatureChart\DCTimeLineStrings.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemperatureChart\dlgEditSingleValue.resx">
+      <DependentUpon>dlgEditSingleValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemperatureChart\dlgEditTowValues.resx">
+      <DependentUpon>dlgEditTowValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemperatureChart\dlgSQLText.resx">
+      <DependentUpon>dlgSQLText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemperatureChart\dlgTickList.resx">
+      <DependentUpon>dlgTickList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemperatureChart\dlgTitleValues.resx">
+      <DependentUpon>dlgTitleValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemperatureChart\frmConfigXML.resx">
+      <DependentUpon>frmConfigXML.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemperatureChart\frmTimeLineData.resx">
+      <DependentUpon>frmTimeLineData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemperatureChart\frmTimeLineDesigner.resx">
+      <DependentUpon>frmTimeLineDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemperatureChart\TemperatureControl.resx">
+      <DependentUpon>TemperatureControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TemperatureChart\TimeLineDesignerControl.resx">
+      <DependentUpon>TimeLineDesignerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="AttachedFiles\CT.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AttachedFiles\RYJL.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AttachedFiles\SSJL.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AttachedFiles\HLJLD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AttachedFiles\SQTL.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AttachedFiles\BLFX.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AttachedFiles\XSHBGD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AttachedFiles\XTJL1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AttachedFiles\XTJL2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AttachedFiles\MZBL.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AttachedFiles\SCBC.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AttachedFiles\MZHLJLD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Drawing\images\BrowseButtonIcon.gif" />
+    <Content Include="Drawing\images\ButtonBackgroundDown.bmp" />
+    <Content Include="Drawing\images\ButtonBackgroundOver.bmp" />
+    <Content Include="Drawing\images\ButtonBackgroundUp.bmp" />
+    <Content Include="Drawing\images\CalenderButtonIcon.bmp" />
+    <Content Include="Drawing\images\ComboBoxButtonActive.bmp" />
+    <Content Include="Drawing\images\ComboBoxButtonNormal.bmp" />
+    <Content Include="Drawing\images\FloatBrowseButtonIcon.bmp" />
+    <Content Include="Drawing\images\UIWaitting.png" />
+    <Content Include="Drawing\Resources\BackImage1.bmp" />
+    <Content Include="Drawing\Resources\BackImage10.bmp" />
+    <Content Include="Drawing\Resources\BackImage11.bmp" />
+    <Content Include="Drawing\Resources\BackImage12.bmp" />
+    <Content Include="Drawing\Resources\BackImage13.bmp" />
+    <Content Include="Drawing\Resources\BackImage2.bmp" />
+    <Content Include="Drawing\Resources\BackImage3.bmp" />
+    <Content Include="Drawing\Resources\BackImage4.bmp" />
+    <Content Include="Drawing\Resources\BackImage5.bmp" />
+    <Content Include="Drawing\Resources\BackImage6.bmp" />
+    <Content Include="Drawing\Resources\BackImage7.bmp" />
+    <Content Include="Drawing\Resources\BackImage8.bmp" />
+    <Content Include="Drawing\Resources\BackImage9.bmp" />
+    <Content Include="TemperatureChart\DCTimeLine.bmp" />
+    <Content Include="TemperatureChart\DCTimeLine.ico" />
+    <Content Include="TemperatureChart\Images\ArrowDown.bmp" />
+    <Content Include="TemperatureChart\Images\ArrowUp.bmp" />
+    <Content Include="TemperatureChart\Images\Collapse.bmp" />
+    <Content Include="TemperatureChart\Images\CommandDelete.bmp" />
+    <Content Include="TemperatureChart\Images\CommandFileNew.bmp" />
+    <Content Include="TemperatureChart\Images\CommandInsertImage.bmp" />
+    <Content Include="TemperatureChart\Images\CommandViewXMLSource.bmp" />
+    <Content Include="TemperatureChart\Images\DCTimeLine.ico" />
+    <Content Include="TemperatureChart\Images\Expand.bmp" />
+    <Content Include="TemperatureChart\Images\Flag_DockLeft.bmp" />
+    <Content Include="TemperatureChart\Images\Flag_DockRight.bmp" />
+    <Content Include="TemperatureChart\Images\PageSettings.bmp" />
+    <EmbeddedResource Include="TemperatureChart\Images\PointerDeleteRecord.cur" />
+    <EmbeddedResource Include="TemperatureChart\Images\PointerDragRecord.cur" />
+    <EmbeddedResource Include="TemperatureChart\Images\PointerNewRecord.cur" />
+    <EmbeddedResource Include="TemperatureChart\Resources\ArrowDown.bmp" />
+    <EmbeddedResource Include="TemperatureChart\Resources\ArrowUp.bmp" />
+    <Content Include="TemperatureChart\TemperatureControl.bmp" />
+    <Content Include="TemperatureChart\TimeLineDesignerControl.bmp" />
+    <EmbeddedResource Include="WindowsFormsApp\frmDCTimlineDemo.resx">
+      <DependentUpon>frmDCTimlineDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApp\frmPicture.resx">
+      <DependentUpon>frmPicture.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,852 @@
+<?xml version="1.0"?>
+<TemperatureDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Parameters />
+  <Config Version="1.0">
+    <Zones>
+      <Zone EndTime="2026-01-14T18:15:00+08:00" StartTime="2026-01-14T09:00:00+08:00" AlignToGrid="false" BackColorValue="#F5F5F5" AutoTickStepSeconds="1800" GridLineStyle="Dash" Name="oper" GridLineColorValue="#FF8080" SpecifyTickWidth="110">
+        <Ticks />
+      </Zone>
+    </Zones>
+    <SpecifyStartDate />
+    <FooterLines>
+      <Line Title="呼吸" CircleText="R" SpecifyHeight="80" Name="huxi" ValueType="TickText">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line TickStep="6" Title="小便" Name="xiaobian" ValueType="TickText">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line LayoutType="Free" Title="状态" Name="zhuangtai2" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line LayoutType="FreeText" Title="用药" Name="yongyao" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line LayoutType="Free" Title="输液和输血" Name="suye" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line LayoutType="Free" Title="胸管" Name="xiongguan" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+    </FooterLines>
+    <PageTitlePosition>BottomRight</PageTitlePosition>
+    <Title>眼科医院</Title>
+    <HeaderLines>
+      <Line Title="日期">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Title="住院天数" ValueType="GlobalDayIndex">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Title="术后天数" StartDateKeyword="手术" ValueType="DayIndex">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line LayoutType="HorizCascade" TickStep="6" Title="病历文档" Name="wendang" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Title="时刻" ValueType="HourTick">
+        <DataSource />
+        <Scales />
+      </Line>
+    </HeaderLines>
+    <Ticks>
+      <Tick Value="2" ColorValue="#FF0000" Text="2" />
+      <Tick Value="6" ColorValue="#FF0000" Text="6" />
+      <Tick Value="10" Text="10" />
+      <Tick Value="14" Text="14" />
+      <Tick Value="18" Text="18" />
+      <Tick Value="22" ColorValue="#FF0000" Text="22" />
+    </Ticks>
+    <GridYSplitInfo />
+    <FooterDescription>说明：脉搏（●）、体温（口温°，腋温×，肛温○）</FooterDescription>
+    <BigVerticalGridLineColorValue>#000000</BigVerticalGridLineColorValue>
+    <SpecifyEndDate />
+    <YAxisInfos>
+      <YAxis EnableLanternValue="true" AllowOutofRange="true" Name="tiwen" MinValue="34" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" MaxValue="42" SymbolStyle="Cross" ValueFormatString="0.0" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#00FF00" BottomTitle="摄氏" Title="体温" LanternValueTitle="物理降温" RedLineValue="37">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+        <DataSource />
+      </YAxis>
+      <YAxis Name="xinlv" MinValue="20" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" MaxValue="180" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#008000" BottomTitle="次/分" Title="心率">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+        <DataSource />
+      </YAxis>
+      <YAxis Name="SYSTOLIC" MinValue="50" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" MaxValue="170" SymbolStyle="V" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" BottomTitle="mmHg" Title="收缩压">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+        <DataSource />
+      </YAxis>
+      <YAxis Name="DIASTOLIC" MinValue="50" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" MaxValue="170" SymbolStyle="VReversed" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" BottomTitle="mmHg" Title="舒张压">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+        <DataSource />
+      </YAxis>
+      <YAxis Style="Text" Name="wenben" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" Title="文本内容">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+        <DataSource />
+      </YAxis>
+    </YAxisInfos>
+    <PageSettings>
+      <TopMargin>50</TopMargin>
+      <RightMargin>50</RightMargin>
+      <LeftMargin>50</LeftMargin>
+      <BottomMargin>50</BottomMargin>
+    </PageSettings>
+    <DataGridTopPadding>0.1</DataGridTopPadding>
+    <SymbolSize>22</SymbolSize>
+    <FontName>宋体</FontName>
+    <GridLineColorValue>#E0E0E0</GridLineColorValue>
+    <DataGridBottomPadding>0.1</DataGridBottomPadding>
+    <HeaderLabels>
+      <Label Title="姓名" SeperatorChar="58" Value="李四" />
+      <Label Title="性别" SeperatorChar="58" Value="女" />
+      <Label Title="病区" SeperatorChar="58" Value="胸外科" />
+      <Label Title="住院号" SeperatorChar="58" Value="000134" />
+      <Label Title="住院日期" SeperatorChar="58" Value="2026年01月12日" />
+    </HeaderLabels>
+    <Images />
+    <Labels />
+    <PageIndexText>第[%pageindex%]页</PageIndexText>
+  </Config>
+  <Datas>
+    <Data Name="xiaobian">
+      <Values>
+        <Value Time="2026-01-12T00:00:00+08:00" Text="1000" />
+        <Value Time="2026-01-13T00:00:00+08:00" Text="1000" />
+        <Value Time="2026-01-14T00:00:00+08:00" Text="1000" />
+        <Value Time="2026-01-15T00:00:00+08:00" Text="1000" />
+        <Value Time="2026-01-16T00:00:00+08:00" Text="1000" />
+        <Value Time="2026-01-17T00:00:00+08:00" Text="1000" />
+        <Value Time="2026-01-18T00:00:00+08:00" Text="1000" />
+      </Values>
+    </Data>
+    <Data Name="dabian">
+      <Values>
+        <Value Time="2026-01-12T00:00:00+08:00" Text="3" />
+        <Value Time="2026-01-13T00:00:00+08:00" Text="3" />
+        <Value Time="2026-01-14T00:00:00+08:00" Text="3" />
+        <Value Time="2026-01-15T00:00:00+08:00" Text="3" />
+        <Value Time="2026-01-16T00:00:00+08:00" Text="3" />
+        <Value Time="2026-01-17T00:00:00+08:00" Text="3" />
+        <Value Time="2026-01-18T00:00:00+08:00" Text="3" />
+      </Values>
+    </Data>
+    <Data Name="ruliang">
+      <Values>
+        <Value Time="2026-01-12T00:00:00+08:00" Text="800" />
+        <Value Time="2026-01-13T00:00:00+08:00" Text="800" />
+        <Value Time="2026-01-15T00:00:00+08:00" Text="800" />
+        <Value Time="2026-01-16T00:00:00+08:00" Text="800" />
+        <Value Time="2026-01-17T00:00:00+08:00" Text="800" />
+        <Value Time="2026-01-18T00:00:00+08:00" Text="800" />
+      </Values>
+    </Data>
+    <Data Name="huxi">
+      <Values>
+        <Value Time="2026-01-12T00:00:00+08:00" Text="37" />
+        <Value Time="2026-01-12T04:00:00+08:00" Text="38" />
+        <Value Time="2026-01-12T08:00:00+08:00" Text="40" />
+        <Value Time="2026-01-12T12:00:00+08:00" Text="41" />
+        <Value Time="2026-01-12T16:00:00+08:00" Text="R" />
+        <Value Time="2026-01-12T20:00:00+08:00" Text="43" />
+        <Value Time="2026-01-13T00:00:00+08:00" Text="46" />
+        <Value Time="2026-01-13T04:00:00+08:00" Text="48" />
+        <Value Time="2026-01-13T08:00:00+08:00" Text="47" />
+        <Value Time="2026-01-13T12:00:00+08:00" Text="45" />
+        <Value Time="2026-01-13T16:00:00+08:00" Text="" />
+        <Value Time="2026-01-13T20:00:00+08:00" Text="R" />
+        <Value Time="2026-01-14T00:00:00+08:00" Text="" />
+        <Value Time="2026-01-14T04:00:00+08:00" Text="43" />
+        <Value Time="2026-01-14T08:00:00+08:00" Text="42" />
+        <Value Time="2026-01-14T09:10:00+08:00" Text="45" />
+        <Value Time="2026-01-14T09:20:00+08:00" Text="41" />
+        <Value Time="2026-01-14T09:30:00+08:00" Text="32" />
+        <Value Time="2026-01-14T09:40:00+08:00" Text="32" />
+        <Value Time="2026-01-14T09:50:00+08:00" Text="31" />
+        <Value Time="2026-01-14T10:00:00+08:00" Text="25" />
+        <Value Time="2026-01-14T10:10:00+08:00" Text="22" />
+        <Value Time="2026-01-14T10:20:00+08:00" Text="15" />
+        <Value Time="2026-01-14T10:30:00+08:00" Text="15" />
+        <Value Time="2026-01-14T10:40:00+08:00" Text="13" />
+        <Value Time="2026-01-14T10:50:00+08:00" Text="15" />
+        <Value Time="2026-01-14T11:00:00+08:00" Text="17" />
+        <Value Time="2026-01-14T11:10:00+08:00" Text="14" />
+        <Value Time="2026-01-14T11:20:00+08:00" Text="20" />
+        <Value Time="2026-01-14T11:30:00+08:00" Text="R" />
+        <Value Time="2026-01-14T11:40:00+08:00" Text="24" />
+        <Value Time="2026-01-14T11:50:00+08:00" Text="30" />
+        <Value Time="2026-01-14T12:00:00+08:00" Text="34" />
+        <Value Time="2026-01-14T12:10:00+08:00" Text="32" />
+        <Value Time="2026-01-14T12:20:00+08:00" Text="34" />
+        <Value Time="2026-01-14T12:30:00+08:00" Text="42" />
+        <Value Time="2026-01-14T12:40:00+08:00" Text="39" />
+        <Value Time="2026-01-14T12:50:00+08:00" Text="R" />
+        <Value Time="2026-01-14T13:00:00+08:00" Text="48" />
+        <Value Time="2026-01-14T13:10:00+08:00" Text="46" />
+        <Value Time="2026-01-14T13:20:00+08:00" Text="50" />
+        <Value Time="2026-01-14T13:30:00+08:00" Text="55" />
+        <Value Time="2026-01-14T13:40:00+08:00" Text="57" />
+        <Value Time="2026-01-14T13:50:00+08:00" Text="59" />
+        <Value Time="2026-01-14T14:00:00+08:00" Text="60" />
+        <Value Time="2026-01-14T14:10:00+08:00" Text="60" />
+        <Value Time="2026-01-14T14:20:00+08:00" Text="60" />
+        <Value Time="2026-01-14T14:30:00+08:00" Text="59" />
+        <Value Time="2026-01-14T14:40:00+08:00" Text="54" />
+        <Value Time="2026-01-14T14:50:00+08:00" Text="55" />
+        <Value Time="2026-01-14T15:00:00+08:00" Text="53" />
+        <Value Time="2026-01-14T15:10:00+08:00" Text="44" />
+        <Value Time="2026-01-14T15:20:00+08:00" Text="40" />
+        <Value Time="2026-01-14T15:30:00+08:00" Text="39" />
+        <Value Time="2026-01-14T15:40:00+08:00" Text="30" />
+        <Value Time="2026-01-14T15:50:00+08:00" Text="26" />
+        <Value Time="2026-01-14T16:00:00+08:00" Text="28" />
+        <Value Time="2026-01-14T16:10:00+08:00" Text="R" />
+        <Value Time="2026-01-14T16:20:00+08:00" Text="23" />
+        <Value Time="2026-01-14T16:30:00+08:00" Text="20" />
+        <Value Time="2026-01-14T16:40:00+08:00" Text="17" />
+        <Value Time="2026-01-14T16:50:00+08:00" Text="13" />
+        <Value Time="2026-01-14T17:00:00+08:00" Text="15" />
+        <Value Time="2026-01-14T17:10:00+08:00" Text="12" />
+        <Value Time="2026-01-14T17:20:00+08:00" Text="13" />
+        <Value Time="2026-01-14T17:30:00+08:00" Text="19" />
+        <Value Time="2026-01-14T17:40:00+08:00" Text="20" />
+        <Value Time="2026-01-14T17:50:00+08:00" Text="19" />
+        <Value Time="2026-01-14T18:00:00+08:00" Text="18" />
+        <Value Time="2026-01-14T18:10:00+08:00" Text="23" />
+        <Value Time="2026-01-14T22:10:00+08:00" Text="18" />
+        <Value Time="2026-01-15T02:10:00+08:00" Text="20" />
+        <Value Time="2026-01-15T06:10:00+08:00" Text="22" />
+        <Value Time="2026-01-15T10:10:00+08:00" Text="24" />
+        <Value Time="2026-01-15T14:10:00+08:00" Text="26" />
+        <Value Time="2026-01-15T18:10:00+08:00" Text="R" />
+        <Value Time="2026-01-15T22:10:00+08:00" Text="29" />
+        <Value Time="2026-01-16T02:10:00+08:00" Text="30" />
+        <Value Time="2026-01-16T06:10:00+08:00" Text="32" />
+        <Value Time="2026-01-16T10:10:00+08:00" Text="34" />
+        <Value Time="2026-01-16T14:10:00+08:00" Text="" />
+        <Value Time="2026-01-16T18:10:00+08:00" Text="34" />
+        <Value Time="2026-01-16T22:10:00+08:00" Text="34" />
+        <Value Time="2026-01-17T02:10:00+08:00" Text="37" />
+        <Value Time="2026-01-17T06:10:00+08:00" Text="38" />
+        <Value Time="2026-01-17T10:10:00+08:00" Text="37" />
+        <Value Time="2026-01-17T14:10:00+08:00" Text="36" />
+        <Value Time="2026-01-17T18:10:00+08:00" Text="35" />
+        <Value Time="2026-01-17T22:10:00+08:00" Text="33" />
+        <Value Time="2026-01-18T02:10:00+08:00" Text="32" />
+        <Value Time="2026-01-18T06:10:00+08:00" Text="30" />
+        <Value Time="2026-01-18T10:10:00+08:00" Text="29" />
+        <Value Time="2026-01-18T14:10:00+08:00" Text="28" />
+        <Value Time="2026-01-18T18:10:00+08:00" Text="R" />
+        <Value Time="2026-01-18T22:10:00+08:00" Text="" />
+      </Values>
+    </Data>
+    <Data Name="tiwen">
+      <Values>
+        <Value Time="2026-01-12T00:00:00+08:00" Value="38.5372047" />
+        <Value Time="2026-01-12T04:00:00+08:00" Value="38.88532" />
+        <Value Time="2026-01-12T08:00:00+08:00" Value="39.26642" />
+        <Value Time="2026-01-12T12:00:00+08:00" Value="39.44265" />
+        <Value Time="2026-01-12T16:00:00+08:00" Value="39.460125" LanternValue="37.960125" />
+        <Value Time="2026-01-12T20:00:00+08:00" Value="NaN" />
+        <Value Time="2026-01-13T00:00:00+08:00" Value="39.65045" LanternValue="40.65045" />
+        <Value Time="2026-01-13T04:00:00+08:00" Value="40.0690422" />
+        <Value Time="2026-01-13T08:00:00+08:00" Value="40.13077" />
+        <Value Time="2026-01-13T12:00:00+08:00" Value="40.37081" />
+        <Value Time="2026-01-13T16:00:00+08:00" Value="40.79872" />
+        <Value Time="2026-01-13T20:00:00+08:00" Value="40.84919" />
+        <Value Time="2026-01-14T00:00:00+08:00" Value="41.071743" />
+        <Value Time="2026-01-14T04:00:00+08:00" Value="41.2519569" />
+        <Value Time="2026-01-14T08:00:00+08:00" Value="41.5879974" />
+        <Value Time="2026-01-14T09:10:00+08:00" Value="43" />
+        <Value Time="2026-01-14T09:20:00+08:00" Value="43" />
+        <Value Time="2026-01-14T09:30:00+08:00" Value="43" />
+        <Value Time="2026-01-14T09:40:00+08:00" Value="43" />
+        <Value Time="2026-01-14T09:50:00+08:00" Value="42.261364" />
+        <Value Time="2026-01-14T10:00:00+08:00" Value="42.28003" />
+        <Value Time="2026-01-14T10:10:00+08:00" Value="41.73714" />
+        <Value Time="2026-01-14T10:20:00+08:00" Value="39.937603" />
+        <Value Time="2026-01-14T10:30:00+08:00" Value="39.1143532" />
+        <Value Time="2026-01-14T10:40:00+08:00" Value="38.8025475" />
+        <Value Time="2026-01-14T10:50:00+08:00" Value="38.5312462" />
+        <Value Time="2026-01-14T11:00:00+08:00" Value="38.5988922" />
+        <Value Time="2026-01-14T11:10:00+08:00" Value="39.3515549" />
+        <Value Time="2026-01-14T11:20:00+08:00" Value="38.181797" />
+        <Value Time="2026-01-14T11:30:00+08:00" Value="37.0373535" />
+        <Value Time="2026-01-14T11:40:00+08:00" Value="37.09495" />
+        <Value Time="2026-01-14T11:50:00+08:00" Value="36.3852654" />
+        <Value Time="2026-01-14T12:00:00+08:00" Value="36.54128" />
+        <Value Time="2026-01-14T12:10:00+08:00" Value="35.9494743" />
+        <Value Time="2026-01-14T12:20:00+08:00" Value="35.6330833" LanternValue="34.1330833" />
+        <Value Time="2026-01-14T12:30:00+08:00" Value="34.95105" />
+        <Value Time="2026-01-14T12:40:00+08:00" Value="34.3113556" />
+        <Value Time="2026-01-14T12:50:00+08:00" Value="34.72437" />
+        <Value Time="2026-01-14T13:00:00+08:00" Value="33.3509521" />
+        <Value Time="2026-01-14T13:10:00+08:00" Value="33.78317" />
+        <Value Time="2026-01-14T13:20:00+08:00" Value="33.42875" />
+        <Value Time="2026-01-14T13:30:00+08:00" Value="34.29423" />
+        <Value Time="2026-01-14T13:40:00+08:00" Value="34.66926" />
+        <Value Time="2026-01-14T13:50:00+08:00" Value="35.65862" />
+        <Value Time="2026-01-14T14:00:00+08:00" Value="36.05526" />
+        <Value Time="2026-01-14T14:10:00+08:00" Value="37.05262" />
+        <Value Time="2026-01-14T14:20:00+08:00" Value="37.5263557" />
+        <Value Time="2026-01-14T14:30:00+08:00" Value="37.32499" />
+        <Value Time="2026-01-14T14:40:00+08:00" Value="38.3522377" />
+        <Value Time="2026-01-14T14:50:00+08:00" Value="39.3474045" />
+        <Value Time="2026-01-14T15:00:00+08:00" Value="39.85829" />
+        <Value Time="2026-01-14T15:10:00+08:00" Value="40.5029831" />
+        <Value Time="2026-01-14T15:20:00+08:00" Value="41.0961456" />
+        <Value Time="2026-01-14T15:30:00+08:00" Value="40.83754" />
+        <Value Time="2026-01-14T15:40:00+08:00" Value="42.06037" />
+        <Value Time="2026-01-14T15:50:00+08:00" Value="41.2797737" />
+        <Value Time="2026-01-14T16:00:00+08:00" Value="41.8072624" LanternValue="42" />
+        <Value Time="2026-01-14T16:10:00+08:00" Value="42.2595329" />
+        <Value Time="2026-01-14T16:20:00+08:00" Value="42.73403" />
+        <Value Time="2026-01-14T16:30:00+08:00" Value="42.84774" />
+        <Value Time="2026-01-14T16:40:00+08:00" Value="42.4302826" />
+        <Value Time="2026-01-14T16:50:00+08:00" Value="42.1281548" />
+        <Value Time="2026-01-14T17:00:00+08:00" Value="41.122242" />
+        <Value Time="2026-01-14T17:10:00+08:00" Value="41.1338768" />
+        <Value Time="2026-01-14T17:20:00+08:00" Value="40.1660233" LanternValue="38.6660233" />
+        <Value Time="2026-01-14T17:30:00+08:00" Value="39.26293" />
+        <Value Time="2026-01-14T17:40:00+08:00" Value="38.2328148" />
+        <Value Time="2026-01-14T17:50:00+08:00" Value="37.967865" />
+        <Value Time="2026-01-14T18:00:00+08:00" Value="37.4408646" />
+        <Value Time="2026-01-14T18:10:00+08:00" Value="37.9899139" />
+        <Value Time="2026-01-14T22:10:00+08:00" Value="36.4510956" />
+        <Value Time="2026-01-15T02:10:00+08:00" Value="36.1834755" />
+        <Value Time="2026-01-15T06:10:00+08:00" Value="35.9792" />
+        <Value Time="2026-01-15T10:10:00+08:00" Value="35.89425" />
+        <Value Time="2026-01-15T14:10:00+08:00" Value="35.7595444" />
+        <Value Time="2026-01-15T18:10:00+08:00" Value="35.53491" />
+        <Value Time="2026-01-15T22:10:00+08:00" Value="35.3234062" />
+        <Value Time="2026-01-16T02:10:00+08:00" Value="35.1718025" />
+        <Value Time="2026-01-16T06:10:00+08:00" Value="34.6941338" />
+        <Value Time="2026-01-16T10:10:00+08:00" Value="34.4893532" />
+        <Value Time="2026-01-16T14:10:00+08:00" Value="33.9940453" />
+        <Value Time="2026-01-16T18:10:00+08:00" Value="33.58201" />
+        <Value Time="2026-01-16T22:10:00+08:00" Value="33.5135155" />
+        <Value Time="2026-01-17T02:10:00+08:00" Value="33.05906" />
+        <Value Time="2026-01-17T06:10:00+08:00" Value="33" />
+        <Value Time="2026-01-17T10:10:00+08:00" Value="33.0311661" />
+        <Value Time="2026-01-17T14:10:00+08:00" Value="33.35373" />
+        <Value Time="2026-01-17T18:10:00+08:00" Value="33.6228867" />
+        <Value Time="2026-01-17T22:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-18T02:10:00+08:00" Value="33.99146" />
+        <Value Time="2026-01-18T06:10:00+08:00" Value="34.42513" />
+        <Value Time="2026-01-18T10:10:00+08:00" Value="34.47799" />
+        <Value Time="2026-01-18T14:10:00+08:00" Value="34.79603" />
+        <Value Time="2026-01-18T18:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-18T22:10:00+08:00" Value="34.9893456" LanternValue="34" />
+      </Values>
+    </Data>
+    <Data Name="maibo">
+      <Values>
+        <Value Time="2026-01-12T00:00:00+08:00" Value="131.230133" />
+        <Value Time="2026-01-12T04:00:00+08:00" Value="138.402451" />
+        <Value Time="2026-01-12T08:00:00+08:00" Value="141.289673" />
+        <Value Time="2026-01-12T12:00:00+08:00" Value="148.153259" />
+        <Value Time="2026-01-12T16:00:00+08:00" Value="NaN" />
+        <Value Time="2026-01-12T20:00:00+08:00" Value="154.323532" />
+        <Value Time="2026-01-13T00:00:00+08:00" Value="161.716522" />
+        <Value Time="2026-01-13T04:00:00+08:00" Value="162.045059" />
+        <Value Time="2026-01-13T08:00:00+08:00" Value="165.485855" />
+        <Value Time="2026-01-13T12:00:00+08:00" Value="169.721924" />
+        <Value Time="2026-01-13T16:00:00+08:00" Value="177.43718" />
+        <Value Time="2026-01-13T20:00:00+08:00" Value="180" />
+        <Value Time="2026-01-14T00:00:00+08:00" Value="175.0056" />
+        <Value Time="2026-01-14T04:00:00+08:00" Value="174.796722" />
+        <Value Time="2026-01-14T08:00:00+08:00" Value="NaN" />
+        <Value Time="2026-01-14T09:10:00+08:00" Value="168.796768" />
+        <Value Time="2026-01-14T09:20:00+08:00" Value="173.6217" />
+        <Value Time="2026-01-14T09:30:00+08:00" Value="162.217346" />
+        <Value Time="2026-01-14T09:40:00+08:00" Value="167.919388" />
+        <Value Time="2026-01-14T09:50:00+08:00" Value="162.248947" />
+        <Value Time="2026-01-14T10:00:00+08:00" Value="148.97728" />
+        <Value Time="2026-01-14T10:10:00+08:00" Value="151.68367" />
+        <Value Time="2026-01-14T10:20:00+08:00" Value="138.442871" />
+        <Value Time="2026-01-14T10:30:00+08:00" Value="127.081245" />
+        <Value Time="2026-01-14T10:40:00+08:00" Value="123.121048" />
+        <Value Time="2026-01-14T10:50:00+08:00" Value="127.78109" />
+        <Value Time="2026-01-14T11:00:00+08:00" Value="121.845833" />
+        <Value Time="2026-01-14T11:10:00+08:00" Value="117.660156" />
+        <Value Time="2026-01-14T11:20:00+08:00" Value="109.638039" />
+        <Value Time="2026-01-14T11:30:00+08:00" Value="110.176178" />
+        <Value Time="2026-01-14T11:40:00+08:00" Value="96.4013062" />
+        <Value Time="2026-01-14T11:50:00+08:00" Value="88.07581" />
+        <Value Time="2026-01-14T12:00:00+08:00" Value="86.04185" />
+        <Value Time="2026-01-14T12:10:00+08:00" Value="75.20764" />
+        <Value Time="2026-01-14T12:20:00+08:00" Value="82.8738556" />
+        <Value Time="2026-01-14T12:30:00+08:00" Value="92.88914" />
+        <Value Time="2026-01-14T12:40:00+08:00" Value="112.287514" />
+        <Value Time="2026-01-14T12:50:00+08:00" Value="115.980843" />
+        <Value Time="2026-01-14T13:00:00+08:00" Value="115.119812" />
+        <Value Time="2026-01-14T13:10:00+08:00" Value="140.682114" />
+        <Value Time="2026-01-14T13:20:00+08:00" Value="156.426788" />
+        <Value Time="2026-01-14T13:30:00+08:00" Value="172.01384" />
+        <Value Time="2026-01-14T13:40:00+08:00" Value="174.142349" />
+        <Value Time="2026-01-14T13:50:00+08:00" Value="180" />
+        <Value Time="2026-01-14T14:00:00+08:00" Value="180" />
+        <Value Time="2026-01-14T14:10:00+08:00" Value="180" />
+        <Value Time="2026-01-14T14:20:00+08:00" Value="180" />
+        <Value Time="2026-01-14T14:30:00+08:00" Value="174.857147" />
+        <Value Time="2026-01-14T14:40:00+08:00" Value="171.316223" />
+        <Value Time="2026-01-14T14:50:00+08:00" Value="154.441711" />
+        <Value Time="2026-01-14T15:00:00+08:00" Value="161.6538" />
+        <Value Time="2026-01-14T15:10:00+08:00" Value="147.237946" />
+        <Value Time="2026-01-14T15:20:00+08:00" Value="145.307617" />
+        <Value Time="2026-01-14T15:30:00+08:00" Value="137.298767" />
+        <Value Time="2026-01-14T15:40:00+08:00" Value="121.254753" />
+        <Value Time="2026-01-14T15:50:00+08:00" Value="117.006477" />
+        <Value Time="2026-01-14T16:00:00+08:00" Value="105.255836" />
+        <Value Time="2026-01-14T16:10:00+08:00" Value="102.524467" />
+        <Value Time="2026-01-14T16:20:00+08:00" Value="101.937988" />
+        <Value Time="2026-01-14T16:30:00+08:00" Value="87.88497" />
+        <Value Time="2026-01-14T16:40:00+08:00" Value="89.41946" />
+        <Value Time="2026-01-14T16:50:00+08:00" Value="66.15171" />
+        <Value Time="2026-01-14T17:00:00+08:00" Value="60.8051262" />
+        <Value Time="2026-01-14T17:10:00+08:00" Value="56.7867546" />
+        <Value Time="2026-01-14T17:20:00+08:00" Value="47.0263672" />
+        <Value Time="2026-01-14T17:30:00+08:00" Value="59.62681" />
+        <Value Time="2026-01-14T17:40:00+08:00" Value="57.4863548" />
+        <Value Time="2026-01-14T17:50:00+08:00" Value="69.91117" />
+        <Value Time="2026-01-14T18:00:00+08:00" Value="77.4197159" />
+        <Value Time="2026-01-14T18:10:00+08:00" Value="86.87424" />
+        <Value Time="2026-01-14T22:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-15T02:10:00+08:00" Value="72.82084" />
+        <Value Time="2026-01-15T06:10:00+08:00" Value="76.1392441" />
+        <Value Time="2026-01-15T10:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-15T14:10:00+08:00" Value="80.40664" />
+        <Value Time="2026-01-15T18:10:00+08:00" Value="88.124855" />
+        <Value Time="2026-01-15T22:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-16T02:10:00+08:00" Value="92.61544" />
+        <Value Time="2026-01-16T06:10:00+08:00" Value="96.38416" />
+        <Value Time="2026-01-16T10:10:00+08:00" Value="101.953911" />
+        <Value Time="2026-01-16T14:10:00+08:00" Value="107.668312" />
+        <Value Time="2026-01-16T18:10:00+08:00" Value="108.7589" />
+        <Value Time="2026-01-16T22:10:00+08:00" Value="109.333641" />
+        <Value Time="2026-01-17T02:10:00+08:00" Value="117.2181" />
+        <Value Time="2026-01-17T06:10:00+08:00" Value="119.727432" />
+        <Value Time="2026-01-17T10:10:00+08:00" Value="122.791534" />
+        <Value Time="2026-01-17T14:10:00+08:00" Value="127.801056" />
+        <Value Time="2026-01-17T18:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-17T22:10:00+08:00" Value="131.177414" />
+        <Value Time="2026-01-18T02:10:00+08:00" Value="132.282074" />
+        <Value Time="2026-01-18T06:10:00+08:00" Value="135.580353" />
+        <Value Time="2026-01-18T10:10:00+08:00" Value="140.933334" />
+        <Value Time="2026-01-18T14:10:00+08:00" Value="144.368011" />
+        <Value Time="2026-01-18T18:10:00+08:00" Value="148.249329" />
+        <Value Time="2026-01-18T22:10:00+08:00" Value="145.476944" />
+      </Values>
+    </Data>
+    <Data Name="xinlv">
+      <Values>
+        <Value Time="2026-01-12T00:00:00+08:00" Value="135.007309" />
+        <Value Time="2026-01-12T04:00:00+08:00" Value="144.565338" />
+        <Value Time="2026-01-12T08:00:00+08:00" Value="141.289673" />
+        <Value Time="2026-01-12T12:00:00+08:00" Value="148.153259" />
+        <Value Time="2026-01-12T16:00:00+08:00" Value="NaN" />
+        <Value Time="2026-01-12T20:00:00+08:00" Value="157.800659" />
+        <Value Time="2026-01-13T00:00:00+08:00" Value="166.844345" />
+        <Value Time="2026-01-13T04:00:00+08:00" Value="169.202713" />
+        <Value Time="2026-01-13T08:00:00+08:00" Value="165.485855" />
+        <Value Time="2026-01-13T12:00:00+08:00" Value="175.071335" />
+        <Value Time="2026-01-13T16:00:00+08:00" Value="177.43718" />
+        <Value Time="2026-01-13T20:00:00+08:00" Value="180" />
+        <Value Time="2026-01-14T00:00:00+08:00" Value="180" />
+        <Value Time="2026-01-14T04:00:00+08:00" Value="180" />
+        <Value Time="2026-01-14T08:00:00+08:00" Value="NaN" />
+        <Value Time="2026-01-14T09:10:00+08:00" Value="175.677" />
+        <Value Time="2026-01-14T09:20:00+08:00" Value="174.144516" />
+        <Value Time="2026-01-14T09:30:00+08:00" Value="164.030212" />
+        <Value Time="2026-01-14T09:40:00+08:00" Value="167.919388" />
+        <Value Time="2026-01-14T09:50:00+08:00" Value="169.947922" />
+        <Value Time="2026-01-14T10:00:00+08:00" Value="148.97728" />
+        <Value Time="2026-01-14T10:10:00+08:00" Value="151.68367" />
+        <Value Time="2026-01-14T10:20:00+08:00" Value="138.442871" />
+        <Value Time="2026-01-14T10:30:00+08:00" Value="134.040421" />
+        <Value Time="2026-01-14T10:40:00+08:00" Value="126.18885" />
+        <Value Time="2026-01-14T10:50:00+08:00" Value="136.13269" />
+        <Value Time="2026-01-14T11:00:00+08:00" Value="125.171295" />
+        <Value Time="2026-01-14T11:10:00+08:00" Value="117.660156" />
+        <Value Time="2026-01-14T11:20:00+08:00" Value="109.638039" />
+        <Value Time="2026-01-14T11:30:00+08:00" Value="110.60743" />
+        <Value Time="2026-01-14T11:40:00+08:00" Value="97.07599" />
+        <Value Time="2026-01-14T11:50:00+08:00" Value="90.85028" />
+        <Value Time="2026-01-14T12:00:00+08:00" Value="92.62633" />
+        <Value Time="2026-01-14T12:10:00+08:00" Value="81.0408859" />
+        <Value Time="2026-01-14T12:20:00+08:00" Value="88.17012" />
+        <Value Time="2026-01-14T12:30:00+08:00" Value="92.88914" />
+        <Value Time="2026-01-14T12:40:00+08:00" Value="112.287514" />
+        <Value Time="2026-01-14T12:50:00+08:00" Value="115.980843" />
+        <Value Time="2026-01-14T13:00:00+08:00" Value="124.094284" />
+        <Value Time="2026-01-14T13:10:00+08:00" Value="141.246063" />
+        <Value Time="2026-01-14T13:20:00+08:00" Value="160.598877" />
+        <Value Time="2026-01-14T13:30:00+08:00" Value="176.070633" />
+        <Value Time="2026-01-14T13:40:00+08:00" Value="176.02623" />
+        <Value Time="2026-01-14T13:50:00+08:00" Value="180" />
+        <Value Time="2026-01-14T14:00:00+08:00" Value="180" />
+        <Value Time="2026-01-14T14:10:00+08:00" Value="180" />
+        <Value Time="2026-01-14T14:20:00+08:00" Value="180" />
+        <Value Time="2026-01-14T14:30:00+08:00" Value="178.578964" />
+        <Value Time="2026-01-14T14:40:00+08:00" Value="171.316223" />
+        <Value Time="2026-01-14T14:50:00+08:00" Value="154.441711" />
+        <Value Time="2026-01-14T15:00:00+08:00" Value="167.021362" />
+        <Value Time="2026-01-14T15:10:00+08:00" Value="147.237946" />
+        <Value Time="2026-01-14T15:20:00+08:00" Value="145.307617" />
+        <Value Time="2026-01-14T15:30:00+08:00" Value="139.318588" />
+        <Value Time="2026-01-14T15:40:00+08:00" Value="121.254753" />
+        <Value Time="2026-01-14T15:50:00+08:00" Value="117.006477" />
+        <Value Time="2026-01-14T16:00:00+08:00" Value="108.668213" />
+        <Value Time="2026-01-14T16:10:00+08:00" Value="112.2056" />
+        <Value Time="2026-01-14T16:20:00+08:00" Value="101.937988" />
+        <Value Time="2026-01-14T16:30:00+08:00" Value="87.88497" />
+        <Value Time="2026-01-14T16:40:00+08:00" Value="91.65219" />
+        <Value Time="2026-01-14T16:50:00+08:00" Value="70.33508" />
+        <Value Time="2026-01-14T17:00:00+08:00" Value="69.9824142" />
+        <Value Time="2026-01-14T17:10:00+08:00" Value="61.5974274" />
+        <Value Time="2026-01-14T17:20:00+08:00" Value="47.0263672" />
+        <Value Time="2026-01-14T17:30:00+08:00" Value="59.62681" />
+        <Value Time="2026-01-14T17:40:00+08:00" Value="57.4863548" />
+        <Value Time="2026-01-14T17:50:00+08:00" Value="69.91117" />
+        <Value Time="2026-01-14T18:00:00+08:00" Value="77.4197159" />
+        <Value Time="2026-01-14T18:10:00+08:00" Value="86.87424" />
+        <Value Time="2026-01-14T22:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-15T02:10:00+08:00" Value="76.81687" />
+        <Value Time="2026-01-15T06:10:00+08:00" Value="86.02564" />
+        <Value Time="2026-01-15T10:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-15T14:10:00+08:00" Value="80.40664" />
+        <Value Time="2026-01-15T18:10:00+08:00" Value="92.36653" />
+        <Value Time="2026-01-15T22:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-16T02:10:00+08:00" Value="92.61544" />
+        <Value Time="2026-01-16T06:10:00+08:00" Value="96.92691" />
+        <Value Time="2026-01-16T10:10:00+08:00" Value="101.953911" />
+        <Value Time="2026-01-16T14:10:00+08:00" Value="115.530144" />
+        <Value Time="2026-01-16T18:10:00+08:00" Value="114.995728" />
+        <Value Time="2026-01-16T22:10:00+08:00" Value="109.333641" />
+        <Value Time="2026-01-17T02:10:00+08:00" Value="117.2181" />
+        <Value Time="2026-01-17T06:10:00+08:00" Value="128.1637" />
+        <Value Time="2026-01-17T10:10:00+08:00" Value="127.052147" />
+        <Value Time="2026-01-17T14:10:00+08:00" Value="127.801056" />
+        <Value Time="2026-01-17T18:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-17T22:10:00+08:00" Value="139.241547" />
+        <Value Time="2026-01-18T02:10:00+08:00" Value="141.487869" />
+        <Value Time="2026-01-18T06:10:00+08:00" Value="140.262711" />
+        <Value Time="2026-01-18T10:10:00+08:00" Value="150.309387" />
+        <Value Time="2026-01-18T14:10:00+08:00" Value="144.368011" />
+        <Value Time="2026-01-18T18:10:00+08:00" Value="154.675537" />
+        <Value Time="2026-01-18T22:10:00+08:00" Value="149.63266" />
+      </Values>
+    </Data>
+    <Data Name="SYSTOLIC">
+      <Values>
+        <Value Time="2026-01-12T00:00:00+08:00" Value="147.377243" />
+        <Value Time="2026-01-12T04:00:00+08:00" Value="147.889267" />
+        <Value Time="2026-01-12T08:00:00+08:00" Value="148.828629" />
+        <Value Time="2026-01-12T12:00:00+08:00" Value="150.540253" />
+        <Value Time="2026-01-12T16:00:00+08:00" Value="150.8619" />
+        <Value Time="2026-01-12T20:00:00+08:00" Value="152.796432" />
+        <Value Time="2026-01-13T00:00:00+08:00" Value="153.432022" />
+        <Value Time="2026-01-13T04:00:00+08:00" Value="155.280914" />
+        <Value Time="2026-01-13T08:00:00+08:00" Value="157.000656" />
+        <Value Time="2026-01-13T12:00:00+08:00" Value="158.169373" />
+        <Value Time="2026-01-13T16:00:00+08:00" Value="NaN" />
+        <Value Time="2026-01-13T20:00:00+08:00" Value="161.431641" />
+        <Value Time="2026-01-14T00:00:00+08:00" Value="162.759689" />
+        <Value Time="2026-01-14T04:00:00+08:00" Value="NaN" />
+        <Value Time="2026-01-14T08:00:00+08:00" Value="165.7811" />
+        <Value Time="2026-01-14T09:10:00+08:00" Value="170" />
+        <Value Time="2026-01-14T09:20:00+08:00" Value="170" />
+        <Value Time="2026-01-14T09:30:00+08:00" Value="170" />
+        <Value Time="2026-01-14T09:40:00+08:00" Value="170" />
+        <Value Time="2026-01-14T09:50:00+08:00" Value="164.340424" />
+        <Value Time="2026-01-14T10:00:00+08:00" Value="168.86348" />
+        <Value Time="2026-01-14T10:10:00+08:00" Value="164.99881" />
+        <Value Time="2026-01-14T10:20:00+08:00" Value="157.999252" />
+        <Value Time="2026-01-14T10:30:00+08:00" Value="152.803009" />
+        <Value Time="2026-01-14T10:40:00+08:00" Value="148.836533" />
+        <Value Time="2026-01-14T10:50:00+08:00" Value="145.566223" />
+        <Value Time="2026-01-14T11:00:00+08:00" Value="140.694183" />
+        <Value Time="2026-01-14T11:10:00+08:00" Value="143.262558" />
+        <Value Time="2026-01-14T11:20:00+08:00" Value="136.318588" />
+        <Value Time="2026-01-14T11:30:00+08:00" Value="134.476028" />
+        <Value Time="2026-01-14T11:40:00+08:00" Value="125.53038" />
+        <Value Time="2026-01-14T11:50:00+08:00" Value="118.560547" />
+        <Value Time="2026-01-14T12:00:00+08:00" Value="119.885994" />
+        <Value Time="2026-01-14T12:10:00+08:00" Value="119.098732" />
+        <Value Time="2026-01-14T12:20:00+08:00" Value="114.917152" />
+        <Value Time="2026-01-14T12:30:00+08:00" Value="112.494225" />
+        <Value Time="2026-01-14T12:40:00+08:00" Value="105.344749" />
+        <Value Time="2026-01-14T12:50:00+08:00" Value="104.50544" />
+        <Value Time="2026-01-14T13:00:00+08:00" Value="111.9549" />
+        <Value Time="2026-01-14T13:10:00+08:00" Value="112.629723" />
+        <Value Time="2026-01-14T13:20:00+08:00" Value="114.723686" />
+        <Value Time="2026-01-14T13:30:00+08:00" Value="113.570473" />
+        <Value Time="2026-01-14T13:40:00+08:00" Value="119.321564" />
+        <Value Time="2026-01-14T13:50:00+08:00" Value="122.610687" />
+        <Value Time="2026-01-14T14:00:00+08:00" Value="123.195992" />
+        <Value Time="2026-01-14T14:10:00+08:00" Value="131.999176" />
+        <Value Time="2026-01-14T14:20:00+08:00" Value="135.08638" />
+        <Value Time="2026-01-14T14:30:00+08:00" Value="140.93306" />
+        <Value Time="2026-01-14T14:40:00+08:00" Value="148.294769" />
+        <Value Time="2026-01-14T14:50:00+08:00" Value="143.403824" />
+        <Value Time="2026-01-14T15:00:00+08:00" Value="151.794922" />
+        <Value Time="2026-01-14T15:10:00+08:00" Value="151.510239" />
+        <Value Time="2026-01-14T15:20:00+08:00" Value="160.72934" />
+        <Value Time="2026-01-14T15:30:00+08:00" Value="164.965057" />
+        <Value Time="2026-01-14T15:40:00+08:00" Value="169.2104" />
+        <Value Time="2026-01-14T15:50:00+08:00" Value="167.705811" />
+        <Value Time="2026-01-14T16:00:00+08:00" Value="170" />
+        <Value Time="2026-01-14T16:10:00+08:00" Value="170" />
+        <Value Time="2026-01-14T16:20:00+08:00" Value="164.895035" />
+        <Value Time="2026-01-14T16:30:00+08:00" Value="161.040237" />
+        <Value Time="2026-01-14T16:40:00+08:00" Value="153.723679" />
+        <Value Time="2026-01-14T16:50:00+08:00" Value="153.041626" />
+        <Value Time="2026-01-14T17:00:00+08:00" Value="142.711029" />
+        <Value Time="2026-01-14T17:10:00+08:00" Value="144.656265" />
+        <Value Time="2026-01-14T17:20:00+08:00" Value="140.943481" />
+        <Value Time="2026-01-14T17:30:00+08:00" Value="133.905945" />
+        <Value Time="2026-01-14T17:40:00+08:00" Value="122.599152" />
+        <Value Time="2026-01-14T17:50:00+08:00" Value="125.359413" />
+        <Value Time="2026-01-14T18:00:00+08:00" Value="123.037323" />
+        <Value Time="2026-01-14T18:10:00+08:00" Value="115.754143" />
+        <Value Time="2026-01-14T22:10:00+08:00" Value="108.218956" />
+        <Value Time="2026-01-15T02:10:00+08:00" Value="107.680588" />
+        <Value Time="2026-01-15T06:10:00+08:00" Value="104.255081" />
+        <Value Time="2026-01-15T10:10:00+08:00" Value="101.675743" />
+        <Value Time="2026-01-15T14:10:00+08:00" Value="101.597168" />
+        <Value Time="2026-01-15T18:10:00+08:00" Value="100.604149" />
+        <Value Time="2026-01-15T22:10:00+08:00" Value="100.146111" />
+        <Value Time="2026-01-16T02:10:00+08:00" Value="100" />
+        <Value Time="2026-01-16T06:10:00+08:00" Value="102.238029" />
+        <Value Time="2026-01-16T10:10:00+08:00" Value="105.052559" />
+        <Value Time="2026-01-16T14:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-16T18:10:00+08:00" Value="107.364571" />
+        <Value Time="2026-01-16T22:10:00+08:00" Value="109.361168" />
+        <Value Time="2026-01-17T02:10:00+08:00" Value="110.354935" />
+        <Value Time="2026-01-17T06:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-17T10:10:00+08:00" Value="113.041885" />
+        <Value Time="2026-01-17T14:10:00+08:00" Value="114.067764" />
+        <Value Time="2026-01-17T18:10:00+08:00" Value="116.163986" />
+        <Value Time="2026-01-17T22:10:00+08:00" Value="116.603668" />
+        <Value Time="2026-01-18T02:10:00+08:00" Value="117.31424" />
+        <Value Time="2026-01-18T06:10:00+08:00" Value="118.965561" />
+        <Value Time="2026-01-18T10:10:00+08:00" Value="121.419464" />
+        <Value Time="2026-01-18T14:10:00+08:00" Value="123.383545" />
+        <Value Time="2026-01-18T18:10:00+08:00" Value="125.625595" />
+        <Value Time="2026-01-18T22:10:00+08:00" Value="125.734489" />
+      </Values>
+    </Data>
+    <Data Name="DIASTOLIC">
+      <Values>
+        <Value Time="2026-01-12T00:00:00+08:00" Value="81.30521" />
+        <Value Time="2026-01-12T04:00:00+08:00" Value="83.0140152" />
+        <Value Time="2026-01-12T08:00:00+08:00" Value="83.05873" />
+        <Value Time="2026-01-12T12:00:00+08:00" Value="84.78759" />
+        <Value Time="2026-01-12T16:00:00+08:00" Value="84.96481" />
+        <Value Time="2026-01-12T20:00:00+08:00" Value="86.07283" />
+        <Value Time="2026-01-13T00:00:00+08:00" Value="88.3201752" />
+        <Value Time="2026-01-13T04:00:00+08:00" Value="89.62218" />
+        <Value Time="2026-01-13T08:00:00+08:00" Value="NaN" />
+        <Value Time="2026-01-13T12:00:00+08:00" Value="91.15672" />
+        <Value Time="2026-01-13T16:00:00+08:00" Value="92.49736" />
+        <Value Time="2026-01-13T20:00:00+08:00" Value="94.24898" />
+        <Value Time="2026-01-14T00:00:00+08:00" Value="96.38603" />
+        <Value Time="2026-01-14T04:00:00+08:00" Value="98.30012" />
+        <Value Time="2026-01-14T08:00:00+08:00" Value="99.39765" />
+        <Value Time="2026-01-14T09:10:00+08:00" Value="100" />
+        <Value Time="2026-01-14T09:20:00+08:00" Value="100" />
+        <Value Time="2026-01-14T09:30:00+08:00" Value="100" />
+        <Value Time="2026-01-14T09:40:00+08:00" Value="100" />
+        <Value Time="2026-01-14T09:50:00+08:00" Value="93.53505" />
+        <Value Time="2026-01-14T10:00:00+08:00" Value="90.22365" />
+        <Value Time="2026-01-14T10:10:00+08:00" Value="89.83184" />
+        <Value Time="2026-01-14T10:20:00+08:00" Value="84.40792" />
+        <Value Time="2026-01-14T10:30:00+08:00" Value="84.32829" />
+        <Value Time="2026-01-14T10:40:00+08:00" Value="77.235054" />
+        <Value Time="2026-01-14T10:50:00+08:00" Value="74.97227" />
+        <Value Time="2026-01-14T11:00:00+08:00" Value="74.23784" />
+        <Value Time="2026-01-14T11:10:00+08:00" Value="79.6775" />
+        <Value Time="2026-01-14T11:20:00+08:00" Value="69.20211" />
+        <Value Time="2026-01-14T11:30:00+08:00" Value="67.61016" />
+        <Value Time="2026-01-14T11:40:00+08:00" Value="65.1747742" />
+        <Value Time="2026-01-14T11:50:00+08:00" Value="65.52543" />
+        <Value Time="2026-01-14T12:00:00+08:00" Value="61.4905853" />
+        <Value Time="2026-01-14T12:10:00+08:00" Value="57.6192245" />
+        <Value Time="2026-01-14T12:20:00+08:00" Value="56.6692657" />
+        <Value Time="2026-01-14T12:30:00+08:00" Value="56.8497543" />
+        <Value Time="2026-01-14T12:40:00+08:00" Value="52.95342" />
+        <Value Time="2026-01-14T12:50:00+08:00" Value="55.8752174" />
+        <Value Time="2026-01-14T13:00:00+08:00" Value="59.2656479" />
+        <Value Time="2026-01-14T13:10:00+08:00" Value="66.78836" />
+        <Value Time="2026-01-14T13:20:00+08:00" Value="67.34838" />
+        <Value Time="2026-01-14T13:30:00+08:00" Value="69.7055054" />
+        <Value Time="2026-01-14T13:40:00+08:00" Value="75.01445" />
+        <Value Time="2026-01-14T13:50:00+08:00" Value="77.73306" />
+        <Value Time="2026-01-14T14:00:00+08:00" Value="80.82465" />
+        <Value Time="2026-01-14T14:10:00+08:00" Value="80.3070145" />
+        <Value Time="2026-01-14T14:20:00+08:00" Value="84.67627" />
+        <Value Time="2026-01-14T14:30:00+08:00" Value="85.93518" />
+        <Value Time="2026-01-14T14:40:00+08:00" Value="92.6896057" />
+        <Value Time="2026-01-14T14:50:00+08:00" Value="95.35677" />
+        <Value Time="2026-01-14T15:00:00+08:00" Value="94.2858047" />
+        <Value Time="2026-01-14T15:10:00+08:00" Value="100" />
+        <Value Time="2026-01-14T15:20:00+08:00" Value="100" />
+        <Value Time="2026-01-14T15:30:00+08:00" Value="100" />
+        <Value Time="2026-01-14T15:40:00+08:00" Value="100" />
+        <Value Time="2026-01-14T15:50:00+08:00" Value="100" />
+        <Value Time="2026-01-14T16:00:00+08:00" Value="96.1115952" />
+        <Value Time="2026-01-14T16:10:00+08:00" Value="94.12362" />
+        <Value Time="2026-01-14T16:20:00+08:00" Value="93.1787643" />
+        <Value Time="2026-01-14T16:30:00+08:00" Value="88.6604462" />
+        <Value Time="2026-01-14T16:40:00+08:00" Value="81.32942" />
+        <Value Time="2026-01-14T16:50:00+08:00" Value="81.32657" />
+        <Value Time="2026-01-14T17:00:00+08:00" Value="77.08102" />
+        <Value Time="2026-01-14T17:10:00+08:00" Value="79.51689" />
+        <Value Time="2026-01-14T17:20:00+08:00" Value="77.39649" />
+        <Value Time="2026-01-14T17:30:00+08:00" Value="70.85416" />
+        <Value Time="2026-01-14T17:40:00+08:00" Value="70.0675" />
+        <Value Time="2026-01-14T17:50:00+08:00" Value="66.4634" />
+        <Value Time="2026-01-14T18:00:00+08:00" Value="65.48318" />
+        <Value Time="2026-01-14T18:10:00+08:00" Value="59.70978" />
+        <Value Time="2026-01-14T22:10:00+08:00" Value="57.52323" />
+        <Value Time="2026-01-15T02:10:00+08:00" Value="57.1695175" />
+        <Value Time="2026-01-15T06:10:00+08:00" Value="54.933773" />
+        <Value Time="2026-01-15T10:10:00+08:00" Value="53.6463966" />
+        <Value Time="2026-01-15T14:10:00+08:00" Value="51.69671" />
+        <Value Time="2026-01-15T18:10:00+08:00" Value="52.3353462" />
+        <Value Time="2026-01-15T22:10:00+08:00" Value="53.9512749" />
+        <Value Time="2026-01-16T02:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-16T06:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-16T10:10:00+08:00" Value="54.79774" />
+        <Value Time="2026-01-16T14:10:00+08:00" Value="NaN" />
+        <Value Time="2026-01-16T18:10:00+08:00" Value="54.8454781" />
+        <Value Time="2026-01-16T22:10:00+08:00" Value="56.72627" />
+        <Value Time="2026-01-17T02:10:00+08:00" Value="57.55713" />
+        <Value Time="2026-01-17T06:10:00+08:00" Value="59.32205" />
+        <Value Time="2026-01-17T10:10:00+08:00" Value="60.2478256" />
+        <Value Time="2026-01-17T14:10:00+08:00" Value="61.440773" />
+        <Value Time="2026-01-17T18:10:00+08:00" Value="63.9271278" />
+        <Value Time="2026-01-17T22:10:00+08:00" Value="65.83132" />
+        <Value Time="2026-01-18T02:10:00+08:00" Value="67.10319" />
+        <Value Time="2026-01-18T06:10:00+08:00" Value="69.3167648" />
+        <Value Time="2026-01-18T10:10:00+08:00" Value="71.37239" />
+        <Value Time="2026-01-18T14:10:00+08:00" Value="72.43919" />
+        <Value Time="2026-01-18T18:10:00+08:00" Value="73.36568" />
+        <Value Time="2026-01-18T22:10:00+08:00" Value="74.77135" />
+      </Values>
+    </Data>
+    <Data Name="zhuangtai2">
+      <Values>
+        <Value Time="2026-01-12T08:00:00+08:00" Text="重症监护Z1" ColorValue="#FF1493" />
+        <Value Time="2026-01-14T09:00:00+08:00" Text="第三手术室,华佗主刀开胸探查术" ColorValue="#9488D3" EndTime="2026-01-14T18:15:00+08:00" />
+        <Value Time="2026-01-14T18:15:00+08:00" Text="重症监护Z3" ColorValue="#FF1493" />
+        <Value Time="2026-01-18T00:15:00+08:00" Text="1级护理A1床" ColorValue="#FF00FF" />
+      </Values>
+    </Data>
+    <Data Name="mazuiyaopin">
+      <Values>
+        <Value Time="2026-01-18T08:00:00+08:00" Text="芬太尼" ColorValue="#CCCCCC" />
+        <Value Time="2026-01-18T17:00:00+08:00" Text=" " ColorValue="#FFFFFF" />
+      </Values>
+    </Data>
+    <Data Name="wenben">
+      <Values>
+        <Value Time="2026-01-12T08:00:00+08:00" Text="上午八时入院" />
+        <Value Time="2026-01-12T10:00:00+08:00" Text="上午十时血生化" />
+        <Value Time="2026-01-12T18:00:00+08:00" Text="下午六时CT" />
+        <Value Time="2026-01-13T16:00:00+08:00" Text="开始禁食" />
+        <Value Time="2026-01-14T09:00:00+08:00" Text="手术开始" />
+        <Value Time="2026-01-14T10:18:00+08:00" Text="改变体位" />
+        <Value Time="2026-01-14T11:00:00+08:00" Text="撬开肋骨" />
+        <Value Time="2026-01-14T12:00:00+08:00" Text="开始切肿瘤" />
+        <Value Time="2026-01-14T13:00:00+08:00" Text="又切了一个肿瘤" />
+        <Value Time="2026-01-14T18:15:00+08:00" Text="手术结束" />
+      </Values>
+    </Data>
+    <Data Name="yongyao">
+      <Values>
+        <Value Time="2026-01-14T10:00:00+08:00" Text="阿扎司琼10mg PCIA" ColorValue="#333344" />
+        <Value Time="2026-01-14T11:18:00+08:00" Text="曲马多1000mg" ColorValue="#FF3333" />
+        <Value Time="2026-01-14T16:00:00+08:00" Text="面霸120g" ColorValue="#4444FF" />
+      </Values>
+    </Data>
+    <Data Name="suye">
+      <Values>
+        <Value Time="2026-01-14T10:12:00+08:00" Text="乳酸钠林格氏液500ml ivgt" ColorValue="#FFFF00" EndTime="2026-01-14T13:00:00+08:00" />
+      </Values>
+    </Data>
+    <Data Name="wendang">
+      <Values>
+        <Value Time="2026-01-12T12:00:00+08:00" Text="入院记录" />
+        <Value Time="2026-01-12T14:00:00+08:00" Text="首次病程" />
+        <Value Time="2026-01-12T16:00:00+08:00" Text="病危通知书" />
+        <Value Time="2026-01-13T06:00:00+08:00" Text="术前讨论" />
+        <Value Title="不及时填写，扣5分。" Time="2026-01-15T09:00:00+08:00" Text="手术记录" ColorValue="#FF9999" />
+      </Values>
+    </Data>
+    <Data Name="xiongguan">
+      <Values>
+        <Value Time="2026-01-14T10:30:00+08:00" Text="右下胸,直径10mm" ColorValue="#CCCCCC" EndTime="2026-01-16T11:00:00+08:00" />
+      </Values>
+    </Data>
+    <Data>
+      <Values />
+    </Data>
+  </Datas>
+</TemperatureDocument>

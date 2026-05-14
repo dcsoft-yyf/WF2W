@@ -1,0 +1,5 @@
+﻿读取 E:\Source\DCWriter5\trunk\DCSoft.WF2W\DCSoft.WF2W.Demo\WinForms\ControlsDemo\ 下所有的frmTestXXXX.cs/Designer.cs，找到所有使用的类型和成员方法，在项目DCSoft.WF2W.Main中System.Imports子目录下，找到这些类型和成员方法的使用情况，
+根据需要在类型前面添加[System.Reflection.Obfuscation(Exclude = true, ApplyToMembers = false)]，
+在成员方法前面添加[System.Reflection.Obfuscation(Exclude = true, ApplyToMembers = true)]，以便在后续的代码混淆过程中，这些类型和成员方法不会被混淆。
+不要处理AssemblyAttribute.cs，我希望是大部分类型和成员将来会被混淆掉，只留下需要被外界调用的才不混淆。
+然后要求编译通过

@@ -1,0 +1,1 @@
+﻿Notice:Before publish , you need copy javascript files from `/wwwroot/*.js` in project `DCSoft.WF2W.Demo` to directory `/JavaScript` in project `DCSoft.WF2W` , make all js file to `EmbeddedResource` .

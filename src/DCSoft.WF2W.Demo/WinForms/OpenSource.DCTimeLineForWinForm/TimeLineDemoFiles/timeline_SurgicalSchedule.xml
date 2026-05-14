@@ -1,0 +1,1249 @@
+<?xml version="1.0"?>
+<TemperatureDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Parameters />
+  <Config Version="1.0">
+    <Zones />
+    <SpecifyStartDate />
+    <FooterLines>
+      <Line ExtendGridLineType="Above" LayoutType="Free" Title="手术室1" SpecifyHeight="100" Name="room1" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line ExtendGridLineType="Above" LayoutType="Free" Title="手术室2" SpecifyHeight="100" Name="room2" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line ExtendGridLineType="Above" LayoutType="Free" Title="手术室3" SpecifyHeight="100" Name="room3" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line ExtendGridLineType="Above" LayoutType="Free" Title="手术室4" SpecifyHeight="100" Name="room4" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line ExtendGridLineType="Above" LayoutType="Free" Title="手术室5" SpecifyHeight="100" Name="room5" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line ExtendGridLineType="Above" LayoutType="Free" Title="手术室6" SpecifyHeight="100" Name="room6" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line ExtendGridLineType="Above" LayoutType="Free" Title="手术室7" SpecifyHeight="100" Name="room7" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line ExtendGridLineType="Above" LayoutType="Free" Title="手术室8" SpecifyHeight="100" Name="room8" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+    </FooterLines>
+    <PageTitlePosition>BottomRight</PageTitlePosition>
+    <Title>市人民医院手术室排程</Title>
+    <HeaderLines>
+      <Line Title="日期">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line TickStep="12" Title="" LoopTextList="上午,下午" ValueType="TickText">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Title="时刻" ValueType="HourTick">
+        <DataSource />
+        <Scales />
+      </Line>
+    </HeaderLines>
+    <Ticks>
+      <Tick ColorValue="#FF0000" Text="0" />
+      <Tick Value="1" ColorValue="#FF0000" Text="1" />
+      <Tick Value="2" ColorValue="#FF0000" Text="2" />
+      <Tick Value="3" ColorValue="#FF0000" Text="3" />
+      <Tick Value="4" ColorValue="#FF0000" Text="4" />
+      <Tick Value="5" ColorValue="#FF0000" Text="5" />
+      <Tick Value="6" ColorValue="#FF0000" Text="6" />
+      <Tick Value="7" ColorValue="#FF0000" Text="7" />
+      <Tick Value="8" ColorValue="#FF0000" Text="8" />
+      <Tick Value="9" Text="9" />
+      <Tick Value="10" Text="10" />
+      <Tick Value="11" Text="11" />
+      <Tick Value="12" Text="12" />
+      <Tick Value="13" Text="13" />
+      <Tick Value="14" Text="14" />
+      <Tick Value="15" Text="15" />
+      <Tick Value="16" Text="16" />
+      <Tick Value="17" Text="17" />
+      <Tick Value="18" ColorValue="#FF0000" Text="18" />
+      <Tick Value="19" ColorValue="#FF0000" Text="19" />
+      <Tick Value="20" ColorValue="#FF0000" Text="20" />
+      <Tick Value="21" ColorValue="#FF0000" Text="21" />
+      <Tick Value="22" ColorValue="#FF0000" Text="22" />
+      <Tick Value="23" ColorValue="#FF0000" Text="23" />
+    </Ticks>
+    <GridYSplitInfo />
+    <FooterDescription />
+    <BigVerticalGridLineColorValue>#000000</BigVerticalGridLineColorValue>
+    <SpecifyEndDate />
+    <YAxisInfos>
+      <YAxis EnableLanternValue="true" ShowLegendInRule="false" AllowOutofRange="true" Name="shiyonglv" TitleColorValue="#0000FF" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" SymbolStyle="Cross" ValueFormatString="0.0" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#0000FF" BottomTitle="百分比" Title="使用率" LanternValueTitle="">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+        <DataSource />
+      </YAxis>
+      <YAxis ShowLegendInRule="false" AllowOutofRange="true" Name="blood" TitleColorValue="#FF0000" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" MaxValue="8000" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" BottomTitle="毫升" Title="用血量">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+        <DataSource />
+      </YAxis>
+      <YAxis EnableLanternValue="true" ShowLegendInRule="false" AllowOutofRange="true" Name="renshu" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" MaxValue="80" SymbolStyle="HollowCicle" ValueFormatString="0.0" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#000000" BottomTitle="个" Title="医护人数" LanternValueTitle="">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+        <DataSource />
+      </YAxis>
+      <YAxis Style="Text" Name="wenben" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" Title="文本内容">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+        <DataSource />
+      </YAxis>
+      <YAxis Style="Background" Name="timearea" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#000000" Title="时间范围">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+        <DataSource />
+      </YAxis>
+    </YAxisInfos>
+    <PageSettings>
+      <TopMargin>50</TopMargin>
+      <RightMargin>50</RightMargin>
+      <PaperSizeName>custom</PaperSizeName>
+      <LeftMargin>50</LeftMargin>
+      <Landscape>true</Landscape>
+      <BottomMargin>50</BottomMargin>
+    </PageSettings>
+    <DataGridTopPadding>0.1</DataGridTopPadding>
+    <SymbolSize>22</SymbolSize>
+    <FontName>宋体</FontName>
+    <GridLineColorValue>#E0E0E0</GridLineColorValue>
+    <DataGridBottomPadding>0.1</DataGridBottomPadding>
+    <HeaderLabels>
+      <Label Title="手术室排程负责人" SeperatorChar="58" Value="王小二" />
+      <Label Title="手术室电话：" SeperatorChar="58" Value="12345678" />
+      <Label Title="报告时间" SeperatorChar="58" Value="2026-01-20 11:00:15" />
+    </HeaderLabels>
+    <Images />
+    <Labels />
+    <NumOfDaysInOnePage>5</NumOfDaysInOnePage>
+    <PageIndexText>第[%pageindex%]页</PageIndexText>
+  </Config>
+  <Datas>
+    <Data Name="room1">
+      <Values>
+        <Value Title="叶静蓓|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 4.6 小时" Time="2026-01-15T07:00:00+08:00" Text="叶静蓓|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-15T11:37:20.604+08:00" />
+        <Value Title="费卿莉|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 19.4 小时" Time="2026-01-15T12:27:51.025+08:00" Text="费卿莉|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-16T07:50:44.253+08:00" />
+        <Value Title="赵佳|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 8.1 小时" Time="2026-01-16T08:38:41.055+08:00" Text="赵佳|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-16T16:46:25.314+08:00" />
+        <Value Title="邬仪咏|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 8.9 小时" Time="2026-01-16T17:44:06.704+08:00" Text="邬仪咏|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-17T02:38:50.546+08:00" />
+        <Value Title="于贞|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 1.4 小时" Time="2026-01-17T07:00:00+08:00" Text="于贞|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-17T08:26:35.562+08:00" />
+        <Value Title="卢翠婕|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 17.9 小时" Time="2026-01-17T09:39:31.219+08:00" Text="卢翠婕|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-18T03:34:22.172+08:00" />
+        <Value Title="文蕊|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 8.0 小时" Time="2026-01-18T07:00:00+08:00" Text="文蕊|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-18T14:58:54.868+08:00" />
+        <Value Title="邬娜|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 2.2 小时" Time="2026-01-18T16:22:16.123+08:00" Text="邬娜|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-18T18:34:03.956+08:00" />
+        <Value Title="潘珠|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 16.6 小时" Time="2026-01-18T19:31:57.26+08:00" Text="潘珠|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-19T12:09:22.15+08:00" />
+        <Value Title="符雪瑾|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 16.0 小时" Time="2026-01-19T13:13:30.53+08:00" Text="符雪瑾|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-20T05:12:00.156+08:00" />
+        <Value Title="田眉悦|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 4.7 小时" Time="2026-01-20T07:00:00+08:00" Text="田眉悦|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-20T11:40:45.158+08:00" />
+        <Value Title="车娟舒|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 6.7 小时" Time="2026-01-20T12:49:36.345+08:00" Text="车娟舒|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-20T19:32:19.11+08:00" />
+        <Value Title="鲁娴|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 15.7 小时" Time="2026-01-20T20:08:23.871+08:00" Text="鲁娴|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-21T11:53:00.015+08:00" />
+        <Value Title="倪莲|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 13.7 小时" Time="2026-01-21T12:36:23.691+08:00" Text="倪莲|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-22T02:19:14.874+08:00" />
+        <Value Title="彭荔|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 14.2 小时" Time="2026-01-22T07:00:00+08:00" Text="彭荔|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-22T21:12:43.441+08:00" />
+        <Value Title="钟婷梦|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 12.5 小时" Time="2026-01-23T07:00:00+08:00" Text="钟婷梦|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-23T19:29:35.193+08:00" />
+        <Value Title="郎枝澜|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 20.9 小时" Time="2026-01-23T20:00:04.656+08:00" Text="郎枝澜|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-24T16:51:18.209+08:00" />
+        <Value Title="戚岚娣|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 15.5 小时" Time="2026-01-24T17:35:05.526+08:00" Text="戚岚娣|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-25T09:03:57.847+08:00" />
+        <Value Title="常芝婉|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 17.7 小时" Time="2026-01-25T09:45:57.088+08:00" Text="常芝婉|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-26T03:27:02.902+08:00" />
+        <Value Title="费佳|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 10.7 小时" Time="2026-01-26T07:00:00+08:00" Text="费佳|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-26T17:43:03.771+08:00" />
+      </Values>
+    </Data>
+    <Data Name="room2">
+      <Values>
+        <Value Title="韩政绍|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 18.9 小时" Time="2026-01-15T07:00:00+08:00" Text="韩政绍|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-16T01:51:35.921+08:00" />
+        <Value Title="侯之树|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 11.6 小时" Time="2026-01-16T07:00:00+08:00" Text="侯之树|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-16T18:37:47.988+08:00" />
+        <Value Title="庄元翔|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 16.9 小时" Time="2026-01-16T19:42:46.767+08:00" Text="庄元翔|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-17T12:38:18.252+08:00" />
+        <Value Title="卓永|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 14.3 小时" Time="2026-01-17T13:08:37.664+08:00" Text="卓永|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-18T03:27:49.237+08:00" />
+        <Value Title="关全振|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 17.1 小时" Time="2026-01-18T07:00:00+08:00" Text="关全振|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-19T00:05:02.646+08:00" />
+        <Value Title="凌士天|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 14.0 小时" Time="2026-01-19T07:00:00+08:00" Text="凌士天|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-19T20:58:28.728+08:00" />
+        <Value Title="皮伯|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 16.6 小时" Time="2026-01-20T07:00:00+08:00" Text="皮伯|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-20T23:37:53.322+08:00" />
+        <Value Title="任中|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 10.0 小时" Time="2026-01-21T07:00:00+08:00" Text="任中|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-21T16:57:18.908+08:00" />
+        <Value Title="黎东|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 9.4 小时" Time="2026-01-21T18:26:13.897+08:00" Text="黎东|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-22T03:51:26.206+08:00" />
+        <Value Title="胡康顺|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 7.5 小时" Time="2026-01-22T07:00:00+08:00" Text="胡康顺|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-22T14:29:53.253+08:00" />
+        <Value Title="司亨杰|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 13.0 小时" Time="2026-01-22T15:29:25.939+08:00" Text="司亨杰|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-23T04:29:47.441+08:00" />
+        <Value Title="朱龙榕|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 18.4 小时" Time="2026-01-23T07:00:00+08:00" Text="朱龙榕|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-24T01:23:27.909+08:00" />
+        <Value Title="司言茂|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 5.2 小时" Time="2026-01-24T07:00:00+08:00" Text="司言茂|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-24T12:14:17.768+08:00" />
+        <Value Title="岑斌|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 5.5 小时" Time="2026-01-24T13:28:52.235+08:00" Text="岑斌|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-24T18:58:10.346+08:00" />
+        <Value Title="林林鸣|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 15.7 小时" Time="2026-01-24T20:17:04.924+08:00" Text="林林鸣|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-25T12:01:37.126+08:00" />
+        <Value Title="姜彬祥|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 11.8 小时" Time="2026-01-25T13:05:12.471+08:00" Text="姜彬祥|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-26T00:52:56.027+08:00" />
+      </Values>
+    </Data>
+    <Data Name="room3">
+      <Values>
+        <Value Title="方婵环|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 6.0 小时" Time="2026-01-15T07:00:00+08:00" Text="方婵环|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-15T12:59:31.541+08:00" />
+        <Value Title="童萍彩|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 19.9 小时" Time="2026-01-15T13:33:04.261+08:00" Text="童萍彩|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-16T09:25:33.86+08:00" />
+        <Value Title="陶倩咏|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 3.6 小时" Time="2026-01-16T10:26:13.999+08:00" Text="陶倩咏|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-16T14:04:12.635+08:00" />
+        <Value Title="高娴|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 4.4 小时" Time="2026-01-16T15:32:18.21+08:00" Text="高娴|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-16T19:57:19.219+08:00" />
+        <Value Title="卢凝|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 3.2 小时" Time="2026-01-17T07:00:00+08:00" Text="卢凝|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-17T10:14:01.485+08:00" />
+        <Value Title="江珍眉|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 15.1 小时" Time="2026-01-17T10:44:48.735+08:00" Text="江珍眉|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-18T01:51:33.314+08:00" />
+        <Value Title="胡梦珠|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 7.0 小时" Time="2026-01-18T07:00:00+08:00" Text="胡梦珠|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-18T13:59:29.228+08:00" />
+        <Value Title="尤伊琦|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 15.2 小时" Time="2026-01-18T15:07:30.826+08:00" Text="尤伊琦|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-19T06:20:17.532+08:00" />
+        <Value Title="陈融珍|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 14.0 小时" Time="2026-01-19T07:43:09.97+08:00" Text="陈融珍|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-19T21:40:51.49+08:00" />
+        <Value Title="强爽|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 3.4 小时" Time="2026-01-20T07:00:00+08:00" Text="强爽|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-20T10:22:29.568+08:00" />
+        <Value Title="吴荣|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 4.2 小时" Time="2026-01-20T10:54:44.688+08:00" Text="吴荣|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-20T15:07:56.858+08:00" />
+        <Value Title="魏艳环|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 9.0 小时" Time="2026-01-20T15:50:17.091+08:00" Text="魏艳环|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-21T00:47:23.157+08:00" />
+        <Value Title="王婕|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 2.1 小时" Time="2026-01-21T07:00:00+08:00" Text="王婕|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-21T09:04:17.102+08:00" />
+        <Value Title="樊仪|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 16.3 小时" Time="2026-01-21T09:42:18.61+08:00" Text="樊仪|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-22T02:02:31.92+08:00" />
+        <Value Title="王妹茜|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 11.2 小时" Time="2026-01-22T07:00:00+08:00" Text="王妹茜|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-22T18:10:01.747+08:00" />
+        <Value Title="赖希|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 19.8 小时" Time="2026-01-22T18:57:27.908+08:00" Text="赖希|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-23T14:43:14.011+08:00" />
+        <Value Title="汤馨叶|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 16.2 小时" Time="2026-01-23T15:30:40.468+08:00" Text="汤馨叶|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-24T07:42:05.643+08:00" />
+        <Value Title="康莲娣|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 2.5 小时" Time="2026-01-24T08:52:16.796+08:00" Text="康莲娣|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-24T11:22:00.578+08:00" />
+        <Value Title="许巧悦|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 8.8 小时" Time="2026-01-24T12:40:09.804+08:00" Text="许巧悦|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-24T21:30:48.627+08:00" />
+        <Value Title="王爽丹|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 7.7 小时" Time="2026-01-25T07:00:00+08:00" Text="王爽丹|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-25T14:39:01.583+08:00" />
+        <Value Title="华莉姣|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 18.0 小时" Time="2026-01-25T15:14:29.667+08:00" Text="华莉姣|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-26T09:16:18.99+08:00" />
+      </Values>
+    </Data>
+    <Data Name="room4">
+      <Values>
+        <Value Title="范新翔|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 20.9 小时" Time="2026-01-15T07:00:00+08:00" Text="范新翔|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-16T03:52:39.414+08:00" />
+        <Value Title="武天强|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 3.6 小时" Time="2026-01-16T07:00:00+08:00" Text="武天强|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-16T10:37:16.539+08:00" />
+        <Value Title="曾昌朋|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 14.7 小时" Time="2026-01-16T11:37:29.444+08:00" Text="曾昌朋|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-17T02:19:19.108+08:00" />
+        <Value Title="甘昌文|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 15.6 小时" Time="2026-01-17T07:00:00+08:00" Text="甘昌文|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-17T22:37:28.103+08:00" />
+        <Value Title="潘奇良|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 3.7 小时" Time="2026-01-18T07:00:00+08:00" Text="潘奇良|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-18T10:44:35.609+08:00" />
+        <Value Title="孔以兴|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 13.1 小时" Time="2026-01-18T12:01:29.705+08:00" Text="孔以兴|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-19T01:07:26.237+08:00" />
+        <Value Title="关壮诚|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 9.1 小时 死亡" Time="2026-01-19T07:00:00+08:00" Text="关壮诚|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#FF0000" EndTime="2026-01-19T16:03:40.142+08:00" />
+        <Value Title="卓斌壮|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 15.4 小时" Time="2026-01-19T17:00:56.536+08:00" Text="卓斌壮|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-20T08:26:12.056+08:00" />
+        <Value Title="褚超启|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 9.8 小时" Time="2026-01-20T09:51:07.255+08:00" Text="褚超启|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-20T19:39:14.211+08:00" />
+        <Value Title="钱彪建|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 15.8 小时" Time="2026-01-20T20:40:06.328+08:00" Text="钱彪建|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-21T12:25:39.336+08:00" />
+        <Value Title="钱致|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 10.9 小时" Time="2026-01-21T13:45:35.602+08:00" Text="钱致|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-22T00:36:52.007+08:00" />
+        <Value Title="甘旭|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 18.7 小时" Time="2026-01-22T07:00:00+08:00" Text="甘旭|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-23T01:39:36.281+08:00" />
+        <Value Title="沈茂|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 18.1 小时" Time="2026-01-23T07:00:00+08:00" Text="沈茂|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-24T01:08:02.671+08:00" />
+        <Value Title="倪刚壮|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 12.5 小时" Time="2026-01-24T07:00:00+08:00" Text="倪刚壮|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-24T19:27:11.579+08:00" />
+        <Value Title="巫子|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 3.6 小时" Time="2026-01-24T20:44:16.848+08:00" Text="巫子|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-25T00:18:37.848+08:00" />
+        <Value Title="武功有|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 16.8 小时" Time="2026-01-25T07:00:00+08:00" Text="武功有|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-25T23:46:32.461+08:00" />
+        <Value Title="邬奇功|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 16.3 小时" Time="2026-01-26T07:00:00+08:00" Text="邬奇功|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-26T23:19:04.45+08:00" />
+      </Values>
+    </Data>
+    <Data Name="wenben">
+      <Values>
+        <Value Time="2026-01-17T20:46:54.868+08:00" Text="黄翰文 死亡" />
+        <Value Time="2026-01-19T16:03:40.142+08:00" Text="关壮诚 死亡" />
+      </Values>
+    </Data>
+    <Data Name="room5">
+      <Values>
+        <Value Title="蔡琳珊|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 3.5 小时" Time="2026-01-15T07:00:00+08:00" Text="蔡琳珊|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-15T10:30:49.296+08:00" />
+        <Value Title="凌韵美|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 5.7 小时" Time="2026-01-15T11:47:46.425+08:00" Text="凌韵美|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-15T17:28:10.271+08:00" />
+        <Value Title="路蕊|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 19.4 小时" Time="2026-01-15T18:50:52.562+08:00" Text="路蕊|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-16T14:12:07.093+08:00" />
+        <Value Title="廖枝思|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 7.1 小时" Time="2026-01-16T15:33:36.434+08:00" Text="廖枝思|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-16T22:39:26.723+08:00" />
+        <Value Title="邓春|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 15.4 小时" Time="2026-01-17T07:00:00+08:00" Text="邓春|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-17T22:26:20.251+08:00" />
+        <Value Title="韦馨雁|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 19.4 小时" Time="2026-01-18T07:00:00+08:00" Text="韦馨雁|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-19T02:22:48.412+08:00" />
+        <Value Title="白婉萍|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 19.7 小时" Time="2026-01-19T07:00:00+08:00" Text="白婉萍|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-20T02:43:30.142+08:00" />
+        <Value Title="江莲娥|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 14.0 小时" Time="2026-01-20T07:00:00+08:00" Text="江莲娥|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-20T21:01:34.495+08:00" />
+        <Value Title="何莎影|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 20.4 小时" Time="2026-01-21T07:00:00+08:00" Text="何莎影|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-22T03:26:28.558+08:00" />
+        <Value Title="费红|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 8.3 小时" Time="2026-01-22T07:00:00+08:00" Text="费红|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-22T15:20:27.11+08:00" />
+        <Value Title="虞丹珠|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 3.0 小时" Time="2026-01-22T16:00:18.625+08:00" Text="虞丹珠|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-22T19:00:52.317+08:00" />
+        <Value Title="巫瑾|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 17.6 小时" Time="2026-01-22T19:37:54.751+08:00" Text="巫瑾|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-23T13:11:48.012+08:00" />
+        <Value Title="韦薇娜|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 15.3 小时" Time="2026-01-23T14:26:23.821+08:00" Text="韦薇娜|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-24T05:43:30.726+08:00" />
+        <Value Title="武思蕊|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 17.5 小时" Time="2026-01-24T07:09:06.654+08:00" Text="武思蕊|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-25T00:37:37.365+08:00" />
+        <Value Title="高丹|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 5.8 小时" Time="2026-01-25T07:00:00+08:00" Text="高丹|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-25T12:50:04.332+08:00" />
+        <Value Title="邬梅莉|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 6.1 小时" Time="2026-01-25T13:34:40.039+08:00" Text="邬梅莉|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-25T19:39:58.086+08:00" />
+      </Values>
+    </Data>
+    <Data Name="room6">
+      <Values>
+        <Value Title="邱风绍|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 16.6 小时" Time="2026-01-15T07:00:00+08:00" Text="邱风绍|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-15T23:37:32.773+08:00" />
+        <Value Title="廖信家|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 19.2 小时" Time="2026-01-16T07:00:00+08:00" Text="廖信家|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-17T02:13:19.028+08:00" />
+        <Value Title="关祥梁|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 8.5 小时" Time="2026-01-17T07:00:00+08:00" Text="关祥梁|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-17T15:31:55.633+08:00" />
+        <Value Title="曾世|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 4.5 小时" Time="2026-01-17T16:29:51.463+08:00" Text="曾世|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-17T21:00:17.072+08:00" />
+        <Value Title="邬启思|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 13.4 小时" Time="2026-01-18T07:00:00+08:00" Text="邬启思|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-18T20:25:46.559+08:00" />
+        <Value Title="丘固|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 7.3 小时" Time="2026-01-19T07:00:00+08:00" Text="丘固|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-19T14:16:02.508+08:00" />
+        <Value Title="黄安刚|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 1.2 小时" Time="2026-01-19T15:01:03.605+08:00" Text="黄安刚|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-19T16:12:35.192+08:00" />
+        <Value Title="王永星|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 9.2 小时" Time="2026-01-19T17:16:49.488+08:00" Text="王永星|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-20T02:28:19.651+08:00" />
+        <Value Title="刘中榕|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 11.9 小时" Time="2026-01-20T07:00:00+08:00" Text="刘中榕|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-20T18:51:43.05+08:00" />
+        <Value Title="梅宁|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 3.8 小时" Time="2026-01-20T19:56:51.767+08:00" Text="梅宁|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-20T23:46:27.933+08:00" />
+        <Value Title="钟国安|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 17.8 小时" Time="2026-01-21T07:00:00+08:00" Text="钟国安|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-22T00:48:10.522+08:00" />
+        <Value Title="龙光翔|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 8.6 小时" Time="2026-01-22T07:00:00+08:00" Text="龙光翔|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-22T15:34:14.574+08:00" />
+        <Value Title="夏新|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 12.9 小时" Time="2026-01-22T16:48:53.798+08:00" Text="夏新|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-23T05:41:51.322+08:00" />
+        <Value Title="傅仁|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 11.9 小时" Time="2026-01-23T07:00:00+08:00" Text="傅仁|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-23T18:53:01.29+08:00" />
+        <Value Title="马天|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 19.6 小时" Time="2026-01-23T20:14:33.615+08:00" Text="马天|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-24T15:49:21.479+08:00" />
+        <Value Title="骆生文|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 5.6 小时" Time="2026-01-24T17:10:58.495+08:00" Text="骆生文|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-24T22:47:26.919+08:00" />
+        <Value Title="莫之庆|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 3.1 小时" Time="2026-01-25T07:00:00+08:00" Text="莫之庆|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-25T10:07:54.562+08:00" />
+        <Value Title="皮政|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 9.2 小时" Time="2026-01-25T11:28:06.605+08:00" Text="皮政|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-25T20:42:51.526+08:00" />
+      </Values>
+    </Data>
+    <Data Name="room7">
+      <Values>
+        <Value Title="龚婕红|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 17.4 小时" Time="2026-01-15T07:00:00+08:00" Text="龚婕红|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-16T00:21:01.167+08:00" />
+        <Value Title="罗瑗君|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 19.4 小时" Time="2026-01-16T07:00:00+08:00" Text="罗瑗君|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-17T02:26:53.558+08:00" />
+        <Value Title="严娅|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 2.9 小时" Time="2026-01-17T07:00:00+08:00" Text="严娅|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-17T09:55:37.47+08:00" />
+        <Value Title="郑兰咏|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 19.5 小时" Time="2026-01-17T11:14:35.909+08:00" Text="郑兰咏|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-18T06:47:35.71+08:00" />
+        <Value Title="尤筠佳|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 14.1 小时" Time="2026-01-18T08:14:04.961+08:00" Text="尤筠佳|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-18T22:21:29.377+08:00" />
+        <Value Title="邓黛寒|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 1.4 小时" Time="2026-01-19T07:00:00+08:00" Text="邓黛寒|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-19T08:21:36.255+08:00" />
+        <Value Title="邱琼仪|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 18.1 小时" Time="2026-01-19T08:53:36.773+08:00" Text="邱琼仪|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-20T03:02:26.961+08:00" />
+        <Value Title="彭美聪|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 1.7 小时" Time="2026-01-20T07:00:00+08:00" Text="彭美聪|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-20T08:41:41.604+08:00" />
+        <Value Title="尤薇|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 7.1 小时" Time="2026-01-20T09:37:21.884+08:00" Text="尤薇|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-20T16:44:00.135+08:00" />
+        <Value Title="吴晓菲|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 20.6 小时" Time="2026-01-20T17:47:39.805+08:00" Text="吴晓菲|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-21T14:24:29.205+08:00" />
+        <Value Title="卫枫菲|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 11.8 小时" Time="2026-01-21T15:52:18.901+08:00" Text="卫枫菲|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-22T03:38:47.29+08:00" />
+        <Value Title="齐嘉薇|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 19.5 小时" Time="2026-01-22T07:00:00+08:00" Text="齐嘉薇|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-23T02:30:26.33+08:00" />
+        <Value Title="陈静雁|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 17.4 小时" Time="2026-01-23T07:00:00+08:00" Text="陈静雁|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-24T00:24:11.885+08:00" />
+        <Value Title="洪纯英|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 11.7 小时" Time="2026-01-24T07:00:00+08:00" Text="洪纯英|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-24T18:42:41.788+08:00" />
+        <Value Title="黎芝毓|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 20.4 小时" Time="2026-01-24T19:22:36.265+08:00" Text="黎芝毓|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-25T15:48:19.837+08:00" />
+        <Value Title="苏琴霭|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 12.0 小时" Time="2026-01-25T16:52:02.633+08:00" Text="苏琴霭|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-26T04:51:25.583+08:00" />
+      </Values>
+    </Data>
+    <Data Name="room8">
+      <Values>
+        <Value Title="张峰力|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 7.5 小时" Time="2026-01-15T07:00:00+08:00" Text="张峰力|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-15T14:29:14.545+08:00" />
+        <Value Title="孟涛兴|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 20.1 小时" Time="2026-01-15T15:35:49.492+08:00" Text="孟涛兴|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-16T11:40:59.921+08:00" />
+        <Value Title="关雄河|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 20.0 小时" Time="2026-01-16T12:37:15.176+08:00" Text="关雄河|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-17T08:37:00.103+08:00" />
+        <Value Title="武军山|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 8.5 小时" Time="2026-01-17T09:55:06.566+08:00" Text="武军山|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-17T18:23:41.092+08:00" />
+        <Value Title="黄翰文|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 1.2 小时 死亡" Time="2026-01-17T19:35:13.617+08:00" Text="黄翰文|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#FF0000" EndTime="2026-01-17T20:46:54.868+08:00" />
+        <Value Title="时松|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 16.8 小时" Time="2026-01-18T07:00:00+08:00" Text="时松|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-18T23:45:34.638+08:00" />
+        <Value Title="韩毅亮|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 1.2 小时" Time="2026-01-19T07:00:00+08:00" Text="韩毅亮|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#90EE90" EndTime="2026-01-19T08:11:46.003+08:00" />
+        <Value Title="钟良浩|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 14.7 小时" Time="2026-01-19T09:33:56.606+08:00" Text="钟良浩|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#90EE90" EndTime="2026-01-20T00:18:45.411+08:00" />
+        <Value Title="卓伟厚|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 12.6 小时" Time="2026-01-20T07:00:00+08:00" Text="卓伟厚|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#90EE90" EndTime="2026-01-20T19:33:18.394+08:00" />
+        <Value Title="白健|华佗,&#xD;&#xA;重度脑残症,开颅术&#xD;&#xA;耗时 3.6 小时" Time="2026-01-20T20:42:41.137+08:00" Text="白健|华佗,&#xD;&#xA;重度脑残症,开颅术" ColorValue="#D3D3D3" EndTime="2026-01-21T00:16:07.365+08:00" />
+        <Value Title="于震|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 18.3 小时" Time="2026-01-21T07:00:00+08:00" Text="于震|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-22T01:17:21.515+08:00" />
+        <Value Title="辛哲|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 7.5 小时" Time="2026-01-22T07:00:00+08:00" Text="辛哲|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-22T14:30:03.934+08:00" />
+        <Value Title="唐鹏良|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 11.7 小时" Time="2026-01-22T15:27:27.515+08:00" Text="唐鹏良|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-23T03:07:28.531+08:00" />
+        <Value Title="郑祥|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 14.8 小时" Time="2026-01-23T07:00:00+08:00" Text="郑祥|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-23T21:50:22.286+08:00" />
+        <Value Title="萧以政|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 6.6 小时" Time="2026-01-24T07:00:00+08:00" Text="萧以政|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-24T13:34:09.968+08:00" />
+        <Value Title="葛承有|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 10.1 小时" Time="2026-01-24T14:55:09.347+08:00" Text="葛承有|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-25T01:01:31.569+08:00" />
+        <Value Title="危奇东|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 2.6 小时" Time="2026-01-25T07:00:00+08:00" Text="危奇东|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-25T09:33:45.471+08:00" />
+        <Value Title="杨行仁|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术&#xD;&#xA;耗时 13.3 小时" Time="2026-01-25T10:39:45.117+08:00" Text="杨行仁|孙思邈,&#xD;&#xA;冠心病+缺心眼,搭桥术" ColorValue="#D3D3D3" EndTime="2026-01-25T23:57:14.604+08:00" />
+        <Value Title="俞承光|李时珍&#xD;&#xA;伤寒,灌肠术&#xD;&#xA;耗时 16.0 小时" Time="2026-01-26T07:00:00+08:00" Text="俞承光|李时珍&#xD;&#xA;伤寒,灌肠术" ColorValue="#D3D3D3" EndTime="2026-01-26T23:00:16.289+08:00" />
+      </Values>
+    </Data>
+    <Data Name="shiyonglv">
+      <Values>
+        <Value Time="2026-01-15T00:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T01:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T02:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T03:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T04:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T05:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T06:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T07:00:00+08:00" Value="100" />
+        <Value Time="2026-01-15T08:00:00+08:00" Value="100" />
+        <Value Time="2026-01-15T09:00:00+08:00" Value="100" />
+        <Value Time="2026-01-15T10:00:00+08:00" Value="100" />
+        <Value Time="2026-01-15T11:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-15T12:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-15T13:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-15T14:00:00+08:00" Value="100" />
+        <Value Time="2026-01-15T15:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-15T16:00:00+08:00" Value="100" />
+        <Value Time="2026-01-15T17:00:00+08:00" Value="100" />
+        <Value Time="2026-01-15T18:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-15T19:00:00+08:00" Value="100" />
+        <Value Time="2026-01-15T20:00:00+08:00" Value="100" />
+        <Value Time="2026-01-15T21:00:00+08:00" Value="100" />
+        <Value Time="2026-01-15T22:00:00+08:00" Value="100" />
+        <Value Time="2026-01-15T23:00:00+08:00" Value="100" />
+        <Value Time="2026-01-16T00:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-16T01:00:00+08:00" Value="75" />
+        <Value Time="2026-01-16T02:00:00+08:00" Value="62.5" />
+        <Value Time="2026-01-16T03:00:00+08:00" Value="62.5" />
+        <Value Time="2026-01-16T04:00:00+08:00" Value="50" />
+        <Value Time="2026-01-16T05:00:00+08:00" Value="50" />
+        <Value Time="2026-01-16T06:00:00+08:00" Value="50" />
+        <Value Time="2026-01-16T07:00:00+08:00" Value="100" />
+        <Value Time="2026-01-16T08:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-16T09:00:00+08:00" Value="100" />
+        <Value Time="2026-01-16T10:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-16T11:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-16T12:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-16T13:00:00+08:00" Value="100" />
+        <Value Time="2026-01-16T14:00:00+08:00" Value="100" />
+        <Value Time="2026-01-16T15:00:00+08:00" Value="75" />
+        <Value Time="2026-01-16T16:00:00+08:00" Value="100" />
+        <Value Time="2026-01-16T17:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-16T18:00:00+08:00" Value="100" />
+        <Value Time="2026-01-16T19:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-16T20:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-16T21:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-16T22:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-16T23:00:00+08:00" Value="75" />
+        <Value Time="2026-01-17T00:00:00+08:00" Value="75" />
+        <Value Time="2026-01-17T01:00:00+08:00" Value="75" />
+        <Value Time="2026-01-17T02:00:00+08:00" Value="75" />
+        <Value Time="2026-01-17T03:00:00+08:00" Value="25" />
+        <Value Time="2026-01-17T04:00:00+08:00" Value="25" />
+        <Value Time="2026-01-17T05:00:00+08:00" Value="25" />
+        <Value Time="2026-01-17T06:00:00+08:00" Value="25" />
+        <Value Time="2026-01-17T07:00:00+08:00" Value="100" />
+        <Value Time="2026-01-17T08:00:00+08:00" Value="100" />
+        <Value Time="2026-01-17T09:00:00+08:00" Value="75" />
+        <Value Time="2026-01-17T10:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-17T11:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-17T12:00:00+08:00" Value="100" />
+        <Value Time="2026-01-17T13:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-17T14:00:00+08:00" Value="100" />
+        <Value Time="2026-01-17T15:00:00+08:00" Value="100" />
+        <Value Time="2026-01-17T16:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-17T17:00:00+08:00" Value="100" />
+        <Value Time="2026-01-17T18:00:00+08:00" Value="100" />
+        <Value Time="2026-01-17T19:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-17T20:00:00+08:00" Value="100" />
+        <Value Time="2026-01-17T21:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-17T22:00:00+08:00" Value="75" />
+        <Value Time="2026-01-17T23:00:00+08:00" Value="50" />
+        <Value Time="2026-01-18T00:00:00+08:00" Value="50" />
+        <Value Time="2026-01-18T01:00:00+08:00" Value="50" />
+        <Value Time="2026-01-18T02:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-18T03:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-18T04:00:00+08:00" Value="12.5" />
+        <Value Time="2026-01-18T05:00:00+08:00" Value="12.5" />
+        <Value Time="2026-01-18T06:00:00+08:00" Value="12.5" />
+        <Value Time="2026-01-18T07:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-18T08:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-18T09:00:00+08:00" Value="100" />
+        <Value Time="2026-01-18T10:00:00+08:00" Value="100" />
+        <Value Time="2026-01-18T11:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-18T12:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-18T13:00:00+08:00" Value="100" />
+        <Value Time="2026-01-18T14:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-18T15:00:00+08:00" Value="75" />
+        <Value Time="2026-01-18T16:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-18T17:00:00+08:00" Value="100" />
+        <Value Time="2026-01-18T18:00:00+08:00" Value="100" />
+        <Value Time="2026-01-18T19:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-18T20:00:00+08:00" Value="100" />
+        <Value Time="2026-01-18T21:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-18T22:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-18T23:00:00+08:00" Value="75" />
+        <Value Time="2026-01-19T00:00:00+08:00" Value="62.5" />
+        <Value Time="2026-01-19T01:00:00+08:00" Value="50" />
+        <Value Time="2026-01-19T02:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-19T03:00:00+08:00" Value="25" />
+        <Value Time="2026-01-19T04:00:00+08:00" Value="25" />
+        <Value Time="2026-01-19T05:00:00+08:00" Value="25" />
+        <Value Time="2026-01-19T06:00:00+08:00" Value="25" />
+        <Value Time="2026-01-19T07:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-19T08:00:00+08:00" Value="100" />
+        <Value Time="2026-01-19T09:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-19T10:00:00+08:00" Value="100" />
+        <Value Time="2026-01-19T11:00:00+08:00" Value="100" />
+        <Value Time="2026-01-19T12:00:00+08:00" Value="100" />
+        <Value Time="2026-01-19T13:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-19T14:00:00+08:00" Value="100" />
+        <Value Time="2026-01-19T15:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-19T16:00:00+08:00" Value="100" />
+        <Value Time="2026-01-19T17:00:00+08:00" Value="75" />
+        <Value Time="2026-01-19T18:00:00+08:00" Value="100" />
+        <Value Time="2026-01-19T19:00:00+08:00" Value="100" />
+        <Value Time="2026-01-19T20:00:00+08:00" Value="100" />
+        <Value Time="2026-01-19T21:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-19T22:00:00+08:00" Value="75" />
+        <Value Time="2026-01-19T23:00:00+08:00" Value="75" />
+        <Value Time="2026-01-20T00:00:00+08:00" Value="75" />
+        <Value Time="2026-01-20T01:00:00+08:00" Value="62.5" />
+        <Value Time="2026-01-20T02:00:00+08:00" Value="62.5" />
+        <Value Time="2026-01-20T03:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-20T04:00:00+08:00" Value="25" />
+        <Value Time="2026-01-20T05:00:00+08:00" Value="25" />
+        <Value Time="2026-01-20T06:00:00+08:00" Value="12.5" />
+        <Value Time="2026-01-20T07:00:00+08:00" Value="100" />
+        <Value Time="2026-01-20T08:00:00+08:00" Value="100" />
+        <Value Time="2026-01-20T09:00:00+08:00" Value="75" />
+        <Value Time="2026-01-20T10:00:00+08:00" Value="100" />
+        <Value Time="2026-01-20T11:00:00+08:00" Value="100" />
+        <Value Time="2026-01-20T12:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-20T13:00:00+08:00" Value="100" />
+        <Value Time="2026-01-20T14:00:00+08:00" Value="100" />
+        <Value Time="2026-01-20T15:00:00+08:00" Value="100" />
+        <Value Time="2026-01-20T16:00:00+08:00" Value="100" />
+        <Value Time="2026-01-20T17:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-20T18:00:00+08:00" Value="100" />
+        <Value Time="2026-01-20T19:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-20T20:00:00+08:00" Value="62.5" />
+        <Value Time="2026-01-20T21:00:00+08:00" Value="100" />
+        <Value Time="2026-01-20T22:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-20T23:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-21T00:00:00+08:00" Value="62.5" />
+        <Value Time="2026-01-21T01:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-21T02:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-21T03:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-21T04:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-21T05:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-21T06:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-21T07:00:00+08:00" Value="100" />
+        <Value Time="2026-01-21T08:00:00+08:00" Value="100" />
+        <Value Time="2026-01-21T09:00:00+08:00" Value="100" />
+        <Value Time="2026-01-21T10:00:00+08:00" Value="100" />
+        <Value Time="2026-01-21T11:00:00+08:00" Value="100" />
+        <Value Time="2026-01-21T12:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-21T13:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-21T14:00:00+08:00" Value="100" />
+        <Value Time="2026-01-21T15:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-21T16:00:00+08:00" Value="100" />
+        <Value Time="2026-01-21T17:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-21T18:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-21T19:00:00+08:00" Value="100" />
+        <Value Time="2026-01-21T20:00:00+08:00" Value="100" />
+        <Value Time="2026-01-21T21:00:00+08:00" Value="100" />
+        <Value Time="2026-01-21T22:00:00+08:00" Value="100" />
+        <Value Time="2026-01-21T23:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T00:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T01:00:00+08:00" Value="75" />
+        <Value Time="2026-01-22T02:00:00+08:00" Value="62.5" />
+        <Value Time="2026-01-22T03:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-22T04:00:00+08:00" Value="0" />
+        <Value Time="2026-01-22T05:00:00+08:00" Value="0" />
+        <Value Time="2026-01-22T06:00:00+08:00" Value="0" />
+        <Value Time="2026-01-22T07:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T08:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T09:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T10:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T11:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T12:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T13:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T14:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T15:00:00+08:00" Value="75" />
+        <Value Time="2026-01-22T16:00:00+08:00" Value="75" />
+        <Value Time="2026-01-22T17:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T18:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T19:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T20:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T21:00:00+08:00" Value="100" />
+        <Value Time="2026-01-22T22:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-22T23:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-23T00:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-23T01:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-23T02:00:00+08:00" Value="75" />
+        <Value Time="2026-01-23T03:00:00+08:00" Value="62.5" />
+        <Value Time="2026-01-23T04:00:00+08:00" Value="50" />
+        <Value Time="2026-01-23T05:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-23T06:00:00+08:00" Value="25" />
+        <Value Time="2026-01-23T07:00:00+08:00" Value="100" />
+        <Value Time="2026-01-23T08:00:00+08:00" Value="100" />
+        <Value Time="2026-01-23T09:00:00+08:00" Value="100" />
+        <Value Time="2026-01-23T10:00:00+08:00" Value="100" />
+        <Value Time="2026-01-23T11:00:00+08:00" Value="100" />
+        <Value Time="2026-01-23T12:00:00+08:00" Value="100" />
+        <Value Time="2026-01-23T13:00:00+08:00" Value="100" />
+        <Value Time="2026-01-23T14:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-23T15:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-23T16:00:00+08:00" Value="100" />
+        <Value Time="2026-01-23T17:00:00+08:00" Value="100" />
+        <Value Time="2026-01-23T18:00:00+08:00" Value="100" />
+        <Value Time="2026-01-23T19:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-23T20:00:00+08:00" Value="75" />
+        <Value Time="2026-01-23T21:00:00+08:00" Value="100" />
+        <Value Time="2026-01-23T22:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-23T23:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-24T00:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-24T01:00:00+08:00" Value="75" />
+        <Value Time="2026-01-24T02:00:00+08:00" Value="50" />
+        <Value Time="2026-01-24T03:00:00+08:00" Value="50" />
+        <Value Time="2026-01-24T04:00:00+08:00" Value="50" />
+        <Value Time="2026-01-24T05:00:00+08:00" Value="50" />
+        <Value Time="2026-01-24T06:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-24T07:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-24T08:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-24T09:00:00+08:00" Value="100" />
+        <Value Time="2026-01-24T10:00:00+08:00" Value="100" />
+        <Value Time="2026-01-24T11:00:00+08:00" Value="100" />
+        <Value Time="2026-01-24T12:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-24T13:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-24T14:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-24T15:00:00+08:00" Value="100" />
+        <Value Time="2026-01-24T16:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-24T17:00:00+08:00" Value="75" />
+        <Value Time="2026-01-24T18:00:00+08:00" Value="100" />
+        <Value Time="2026-01-24T19:00:00+08:00" Value="75" />
+        <Value Time="2026-01-24T20:00:00+08:00" Value="75" />
+        <Value Time="2026-01-24T21:00:00+08:00" Value="100" />
+        <Value Time="2026-01-24T22:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-24T23:00:00+08:00" Value="75" />
+        <Value Time="2026-01-25T00:00:00+08:00" Value="75" />
+        <Value Time="2026-01-25T01:00:00+08:00" Value="50" />
+        <Value Time="2026-01-25T02:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-25T03:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-25T04:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-25T05:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-25T06:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-25T07:00:00+08:00" Value="100" />
+        <Value Time="2026-01-25T08:00:00+08:00" Value="100" />
+        <Value Time="2026-01-25T09:00:00+08:00" Value="100" />
+        <Value Time="2026-01-25T10:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-25T11:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-25T12:00:00+08:00" Value="100" />
+        <Value Time="2026-01-25T13:00:00+08:00" Value="75" />
+        <Value Time="2026-01-25T14:00:00+08:00" Value="100" />
+        <Value Time="2026-01-25T15:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-25T16:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-25T17:00:00+08:00" Value="100" />
+        <Value Time="2026-01-25T18:00:00+08:00" Value="100" />
+        <Value Time="2026-01-25T19:00:00+08:00" Value="100" />
+        <Value Time="2026-01-25T20:00:00+08:00" Value="87.5" />
+        <Value Time="2026-01-25T21:00:00+08:00" Value="75" />
+        <Value Time="2026-01-25T22:00:00+08:00" Value="75" />
+        <Value Time="2026-01-25T23:00:00+08:00" Value="75" />
+        <Value Time="2026-01-26T00:00:00+08:00" Value="50" />
+        <Value Time="2026-01-26T01:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-26T02:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-26T03:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-26T04:00:00+08:00" Value="25" />
+        <Value Time="2026-01-26T05:00:00+08:00" Value="12.5" />
+        <Value Time="2026-01-26T06:00:00+08:00" Value="12.5" />
+        <Value Time="2026-01-26T07:00:00+08:00" Value="50" />
+        <Value Time="2026-01-26T08:00:00+08:00" Value="50" />
+        <Value Time="2026-01-26T09:00:00+08:00" Value="50" />
+        <Value Time="2026-01-26T10:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-26T11:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-26T12:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-26T13:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-26T14:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-26T15:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-26T16:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-26T17:00:00+08:00" Value="37.5" />
+        <Value Time="2026-01-26T18:00:00+08:00" Value="25" />
+        <Value Time="2026-01-26T19:00:00+08:00" Value="25" />
+        <Value Time="2026-01-26T20:00:00+08:00" Value="25" />
+        <Value Time="2026-01-26T21:00:00+08:00" Value="25" />
+        <Value Time="2026-01-26T22:00:00+08:00" Value="25" />
+        <Value Time="2026-01-26T23:00:00+08:00" Value="25" />
+      </Values>
+    </Data>
+    <Data Name="renshu">
+      <Values>
+        <Value Time="2026-01-15T00:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T01:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T02:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T03:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T04:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T05:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T06:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T07:00:00+08:00" Value="48" />
+        <Value Time="2026-01-15T08:00:00+08:00" Value="48" />
+        <Value Time="2026-01-15T09:00:00+08:00" Value="48" />
+        <Value Time="2026-01-15T10:00:00+08:00" Value="57" />
+        <Value Time="2026-01-15T11:00:00+08:00" Value="36" />
+        <Value Time="2026-01-15T12:00:00+08:00" Value="40" />
+        <Value Time="2026-01-15T13:00:00+08:00" Value="43" />
+        <Value Time="2026-01-15T14:00:00+08:00" Value="42" />
+        <Value Time="2026-01-15T15:00:00+08:00" Value="33" />
+        <Value Time="2026-01-15T16:00:00+08:00" Value="50" />
+        <Value Time="2026-01-15T17:00:00+08:00" Value="45" />
+        <Value Time="2026-01-15T18:00:00+08:00" Value="47" />
+        <Value Time="2026-01-15T19:00:00+08:00" Value="44" />
+        <Value Time="2026-01-15T20:00:00+08:00" Value="46" />
+        <Value Time="2026-01-15T21:00:00+08:00" Value="50" />
+        <Value Time="2026-01-15T22:00:00+08:00" Value="44" />
+        <Value Time="2026-01-15T23:00:00+08:00" Value="55" />
+        <Value Time="2026-01-16T00:00:00+08:00" Value="52" />
+        <Value Time="2026-01-16T01:00:00+08:00" Value="40" />
+        <Value Time="2026-01-16T02:00:00+08:00" Value="26" />
+        <Value Time="2026-01-16T03:00:00+08:00" Value="30" />
+        <Value Time="2026-01-16T04:00:00+08:00" Value="22" />
+        <Value Time="2026-01-16T05:00:00+08:00" Value="23" />
+        <Value Time="2026-01-16T06:00:00+08:00" Value="29" />
+        <Value Time="2026-01-16T07:00:00+08:00" Value="49" />
+        <Value Time="2026-01-16T08:00:00+08:00" Value="45" />
+        <Value Time="2026-01-16T09:00:00+08:00" Value="44" />
+        <Value Time="2026-01-16T10:00:00+08:00" Value="45" />
+        <Value Time="2026-01-16T11:00:00+08:00" Value="38" />
+        <Value Time="2026-01-16T12:00:00+08:00" Value="45" />
+        <Value Time="2026-01-16T13:00:00+08:00" Value="47" />
+        <Value Time="2026-01-16T14:00:00+08:00" Value="50" />
+        <Value Time="2026-01-16T15:00:00+08:00" Value="35" />
+        <Value Time="2026-01-16T16:00:00+08:00" Value="46" />
+        <Value Time="2026-01-16T17:00:00+08:00" Value="34" />
+        <Value Time="2026-01-16T18:00:00+08:00" Value="41" />
+        <Value Time="2026-01-16T19:00:00+08:00" Value="41" />
+        <Value Time="2026-01-16T20:00:00+08:00" Value="50" />
+        <Value Time="2026-01-16T21:00:00+08:00" Value="40" />
+        <Value Time="2026-01-16T22:00:00+08:00" Value="42" />
+        <Value Time="2026-01-16T23:00:00+08:00" Value="29" />
+        <Value Time="2026-01-17T00:00:00+08:00" Value="39" />
+        <Value Time="2026-01-17T01:00:00+08:00" Value="33" />
+        <Value Time="2026-01-17T02:00:00+08:00" Value="29" />
+        <Value Time="2026-01-17T03:00:00+08:00" Value="8" />
+        <Value Time="2026-01-17T04:00:00+08:00" Value="15" />
+        <Value Time="2026-01-17T05:00:00+08:00" Value="9" />
+        <Value Time="2026-01-17T06:00:00+08:00" Value="12" />
+        <Value Time="2026-01-17T07:00:00+08:00" Value="48" />
+        <Value Time="2026-01-17T08:00:00+08:00" Value="55" />
+        <Value Time="2026-01-17T09:00:00+08:00" Value="39" />
+        <Value Time="2026-01-17T10:00:00+08:00" Value="42" />
+        <Value Time="2026-01-17T11:00:00+08:00" Value="41" />
+        <Value Time="2026-01-17T12:00:00+08:00" Value="43" />
+        <Value Time="2026-01-17T13:00:00+08:00" Value="50" />
+        <Value Time="2026-01-17T14:00:00+08:00" Value="49" />
+        <Value Time="2026-01-17T15:00:00+08:00" Value="50" />
+        <Value Time="2026-01-17T16:00:00+08:00" Value="42" />
+        <Value Time="2026-01-17T17:00:00+08:00" Value="41" />
+        <Value Time="2026-01-17T18:00:00+08:00" Value="55" />
+        <Value Time="2026-01-17T19:00:00+08:00" Value="39" />
+        <Value Time="2026-01-17T20:00:00+08:00" Value="56" />
+        <Value Time="2026-01-17T21:00:00+08:00" Value="42" />
+        <Value Time="2026-01-17T22:00:00+08:00" Value="31" />
+        <Value Time="2026-01-17T23:00:00+08:00" Value="21" />
+        <Value Time="2026-01-18T00:00:00+08:00" Value="20" />
+        <Value Time="2026-01-18T01:00:00+08:00" Value="32" />
+        <Value Time="2026-01-18T02:00:00+08:00" Value="17" />
+        <Value Time="2026-01-18T03:00:00+08:00" Value="22" />
+        <Value Time="2026-01-18T04:00:00+08:00" Value="6" />
+        <Value Time="2026-01-18T05:00:00+08:00" Value="6" />
+        <Value Time="2026-01-18T06:00:00+08:00" Value="4" />
+        <Value Time="2026-01-18T07:00:00+08:00" Value="46" />
+        <Value Time="2026-01-18T08:00:00+08:00" Value="37" />
+        <Value Time="2026-01-18T09:00:00+08:00" Value="50" />
+        <Value Time="2026-01-18T10:00:00+08:00" Value="47" />
+        <Value Time="2026-01-18T11:00:00+08:00" Value="41" />
+        <Value Time="2026-01-18T12:00:00+08:00" Value="37" />
+        <Value Time="2026-01-18T13:00:00+08:00" Value="49" />
+        <Value Time="2026-01-18T14:00:00+08:00" Value="41" />
+        <Value Time="2026-01-18T15:00:00+08:00" Value="36" />
+        <Value Time="2026-01-18T16:00:00+08:00" Value="36" />
+        <Value Time="2026-01-18T17:00:00+08:00" Value="45" />
+        <Value Time="2026-01-18T18:00:00+08:00" Value="52" />
+        <Value Time="2026-01-18T19:00:00+08:00" Value="38" />
+        <Value Time="2026-01-18T20:00:00+08:00" Value="59" />
+        <Value Time="2026-01-18T21:00:00+08:00" Value="45" />
+        <Value Time="2026-01-18T22:00:00+08:00" Value="40" />
+        <Value Time="2026-01-18T23:00:00+08:00" Value="39" />
+        <Value Time="2026-01-19T00:00:00+08:00" Value="36" />
+        <Value Time="2026-01-19T01:00:00+08:00" Value="17" />
+        <Value Time="2026-01-19T02:00:00+08:00" Value="18" />
+        <Value Time="2026-01-19T03:00:00+08:00" Value="12" />
+        <Value Time="2026-01-19T04:00:00+08:00" Value="10" />
+        <Value Time="2026-01-19T05:00:00+08:00" Value="9" />
+        <Value Time="2026-01-19T06:00:00+08:00" Value="14" />
+        <Value Time="2026-01-19T07:00:00+08:00" Value="50" />
+        <Value Time="2026-01-19T08:00:00+08:00" Value="50" />
+        <Value Time="2026-01-19T09:00:00+08:00" Value="46" />
+        <Value Time="2026-01-19T10:00:00+08:00" Value="60" />
+        <Value Time="2026-01-19T11:00:00+08:00" Value="45" />
+        <Value Time="2026-01-19T12:00:00+08:00" Value="49" />
+        <Value Time="2026-01-19T13:00:00+08:00" Value="47" />
+        <Value Time="2026-01-19T14:00:00+08:00" Value="44" />
+        <Value Time="2026-01-19T15:00:00+08:00" Value="40" />
+        <Value Time="2026-01-19T16:00:00+08:00" Value="53" />
+        <Value Time="2026-01-19T17:00:00+08:00" Value="36" />
+        <Value Time="2026-01-19T18:00:00+08:00" Value="52" />
+        <Value Time="2026-01-19T19:00:00+08:00" Value="44" />
+        <Value Time="2026-01-19T20:00:00+08:00" Value="42" />
+        <Value Time="2026-01-19T21:00:00+08:00" Value="34" />
+        <Value Time="2026-01-19T22:00:00+08:00" Value="30" />
+        <Value Time="2026-01-19T23:00:00+08:00" Value="30" />
+        <Value Time="2026-01-20T00:00:00+08:00" Value="34" />
+        <Value Time="2026-01-20T01:00:00+08:00" Value="37" />
+        <Value Time="2026-01-20T02:00:00+08:00" Value="24" />
+        <Value Time="2026-01-20T03:00:00+08:00" Value="15" />
+        <Value Time="2026-01-20T04:00:00+08:00" Value="12" />
+        <Value Time="2026-01-20T05:00:00+08:00" Value="15" />
+        <Value Time="2026-01-20T06:00:00+08:00" Value="3" />
+        <Value Time="2026-01-20T07:00:00+08:00" Value="49" />
+        <Value Time="2026-01-20T08:00:00+08:00" Value="61" />
+        <Value Time="2026-01-20T09:00:00+08:00" Value="25" />
+        <Value Time="2026-01-20T10:00:00+08:00" Value="54" />
+        <Value Time="2026-01-20T11:00:00+08:00" Value="47" />
+        <Value Time="2026-01-20T12:00:00+08:00" Value="52" />
+        <Value Time="2026-01-20T13:00:00+08:00" Value="43" />
+        <Value Time="2026-01-20T14:00:00+08:00" Value="46" />
+        <Value Time="2026-01-20T15:00:00+08:00" Value="52" />
+        <Value Time="2026-01-20T16:00:00+08:00" Value="57" />
+        <Value Time="2026-01-20T17:00:00+08:00" Value="46" />
+        <Value Time="2026-01-20T18:00:00+08:00" Value="47" />
+        <Value Time="2026-01-20T19:00:00+08:00" Value="45" />
+        <Value Time="2026-01-20T20:00:00+08:00" Value="30" />
+        <Value Time="2026-01-20T21:00:00+08:00" Value="46" />
+        <Value Time="2026-01-20T22:00:00+08:00" Value="47" />
+        <Value Time="2026-01-20T23:00:00+08:00" Value="36" />
+        <Value Time="2026-01-21T00:00:00+08:00" Value="28" />
+        <Value Time="2026-01-21T01:00:00+08:00" Value="15" />
+        <Value Time="2026-01-21T02:00:00+08:00" Value="22" />
+        <Value Time="2026-01-21T03:00:00+08:00" Value="17" />
+        <Value Time="2026-01-21T04:00:00+08:00" Value="17" />
+        <Value Time="2026-01-21T05:00:00+08:00" Value="16" />
+        <Value Time="2026-01-21T06:00:00+08:00" Value="18" />
+        <Value Time="2026-01-21T07:00:00+08:00" Value="42" />
+        <Value Time="2026-01-21T08:00:00+08:00" Value="52" />
+        <Value Time="2026-01-21T09:00:00+08:00" Value="36" />
+        <Value Time="2026-01-21T10:00:00+08:00" Value="43" />
+        <Value Time="2026-01-21T11:00:00+08:00" Value="44" />
+        <Value Time="2026-01-21T12:00:00+08:00" Value="41" />
+        <Value Time="2026-01-21T13:00:00+08:00" Value="31" />
+        <Value Time="2026-01-21T14:00:00+08:00" Value="55" />
+        <Value Time="2026-01-21T15:00:00+08:00" Value="40" />
+        <Value Time="2026-01-21T16:00:00+08:00" Value="50" />
+        <Value Time="2026-01-21T17:00:00+08:00" Value="51" />
+        <Value Time="2026-01-21T18:00:00+08:00" Value="40" />
+        <Value Time="2026-01-21T19:00:00+08:00" Value="42" />
+        <Value Time="2026-01-21T20:00:00+08:00" Value="50" />
+        <Value Time="2026-01-21T21:00:00+08:00" Value="56" />
+        <Value Time="2026-01-21T22:00:00+08:00" Value="57" />
+        <Value Time="2026-01-21T23:00:00+08:00" Value="40" />
+        <Value Time="2026-01-22T00:00:00+08:00" Value="50" />
+        <Value Time="2026-01-22T01:00:00+08:00" Value="36" />
+        <Value Time="2026-01-22T02:00:00+08:00" Value="27" />
+        <Value Time="2026-01-22T03:00:00+08:00" Value="15" />
+        <Value Time="2026-01-22T04:00:00+08:00" Value="0" />
+        <Value Time="2026-01-22T05:00:00+08:00" Value="0" />
+        <Value Time="2026-01-22T06:00:00+08:00" Value="0" />
+        <Value Time="2026-01-22T07:00:00+08:00" Value="52" />
+        <Value Time="2026-01-22T08:00:00+08:00" Value="47" />
+        <Value Time="2026-01-22T09:00:00+08:00" Value="49" />
+        <Value Time="2026-01-22T10:00:00+08:00" Value="46" />
+        <Value Time="2026-01-22T11:00:00+08:00" Value="38" />
+        <Value Time="2026-01-22T12:00:00+08:00" Value="43" />
+        <Value Time="2026-01-22T13:00:00+08:00" Value="57" />
+        <Value Time="2026-01-22T14:00:00+08:00" Value="49" />
+        <Value Time="2026-01-22T15:00:00+08:00" Value="36" />
+        <Value Time="2026-01-22T16:00:00+08:00" Value="35" />
+        <Value Time="2026-01-22T17:00:00+08:00" Value="47" />
+        <Value Time="2026-01-22T18:00:00+08:00" Value="43" />
+        <Value Time="2026-01-22T19:00:00+08:00" Value="33" />
+        <Value Time="2026-01-22T20:00:00+08:00" Value="58" />
+        <Value Time="2026-01-22T21:00:00+08:00" Value="50" />
+        <Value Time="2026-01-22T22:00:00+08:00" Value="35" />
+        <Value Time="2026-01-22T23:00:00+08:00" Value="41" />
+        <Value Time="2026-01-23T00:00:00+08:00" Value="37" />
+        <Value Time="2026-01-23T01:00:00+08:00" Value="42" />
+        <Value Time="2026-01-23T02:00:00+08:00" Value="39" />
+        <Value Time="2026-01-23T03:00:00+08:00" Value="36" />
+        <Value Time="2026-01-23T04:00:00+08:00" Value="21" />
+        <Value Time="2026-01-23T05:00:00+08:00" Value="19" />
+        <Value Time="2026-01-23T06:00:00+08:00" Value="8" />
+        <Value Time="2026-01-23T07:00:00+08:00" Value="44" />
+        <Value Time="2026-01-23T08:00:00+08:00" Value="54" />
+        <Value Time="2026-01-23T09:00:00+08:00" Value="63" />
+        <Value Time="2026-01-23T10:00:00+08:00" Value="47" />
+        <Value Time="2026-01-23T11:00:00+08:00" Value="51" />
+        <Value Time="2026-01-23T12:00:00+08:00" Value="40" />
+        <Value Time="2026-01-23T13:00:00+08:00" Value="50" />
+        <Value Time="2026-01-23T14:00:00+08:00" Value="41" />
+        <Value Time="2026-01-23T15:00:00+08:00" Value="51" />
+        <Value Time="2026-01-23T16:00:00+08:00" Value="46" />
+        <Value Time="2026-01-23T17:00:00+08:00" Value="38" />
+        <Value Time="2026-01-23T18:00:00+08:00" Value="47" />
+        <Value Time="2026-01-23T19:00:00+08:00" Value="44" />
+        <Value Time="2026-01-23T20:00:00+08:00" Value="35" />
+        <Value Time="2026-01-23T21:00:00+08:00" Value="52" />
+        <Value Time="2026-01-23T22:00:00+08:00" Value="49" />
+        <Value Time="2026-01-23T23:00:00+08:00" Value="46" />
+        <Value Time="2026-01-24T00:00:00+08:00" Value="38" />
+        <Value Time="2026-01-24T01:00:00+08:00" Value="36" />
+        <Value Time="2026-01-24T02:00:00+08:00" Value="24" />
+        <Value Time="2026-01-24T03:00:00+08:00" Value="25" />
+        <Value Time="2026-01-24T04:00:00+08:00" Value="24" />
+        <Value Time="2026-01-24T05:00:00+08:00" Value="24" />
+        <Value Time="2026-01-24T06:00:00+08:00" Value="21" />
+        <Value Time="2026-01-24T07:00:00+08:00" Value="44" />
+        <Value Time="2026-01-24T08:00:00+08:00" Value="42" />
+        <Value Time="2026-01-24T09:00:00+08:00" Value="46" />
+        <Value Time="2026-01-24T10:00:00+08:00" Value="41" />
+        <Value Time="2026-01-24T11:00:00+08:00" Value="42" />
+        <Value Time="2026-01-24T12:00:00+08:00" Value="39" />
+        <Value Time="2026-01-24T13:00:00+08:00" Value="47" />
+        <Value Time="2026-01-24T14:00:00+08:00" Value="39" />
+        <Value Time="2026-01-24T15:00:00+08:00" Value="51" />
+        <Value Time="2026-01-24T16:00:00+08:00" Value="46" />
+        <Value Time="2026-01-24T17:00:00+08:00" Value="44" />
+        <Value Time="2026-01-24T18:00:00+08:00" Value="56" />
+        <Value Time="2026-01-24T19:00:00+08:00" Value="33" />
+        <Value Time="2026-01-24T20:00:00+08:00" Value="35" />
+        <Value Time="2026-01-24T21:00:00+08:00" Value="42" />
+        <Value Time="2026-01-24T22:00:00+08:00" Value="34" />
+        <Value Time="2026-01-24T23:00:00+08:00" Value="40" />
+        <Value Time="2026-01-25T00:00:00+08:00" Value="30" />
+        <Value Time="2026-01-25T01:00:00+08:00" Value="22" />
+        <Value Time="2026-01-25T02:00:00+08:00" Value="23" />
+        <Value Time="2026-01-25T03:00:00+08:00" Value="18" />
+        <Value Time="2026-01-25T04:00:00+08:00" Value="23" />
+        <Value Time="2026-01-25T05:00:00+08:00" Value="24" />
+        <Value Time="2026-01-25T06:00:00+08:00" Value="13" />
+        <Value Time="2026-01-25T07:00:00+08:00" Value="51" />
+        <Value Time="2026-01-25T08:00:00+08:00" Value="55" />
+        <Value Time="2026-01-25T09:00:00+08:00" Value="58" />
+        <Value Time="2026-01-25T10:00:00+08:00" Value="39" />
+        <Value Time="2026-01-25T11:00:00+08:00" Value="40" />
+        <Value Time="2026-01-25T12:00:00+08:00" Value="40" />
+        <Value Time="2026-01-25T13:00:00+08:00" Value="37" />
+        <Value Time="2026-01-25T14:00:00+08:00" Value="39" />
+        <Value Time="2026-01-25T15:00:00+08:00" Value="40" />
+        <Value Time="2026-01-25T16:00:00+08:00" Value="36" />
+        <Value Time="2026-01-25T17:00:00+08:00" Value="46" />
+        <Value Time="2026-01-25T18:00:00+08:00" Value="47" />
+        <Value Time="2026-01-25T19:00:00+08:00" Value="47" />
+        <Value Time="2026-01-25T20:00:00+08:00" Value="38" />
+        <Value Time="2026-01-25T21:00:00+08:00" Value="29" />
+        <Value Time="2026-01-25T22:00:00+08:00" Value="35" />
+        <Value Time="2026-01-25T23:00:00+08:00" Value="41" />
+        <Value Time="2026-01-26T00:00:00+08:00" Value="19" />
+        <Value Time="2026-01-26T01:00:00+08:00" Value="17" />
+        <Value Time="2026-01-26T02:00:00+08:00" Value="17" />
+        <Value Time="2026-01-26T03:00:00+08:00" Value="10" />
+        <Value Time="2026-01-26T04:00:00+08:00" Value="10" />
+        <Value Time="2026-01-26T05:00:00+08:00" Value="4" />
+        <Value Time="2026-01-26T06:00:00+08:00" Value="7" />
+        <Value Time="2026-01-26T07:00:00+08:00" Value="27" />
+        <Value Time="2026-01-26T08:00:00+08:00" Value="27" />
+        <Value Time="2026-01-26T09:00:00+08:00" Value="30" />
+        <Value Time="2026-01-26T10:00:00+08:00" Value="16" />
+        <Value Time="2026-01-26T11:00:00+08:00" Value="14" />
+        <Value Time="2026-01-26T12:00:00+08:00" Value="16" />
+        <Value Time="2026-01-26T13:00:00+08:00" Value="22" />
+        <Value Time="2026-01-26T14:00:00+08:00" Value="19" />
+        <Value Time="2026-01-26T15:00:00+08:00" Value="23" />
+        <Value Time="2026-01-26T16:00:00+08:00" Value="15" />
+        <Value Time="2026-01-26T17:00:00+08:00" Value="16" />
+        <Value Time="2026-01-26T18:00:00+08:00" Value="9" />
+        <Value Time="2026-01-26T19:00:00+08:00" Value="17" />
+        <Value Time="2026-01-26T20:00:00+08:00" Value="7" />
+        <Value Time="2026-01-26T21:00:00+08:00" Value="15" />
+        <Value Time="2026-01-26T22:00:00+08:00" Value="12" />
+        <Value Time="2026-01-26T23:00:00+08:00" Value="14" />
+      </Values>
+    </Data>
+    <Data Name="blood">
+      <Values>
+        <Value Time="2026-01-15T00:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T01:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T02:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T03:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T04:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T05:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T06:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T07:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T08:00:00+08:00" Value="3900" />
+        <Value Time="2026-01-15T09:00:00+08:00" Value="1600" />
+        <Value Time="2026-01-15T10:00:00+08:00" Value="3000" />
+        <Value Time="2026-01-15T11:00:00+08:00" Value="3300" />
+        <Value Time="2026-01-15T12:00:00+08:00" Value="0" />
+        <Value Time="2026-01-15T13:00:00+08:00" Value="1700" />
+        <Value Time="2026-01-15T14:00:00+08:00" Value="1100" />
+        <Value Time="2026-01-15T15:00:00+08:00" Value="3000" />
+        <Value Time="2026-01-15T16:00:00+08:00" Value="1600" />
+        <Value Time="2026-01-15T17:00:00+08:00" Value="1400" />
+        <Value Time="2026-01-15T18:00:00+08:00" Value="1600" />
+        <Value Time="2026-01-15T19:00:00+08:00" Value="1400" />
+        <Value Time="2026-01-15T20:00:00+08:00" Value="3700" />
+        <Value Time="2026-01-15T21:00:00+08:00" Value="800" />
+        <Value Time="2026-01-15T22:00:00+08:00" Value="400" />
+        <Value Time="2026-01-15T23:00:00+08:00" Value="1800" />
+        <Value Time="2026-01-16T00:00:00+08:00" Value="1800" />
+        <Value Time="2026-01-16T01:00:00+08:00" Value="0" />
+        <Value Time="2026-01-16T02:00:00+08:00" Value="0" />
+        <Value Time="2026-01-16T03:00:00+08:00" Value="1500" />
+        <Value Time="2026-01-16T04:00:00+08:00" Value="1000" />
+        <Value Time="2026-01-16T05:00:00+08:00" Value="600" />
+        <Value Time="2026-01-16T06:00:00+08:00" Value="0" />
+        <Value Time="2026-01-16T07:00:00+08:00" Value="1200" />
+        <Value Time="2026-01-16T08:00:00+08:00" Value="0" />
+        <Value Time="2026-01-16T09:00:00+08:00" Value="4100" />
+        <Value Time="2026-01-16T10:00:00+08:00" Value="2400" />
+        <Value Time="2026-01-16T11:00:00+08:00" Value="0" />
+        <Value Time="2026-01-16T12:00:00+08:00" Value="2300" />
+        <Value Time="2026-01-16T13:00:00+08:00" Value="3500" />
+        <Value Time="2026-01-16T14:00:00+08:00" Value="0" />
+        <Value Time="2026-01-16T15:00:00+08:00" Value="2800" />
+        <Value Time="2026-01-16T16:00:00+08:00" Value="2100" />
+        <Value Time="2026-01-16T17:00:00+08:00" Value="200" />
+        <Value Time="2026-01-16T18:00:00+08:00" Value="0" />
+        <Value Time="2026-01-16T19:00:00+08:00" Value="0" />
+        <Value Time="2026-01-16T20:00:00+08:00" Value="500" />
+        <Value Time="2026-01-16T21:00:00+08:00" Value="4900" />
+        <Value Time="2026-01-16T22:00:00+08:00" Value="200" />
+        <Value Time="2026-01-16T23:00:00+08:00" Value="700" />
+        <Value Time="2026-01-17T00:00:00+08:00" Value="1200" />
+        <Value Time="2026-01-17T01:00:00+08:00" Value="0" />
+        <Value Time="2026-01-17T02:00:00+08:00" Value="0" />
+        <Value Time="2026-01-17T03:00:00+08:00" Value="0" />
+        <Value Time="2026-01-17T04:00:00+08:00" Value="0" />
+        <Value Time="2026-01-17T05:00:00+08:00" Value="0" />
+        <Value Time="2026-01-17T06:00:00+08:00" Value="1000" />
+        <Value Time="2026-01-17T07:00:00+08:00" Value="1800" />
+        <Value Time="2026-01-17T08:00:00+08:00" Value="4500" />
+        <Value Time="2026-01-17T09:00:00+08:00" Value="0" />
+        <Value Time="2026-01-17T10:00:00+08:00" Value="0" />
+        <Value Time="2026-01-17T11:00:00+08:00" Value="0" />
+        <Value Time="2026-01-17T12:00:00+08:00" Value="300" />
+        <Value Time="2026-01-17T13:00:00+08:00" Value="1000" />
+        <Value Time="2026-01-17T14:00:00+08:00" Value="0" />
+        <Value Time="2026-01-17T15:00:00+08:00" Value="1200" />
+        <Value Time="2026-01-17T16:00:00+08:00" Value="400" />
+        <Value Time="2026-01-17T17:00:00+08:00" Value="1400" />
+        <Value Time="2026-01-17T18:00:00+08:00" Value="2800" />
+        <Value Time="2026-01-17T19:00:00+08:00" Value="2100" />
+        <Value Time="2026-01-17T20:00:00+08:00" Value="900" />
+        <Value Time="2026-01-17T21:00:00+08:00" Value="1200" />
+        <Value Time="2026-01-17T22:00:00+08:00" Value="2200" />
+        <Value Time="2026-01-17T23:00:00+08:00" Value="1500" />
+        <Value Time="2026-01-18T00:00:00+08:00" Value="1100" />
+        <Value Time="2026-01-18T01:00:00+08:00" Value="100" />
+        <Value Time="2026-01-18T02:00:00+08:00" Value="100" />
+        <Value Time="2026-01-18T03:00:00+08:00" Value="3500" />
+        <Value Time="2026-01-18T04:00:00+08:00" Value="0" />
+        <Value Time="2026-01-18T05:00:00+08:00" Value="0" />
+        <Value Time="2026-01-18T06:00:00+08:00" Value="0" />
+        <Value Time="2026-01-18T07:00:00+08:00" Value="0" />
+        <Value Time="2026-01-18T08:00:00+08:00" Value="1800" />
+        <Value Time="2026-01-18T09:00:00+08:00" Value="0" />
+        <Value Time="2026-01-18T10:00:00+08:00" Value="2900" />
+        <Value Time="2026-01-18T11:00:00+08:00" Value="3500" />
+        <Value Time="2026-01-18T12:00:00+08:00" Value="0" />
+        <Value Time="2026-01-18T13:00:00+08:00" Value="400" />
+        <Value Time="2026-01-18T14:00:00+08:00" Value="0" />
+        <Value Time="2026-01-18T15:00:00+08:00" Value="200" />
+        <Value Time="2026-01-18T16:00:00+08:00" Value="2800" />
+        <Value Time="2026-01-18T17:00:00+08:00" Value="900" />
+        <Value Time="2026-01-18T18:00:00+08:00" Value="2800" />
+        <Value Time="2026-01-18T19:00:00+08:00" Value="800" />
+        <Value Time="2026-01-18T20:00:00+08:00" Value="200" />
+        <Value Time="2026-01-18T21:00:00+08:00" Value="2000" />
+        <Value Time="2026-01-18T22:00:00+08:00" Value="600" />
+        <Value Time="2026-01-18T23:00:00+08:00" Value="3400" />
+        <Value Time="2026-01-19T00:00:00+08:00" Value="0" />
+        <Value Time="2026-01-19T01:00:00+08:00" Value="1300" />
+        <Value Time="2026-01-19T02:00:00+08:00" Value="0" />
+        <Value Time="2026-01-19T03:00:00+08:00" Value="100" />
+        <Value Time="2026-01-19T04:00:00+08:00" Value="500" />
+        <Value Time="2026-01-19T05:00:00+08:00" Value="0" />
+        <Value Time="2026-01-19T06:00:00+08:00" Value="1100" />
+        <Value Time="2026-01-19T07:00:00+08:00" Value="4300" />
+        <Value Time="2026-01-19T08:00:00+08:00" Value="2400" />
+        <Value Time="2026-01-19T09:00:00+08:00" Value="300" />
+        <Value Time="2026-01-19T10:00:00+08:00" Value="0" />
+        <Value Time="2026-01-19T11:00:00+08:00" Value="2900" />
+        <Value Time="2026-01-19T12:00:00+08:00" Value="3700" />
+        <Value Time="2026-01-19T13:00:00+08:00" Value="900" />
+        <Value Time="2026-01-19T14:00:00+08:00" Value="300" />
+        <Value Time="2026-01-19T15:00:00+08:00" Value="1000" />
+        <Value Time="2026-01-19T16:00:00+08:00" Value="0" />
+        <Value Time="2026-01-19T17:00:00+08:00" Value="500" />
+        <Value Time="2026-01-19T18:00:00+08:00" Value="1300" />
+        <Value Time="2026-01-19T19:00:00+08:00" Value="2400" />
+        <Value Time="2026-01-19T20:00:00+08:00" Value="600" />
+        <Value Time="2026-01-19T21:00:00+08:00" Value="2700" />
+        <Value Time="2026-01-19T22:00:00+08:00" Value="0" />
+        <Value Time="2026-01-19T23:00:00+08:00" Value="2100" />
+        <Value Time="2026-01-20T00:00:00+08:00" Value="2300" />
+        <Value Time="2026-01-20T01:00:00+08:00" Value="3400" />
+        <Value Time="2026-01-20T02:00:00+08:00" Value="900" />
+        <Value Time="2026-01-20T03:00:00+08:00" Value="1800" />
+        <Value Time="2026-01-20T04:00:00+08:00" Value="3100" />
+        <Value Time="2026-01-20T05:00:00+08:00" Value="600" />
+        <Value Time="2026-01-20T06:00:00+08:00" Value="0" />
+        <Value Time="2026-01-20T07:00:00+08:00" Value="0" />
+        <Value Time="2026-01-20T08:00:00+08:00" Value="1900" />
+        <Value Time="2026-01-20T09:00:00+08:00" Value="3000" />
+        <Value Time="2026-01-20T10:00:00+08:00" Value="3100" />
+        <Value Time="2026-01-20T11:00:00+08:00" Value="4300" />
+        <Value Time="2026-01-20T12:00:00+08:00" Value="5200" />
+        <Value Time="2026-01-20T13:00:00+08:00" Value="2000" />
+        <Value Time="2026-01-20T14:00:00+08:00" Value="1400" />
+        <Value Time="2026-01-20T15:00:00+08:00" Value="3800" />
+        <Value Time="2026-01-20T16:00:00+08:00" Value="0" />
+        <Value Time="2026-01-20T17:00:00+08:00" Value="2900" />
+        <Value Time="2026-01-20T18:00:00+08:00" Value="1100" />
+        <Value Time="2026-01-20T19:00:00+08:00" Value="2600" />
+        <Value Time="2026-01-20T20:00:00+08:00" Value="0" />
+        <Value Time="2026-01-20T21:00:00+08:00" Value="0" />
+        <Value Time="2026-01-20T22:00:00+08:00" Value="1600" />
+        <Value Time="2026-01-20T23:00:00+08:00" Value="1700" />
+        <Value Time="2026-01-21T00:00:00+08:00" Value="900" />
+        <Value Time="2026-01-21T01:00:00+08:00" Value="0" />
+        <Value Time="2026-01-21T02:00:00+08:00" Value="800" />
+        <Value Time="2026-01-21T03:00:00+08:00" Value="0" />
+        <Value Time="2026-01-21T04:00:00+08:00" Value="0" />
+        <Value Time="2026-01-21T05:00:00+08:00" Value="0" />
+        <Value Time="2026-01-21T06:00:00+08:00" Value="0" />
+        <Value Time="2026-01-21T07:00:00+08:00" Value="100" />
+        <Value Time="2026-01-21T08:00:00+08:00" Value="1300" />
+        <Value Time="2026-01-21T09:00:00+08:00" Value="1800" />
+        <Value Time="2026-01-21T10:00:00+08:00" Value="0" />
+        <Value Time="2026-01-21T11:00:00+08:00" Value="1400" />
+        <Value Time="2026-01-21T12:00:00+08:00" Value="200" />
+        <Value Time="2026-01-21T13:00:00+08:00" Value="0" />
+        <Value Time="2026-01-21T14:00:00+08:00" Value="2100" />
+        <Value Time="2026-01-21T15:00:00+08:00" Value="2400" />
+        <Value Time="2026-01-21T16:00:00+08:00" Value="300" />
+        <Value Time="2026-01-21T17:00:00+08:00" Value="300" />
+        <Value Time="2026-01-21T18:00:00+08:00" Value="1900" />
+        <Value Time="2026-01-21T19:00:00+08:00" Value="800" />
+        <Value Time="2026-01-21T20:00:00+08:00" Value="800" />
+        <Value Time="2026-01-21T21:00:00+08:00" Value="1400" />
+        <Value Time="2026-01-21T22:00:00+08:00" Value="800" />
+        <Value Time="2026-01-21T23:00:00+08:00" Value="2500" />
+        <Value Time="2026-01-22T00:00:00+08:00" Value="2300" />
+        <Value Time="2026-01-22T01:00:00+08:00" Value="0" />
+        <Value Time="2026-01-22T02:00:00+08:00" Value="0" />
+        <Value Time="2026-01-22T03:00:00+08:00" Value="1000" />
+        <Value Time="2026-01-22T04:00:00+08:00" Value="0" />
+        <Value Time="2026-01-22T05:00:00+08:00" Value="0" />
+        <Value Time="2026-01-22T06:00:00+08:00" Value="0" />
+        <Value Time="2026-01-22T07:00:00+08:00" Value="1100" />
+        <Value Time="2026-01-22T08:00:00+08:00" Value="1800" />
+        <Value Time="2026-01-22T09:00:00+08:00" Value="3000" />
+        <Value Time="2026-01-22T10:00:00+08:00" Value="1500" />
+        <Value Time="2026-01-22T11:00:00+08:00" Value="1700" />
+        <Value Time="2026-01-22T12:00:00+08:00" Value="600" />
+        <Value Time="2026-01-22T13:00:00+08:00" Value="3200" />
+        <Value Time="2026-01-22T14:00:00+08:00" Value="0" />
+        <Value Time="2026-01-22T15:00:00+08:00" Value="800" />
+        <Value Time="2026-01-22T16:00:00+08:00" Value="1700" />
+        <Value Time="2026-01-22T17:00:00+08:00" Value="2100" />
+        <Value Time="2026-01-22T18:00:00+08:00" Value="1900" />
+        <Value Time="2026-01-22T19:00:00+08:00" Value="3100" />
+        <Value Time="2026-01-22T20:00:00+08:00" Value="2800" />
+        <Value Time="2026-01-22T21:00:00+08:00" Value="3000" />
+        <Value Time="2026-01-22T22:00:00+08:00" Value="3500" />
+        <Value Time="2026-01-22T23:00:00+08:00" Value="3000" />
+        <Value Time="2026-01-23T00:00:00+08:00" Value="1900" />
+        <Value Time="2026-01-23T01:00:00+08:00" Value="1500" />
+        <Value Time="2026-01-23T02:00:00+08:00" Value="4100" />
+        <Value Time="2026-01-23T03:00:00+08:00" Value="1000" />
+        <Value Time="2026-01-23T04:00:00+08:00" Value="2400" />
+        <Value Time="2026-01-23T05:00:00+08:00" Value="400" />
+        <Value Time="2026-01-23T06:00:00+08:00" Value="0" />
+        <Value Time="2026-01-23T07:00:00+08:00" Value="800" />
+        <Value Time="2026-01-23T08:00:00+08:00" Value="2600" />
+        <Value Time="2026-01-23T09:00:00+08:00" Value="2400" />
+        <Value Time="2026-01-23T10:00:00+08:00" Value="200" />
+        <Value Time="2026-01-23T11:00:00+08:00" Value="2500" />
+        <Value Time="2026-01-23T12:00:00+08:00" Value="2400" />
+        <Value Time="2026-01-23T13:00:00+08:00" Value="1300" />
+        <Value Time="2026-01-23T14:00:00+08:00" Value="1300" />
+        <Value Time="2026-01-23T15:00:00+08:00" Value="2600" />
+        <Value Time="2026-01-23T16:00:00+08:00" Value="1000" />
+        <Value Time="2026-01-23T17:00:00+08:00" Value="5600" />
+        <Value Time="2026-01-23T18:00:00+08:00" Value="0" />
+        <Value Time="2026-01-23T19:00:00+08:00" Value="2800" />
+        <Value Time="2026-01-23T20:00:00+08:00" Value="0" />
+        <Value Time="2026-01-23T21:00:00+08:00" Value="3100" />
+        <Value Time="2026-01-23T22:00:00+08:00" Value="100" />
+        <Value Time="2026-01-23T23:00:00+08:00" Value="2900" />
+        <Value Time="2026-01-24T00:00:00+08:00" Value="4500" />
+        <Value Time="2026-01-24T01:00:00+08:00" Value="1800" />
+        <Value Time="2026-01-24T02:00:00+08:00" Value="2300" />
+        <Value Time="2026-01-24T03:00:00+08:00" Value="1500" />
+        <Value Time="2026-01-24T04:00:00+08:00" Value="100" />
+        <Value Time="2026-01-24T05:00:00+08:00" Value="2200" />
+        <Value Time="2026-01-24T06:00:00+08:00" Value="500" />
+        <Value Time="2026-01-24T07:00:00+08:00" Value="0" />
+        <Value Time="2026-01-24T08:00:00+08:00" Value="3100" />
+        <Value Time="2026-01-24T09:00:00+08:00" Value="0" />
+        <Value Time="2026-01-24T10:00:00+08:00" Value="2300" />
+        <Value Time="2026-01-24T11:00:00+08:00" Value="400" />
+        <Value Time="2026-01-24T12:00:00+08:00" Value="3100" />
+        <Value Time="2026-01-24T13:00:00+08:00" Value="1400" />
+        <Value Time="2026-01-24T14:00:00+08:00" Value="0" />
+        <Value Time="2026-01-24T15:00:00+08:00" Value="4700" />
+        <Value Time="2026-01-24T16:00:00+08:00" Value="1200" />
+        <Value Time="2026-01-24T17:00:00+08:00" Value="3900" />
+        <Value Time="2026-01-24T18:00:00+08:00" Value="200" />
+        <Value Time="2026-01-24T19:00:00+08:00" Value="4700" />
+        <Value Time="2026-01-24T20:00:00+08:00" Value="3300" />
+        <Value Time="2026-01-24T21:00:00+08:00" Value="800" />
+        <Value Time="2026-01-24T22:00:00+08:00" Value="600" />
+        <Value Time="2026-01-24T23:00:00+08:00" Value="800" />
+        <Value Time="2026-01-25T00:00:00+08:00" Value="0" />
+        <Value Time="2026-01-25T01:00:00+08:00" Value="300" />
+        <Value Time="2026-01-25T02:00:00+08:00" Value="1000" />
+        <Value Time="2026-01-25T03:00:00+08:00" Value="1900" />
+        <Value Time="2026-01-25T04:00:00+08:00" Value="0" />
+        <Value Time="2026-01-25T05:00:00+08:00" Value="1900" />
+        <Value Time="2026-01-25T06:00:00+08:00" Value="800" />
+        <Value Time="2026-01-25T07:00:00+08:00" Value="0" />
+        <Value Time="2026-01-25T08:00:00+08:00" Value="2300" />
+        <Value Time="2026-01-25T09:00:00+08:00" Value="1800" />
+        <Value Time="2026-01-25T10:00:00+08:00" Value="0" />
+        <Value Time="2026-01-25T11:00:00+08:00" Value="700" />
+        <Value Time="2026-01-25T12:00:00+08:00" Value="2900" />
+        <Value Time="2026-01-25T13:00:00+08:00" Value="0" />
+        <Value Time="2026-01-25T14:00:00+08:00" Value="3700" />
+        <Value Time="2026-01-25T15:00:00+08:00" Value="0" />
+        <Value Time="2026-01-25T16:00:00+08:00" Value="3500" />
+        <Value Time="2026-01-25T17:00:00+08:00" Value="3500" />
+        <Value Time="2026-01-25T18:00:00+08:00" Value="1100" />
+        <Value Time="2026-01-25T19:00:00+08:00" Value="3100" />
+        <Value Time="2026-01-25T20:00:00+08:00" Value="1500" />
+        <Value Time="2026-01-25T21:00:00+08:00" Value="1800" />
+        <Value Time="2026-01-25T22:00:00+08:00" Value="3300" />
+        <Value Time="2026-01-25T23:00:00+08:00" Value="1400" />
+        <Value Time="2026-01-26T00:00:00+08:00" Value="0" />
+        <Value Time="2026-01-26T01:00:00+08:00" Value="1000" />
+        <Value Time="2026-01-26T02:00:00+08:00" Value="0" />
+        <Value Time="2026-01-26T03:00:00+08:00" Value="800" />
+        <Value Time="2026-01-26T04:00:00+08:00" Value="1100" />
+        <Value Time="2026-01-26T05:00:00+08:00" Value="0" />
+        <Value Time="2026-01-26T06:00:00+08:00" Value="0" />
+        <Value Time="2026-01-26T07:00:00+08:00" Value="900" />
+        <Value Time="2026-01-26T08:00:00+08:00" Value="0" />
+        <Value Time="2026-01-26T09:00:00+08:00" Value="200" />
+        <Value Time="2026-01-26T10:00:00+08:00" Value="700" />
+        <Value Time="2026-01-26T11:00:00+08:00" Value="1100" />
+        <Value Time="2026-01-26T12:00:00+08:00" Value="1500" />
+        <Value Time="2026-01-26T13:00:00+08:00" Value="0" />
+        <Value Time="2026-01-26T14:00:00+08:00" Value="0" />
+        <Value Time="2026-01-26T15:00:00+08:00" Value="1700" />
+        <Value Time="2026-01-26T16:00:00+08:00" Value="500" />
+        <Value Time="2026-01-26T17:00:00+08:00" Value="600" />
+        <Value Time="2026-01-26T18:00:00+08:00" Value="700" />
+        <Value Time="2026-01-26T19:00:00+08:00" Value="0" />
+        <Value Time="2026-01-26T20:00:00+08:00" Value="1200" />
+        <Value Time="2026-01-26T21:00:00+08:00" Value="0" />
+        <Value Time="2026-01-26T22:00:00+08:00" Value="1700" />
+        <Value Time="2026-01-26T23:00:00+08:00" Value="900" />
+      </Values>
+    </Data>
+    <Data Name="timearea">
+      <Values>
+        <Value Time="2026-01-20T11:00:15.6201771+08:00" Text=" " ColorValue="#D3D3D3" />
+      </Values>
+    </Data>
+    <Data>
+      <Values />
+    </Data>
+  </Datas>
+</TemperatureDocument>

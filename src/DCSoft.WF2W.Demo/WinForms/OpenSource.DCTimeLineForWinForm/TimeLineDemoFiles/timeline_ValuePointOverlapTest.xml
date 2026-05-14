@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<TemperatureDocument xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Config Version="1.0">
+    <Images />
+    <Labels />
+    <PageIndexText>第[%pageindex%]页</PageIndexText>
+    <PageSettings />
+    <GridYSplitInfo />
+    <Zones />
+    <Ticks>
+      <Tick Value="2" Text="2" ColorValue="#FF0000" />
+      <Tick Value="6" Text="6" ColorValue="#FF0000" />
+      <Tick Value="10" Text="10" />
+      <Tick Value="14" Text="14" />
+      <Tick Value="18" Text="18" />
+      <Tick Value="22" Text="22" ColorValue="#FF0000" />
+    </Ticks>
+    <FontName>宋体</FontName>
+    <PageIndexFont />
+    <HeaderLabels />
+    <HeaderLines>
+      <Line Name="NewLine" Title="页眉数据行">
+        <Scales />
+      </Line>
+    </HeaderLines>
+    <FooterLines />
+    <YAxisInfos>
+      <YAxis Name="maibo" HollowCovertTargetName="yewen,kouwen" Title="脉搏" ColorValueForPointValue="#000000" ColorValueForDownValue="#FF0000" ColorValueForUpValue="#FF0000">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+      <YAxis Name="yewen" Title="腋温" ColorValueForPointValue="#000000" ColorValueForDownValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolStyle="Cross" SymbolColorValue="#0000FF">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+      <YAxis Name="kouwen" Title="口温" ColorValueForPointValue="#000000" ColorValueForDownValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#0000FF">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+      <YAxis Name="gangwen" HollowCovertTargetName="maibo" Title="肛温" ColorValueForPointValue="#000000" ColorValueForDownValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolStyle="HollowCicle" SymbolColorValue="#0000FF">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+    </YAxisInfos>
+  </Config>
+  <Parameters />
+  <Datas>
+    <Data Name="NewLine">
+      <Values />
+    </Data>
+    <Data Name="maibo">
+      <Values>
+        <Value Time="2021-11-18T16:59:17.2253536+08:00" Value="85" Text="" />
+        <Value Time="2021-11-19T17:02:35" Value="85" Text="" />
+        <Value Time="2021-11-20T17:03:26" Value="85" Text="" />
+        <Value Time="2021-11-21T17:03:47" Value="85" Text="" />
+      </Values>
+    </Data>
+    <Data Name="tiwen">
+      <Values />
+    </Data>
+    <Data Name="kouwen">
+      <Values>
+        <Value Time="2021-11-20T17:00:14" Value="85" Text="" />
+      </Values>
+    </Data>
+    <Data Name="yewen">
+      <Values>
+        <Value Time="2021-11-19T16:59:56" Value="85" Text="" />
+      </Values>
+    </Data>
+    <Data Name="gangwen">
+      <Values>
+        <Value Time="2021-11-21T17:00:32" Value="85" Text="" />
+      </Values>
+    </Data>
+  </Datas>
+</TemperatureDocument>

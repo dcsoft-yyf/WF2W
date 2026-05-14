@@ -1,0 +1,137 @@
+// WriteAttributeTo methods for TabControl, TabPage, and ComboBox
+// Add these methods to their respective classes
+
+// ===== For TabControl.cs =====
+// Add this method inside the TabControl class after the constructor
+
+public override void WriteAttributeTo(System.Text.Json.Nodes.JsonObject json)
+{
+    base.WriteAttributeTo(json);
+    
+    try {
+        json["Alignment"] = System.Text.Json.Nodes.JsonValue.Create(alignment.ToString());
+        json["Appearance"] = System.Text.Json.Nodes.JsonValue.Create(appearance.ToString());
+        json["DrawMode"] = System.Text.Json.Nodes.JsonValue.Create(drawMode.ToString());
+        json["SizeMode"] = System.Text.Json.Nodes.JsonValue.Create(sizeMode.ToString());
+        
+        json["Multiline"] = System.Text.Json.Nodes.JsonValue.Create(Multiline);
+        json["HotTrack"] = System.Text.Json.Nodes.JsonValue.Create(HotTrack);
+        json["ShowToolTips"] = System.Text.Json.Nodes.JsonValue.Create(ShowToolTips);
+        json["SelectedIndex"] = System.Text.Json.Nodes.JsonValue.Create(SelectedIndex);
+        
+        if (!itemSize.IsEmpty) {
+            var itemSizeObj = new System.Text.Json.Nodes.JsonObject();
+            itemSizeObj["Width"] = System.Text.Json.Nodes.JsonValue.Create(itemSize.Width);
+            itemSizeObj["Height"] = System.Text.Json.Nodes.JsonValue.Create(itemSize.Height);
+            json["ItemSize"] = itemSizeObj;
+        }
+        
+        var padObj = new System.Text.Json.Nodes.JsonObject();
+        padObj["X"] = System.Text.Json.Nodes.JsonValue.Create(padding.X);
+        padObj["Y"] = System.Text.Json.Nodes.JsonValue.Create(padding.Y);
+        json["Padding"] = padObj;
+        
+        if (tabPages != null && tabPageCount > 0) {
+            var tabPagesArray = new System.Text.Json.Nodes.JsonArray();
+            for (int i = 0; i < tabPageCount; i++) {
+                var tabPage = tabPages[i];
+                if (tabPage != null) {
+                    var tabPageObj = new System.Text.Json.Nodes.JsonObject();
+                    tabPageObj["Text"] = System.Text.Json.Nodes.JsonValue.Create(tabPage.Text ?? "");
+                    tabPageObj["ToolTipText"] = System.Text.Json.Nodes.JsonValue.Create(tabPage.ToolTipText ?? "");
+                    if (tabPage.BackColor != Color.Empty && tabPage.BackColor != SystemColors.Control) {
+                        tabPageObj["BackColor"] = System.Text.Json.Nodes.JsonValue.Create(ColorTranslator.ToHtml(tabPage.BackColor));
+                    }
+                    if (tabPage.ImageIndex >= 0) {
+                        tabPageObj["ImageIndex"] = System.Text.Json.Nodes.JsonValue.Create(tabPage.ImageIndex);
+                    }
+                    if (!string.IsNullOrEmpty(tabPage.ImageKey)) {
+                        tabPageObj["ImageKey"] = System.Text.Json.Nodes.JsonValue.Create(tabPage.ImageKey);
+                    }
+                    if (tabPage.Handle != IntPtr.Zero) {
+                        tabPageObj["Handle"] = System.Text.Json.Nodes.JsonValue.Create(tabPage.Handle.ToInt32());
+                    }
+                    tabPagesArray.Add(tabPageObj);
+                }
+            }
+            json["TabPages"] = tabPagesArray;
+        }
+    }
+    catch {
+        // Swallow errors
+    }
+}
+
+
+// ===== For TabPage.cs =====
+// Add this method inside the TabPage class after the constructor
+
+public override void WriteAttributeTo(System.Text.Json.Nodes.JsonObject json)
+{
+    base.WriteAttributeTo(json);
+    
+    try {
+        json["ToolTipText"] = System.Text.Json.Nodes.JsonValue.Create(toolTipText ?? "");
+        json["UseVisualStyleBackColor"] = System.Text.Json.Nodes.JsonValue.Create(useVisualStyleBackColor);
+        
+        if (imageIndexer != null) {
+            if (imageIndexer.Index >= 0) {
+                json["ImageIndex"] = System.Text.Json.Nodes.JsonValue.Create(imageIndexer.Index);
+            }
+            if (!string.IsNullOrEmpty(imageIndexer.Key)) {
+                json["ImageKey"] = System.Text.Json.Nodes.JsonValue.Create(imageIndexer.Key);
+            }
+        }
+    }
+    catch {
+        // Swallow errors
+    }
+}
+
+
+// ===== For ComboBox.cs =====
+// Add this method inside the ComboBox class
+
+public override void WriteAttributeTo(System.Text.Json.Nodes.JsonObject json)
+{
+    base.WriteAttributeTo(json);
+    
+    try {
+        json["DropDownStyle"] = System.Text.Json.Nodes.JsonValue.Create(dropDownStyle.ToString());
+        json["DropDownWidth"] = System.Text.Json.Nodes.JsonValue.Create(dropDownWidth);
+        json["DropDownHeight"] = System.Text.Json.Nodes.JsonValue.Create(dropDownHeight);
+        json["DroppedDown"] = System.Text.Json.Nodes.JsonValue.Create(DroppedDown);
+        
+        json["MaxDropDownItems"] = System.Text.Json.Nodes.JsonValue.Create(maxDropDownItems);
+        json["MaxLength"] = System.Text.Json.Nodes.JsonValue.Create(maxLength);
+        json["Sorted"] = System.Text.Json.Nodes.JsonValue.Create(sorted);
+        json["SelectedIndex"] = System.Text.Json.Nodes.JsonValue.Create(SelectedIndex);
+        
+        if (!string.IsNullOrEmpty(SelectedText)) {
+            json["SelectedText"] = System.Text.Json.Nodes.JsonValue.Create(SelectedText);
+        }
+        
+        if (itemsCollection != null && itemsCollection.Count > 0) {
+            var itemsArray = new System.Text.Json.Nodes.JsonArray();
+            foreach (var item in itemsCollection) {
+                if (item != null) {
+                    itemsArray.Add(System.Text.Json.Nodes.JsonValue.Create(item.ToString()));
+                }
+            }
+            json["Items"] = itemsArray;
+        }
+        
+        json["AutoCompleteMode"] = System.Text.Json.Nodes.JsonValue.Create(autoCompleteMode.ToString());
+        json["AutoCompleteSource"] = System.Text.Json.Nodes.JsonValue.Create(autoCompleteSource.ToString());
+        
+        json["FlatStyle"] = System.Text.Json.Nodes.JsonValue.Create(flatStyle.ToString());
+        json["DrawMode"] = System.Text.Json.Nodes.JsonValue.Create(drawMode.ToString());
+        
+        if (itemHeight != DefaultItemHeight) {
+            json["ItemHeight"] = System.Text.Json.Nodes.JsonValue.Create(itemHeight);
+        }
+    }
+    catch {
+        // Swallow errors
+    }
+}

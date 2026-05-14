@@ -1,0 +1,1363 @@
+<?xml version="1.0"?>
+<TemperatureDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Parameters />
+  <Config Version="1.0">
+    <Zones />
+    <SpecifyStartDate />
+    <FooterLines>
+      <Line LayoutType="Cascade" TickStep="6" Title="尿" Name="URINE" ValueType="TickText">
+        <Scales />
+      </Line>
+      <Line LayoutType="Cascade" TickStep="6" Title="飲食量" Name="DRANK" ValueType="TickText">
+        <Scales />
+      </Line>
+      <Line LayoutType="Cascade" TickStep="6" Title="注射量" Name="INJECT" ValueType="TickText">
+        <Scales />
+      </Line>
+      <Line LayoutType="Cascade" TickStep="6" Title="輸入量" Name="INTAKE" ValueType="TickText">
+        <Scales />
+      </Line>
+      <Line LayoutType="Cascade" TickStep="6" Title="輸出量" Name="OUTPUT" ValueType="TickText">
+        <Scales />
+      </Line>
+      <Line LayoutType="HorizCascade" TickStep="6" Title="狀態" Name="zhuangtai2" ValueType="Data">
+        <Scales />
+      </Line>
+      <Line LayoutType="Free" TickStep="6" Title="其他" Name="REMARK" ValueType="Data">
+        <Scales />
+      </Line>
+    </FooterLines>
+    <PageTitlePosition>BottomRight</PageTitlePosition>
+    <Title>中山醫學大學附設醫院</Title>
+    <HeaderLines>
+      <Line Title="日期">
+        <Scales />
+      </Line>
+      <Line Title="住院天數" ValueType="GlobalDayIndex">
+        <Scales />
+      </Line>
+      <Line Title="手術天數" StartDateKeyword="手術" ValueType="DayIndex">
+        <Scales />
+      </Line>
+      <Line LayoutType="Free" TickStep="6" Title="身高/體重" Name="HW" ValueType="Data">
+        <Scales />
+      </Line>
+      <Line Title="時間" ValueType="HourTick">
+        <Scales />
+      </Line>
+    </HeaderLines>
+    <Ticks>
+      <Tick Value="2" ColorValue="#FF0000" Text="2" />
+      <Tick Value="6" ColorValue="#FF0000" Text="6" />
+      <Tick Value="10" Text="10" />
+      <Tick Value="14" Text="14" />
+      <Tick Value="18" Text="18" />
+      <Tick Value="22" ColorValue="#FF0000" Text="22" />
+    </Ticks>
+    <GridYSplitInfo />
+    <FooterDescription>說明：脈搏（●）、體溫（口溫°，腋溫×，肛溫○）</FooterDescription>
+    <BigVerticalGridLineColorValue>#000000</BigVerticalGridLineColorValue>
+    <SpecifyEndDate />
+    <YAxisInfos>
+      <YAxis Name="PAIN" MinValue="-6" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" MaxValue="10" SymbolStyle="Diamond" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#C00000" Title="疼痛" ValueVisible="false">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales>
+          <Scale Value="10" ScaleRate="1" />
+          <Scale Value="8" ScaleRate="0.875" />
+          <Scale Value="6" ScaleRate="0.75" />
+          <Scale Value="4" ScaleRate="0.615" />
+          <Scale Value="2" ScaleRate="0.5" />
+          <Scale ScaleRate="0.375" />
+        </Scales>
+      </YAxis>
+      <YAxis Name="SYSTOLIC" MinValue="50" ColorValueForDownValue="#FF0000" ShadowName="DIASTOLIC" ColorValueForPointValue="#000000" MaxValue="170" SymbolStyle="HollowSquare" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#00008B" Title="收縮壓">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+      <YAxis Name="DIASTOLIC" MinValue="50" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" MaxValue="170" SymbolStyle="HollowDiamond" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#8B0000" Title="舒張壓">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+      <YAxis Name="RESP" MinValue="-10" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" MaxValue="70" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#000000" Title="呼吸" ValueVisible="false">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+      <YAxis Name="PULSE" MinValue="20" ColorValueForDownValue="#FF0000" ShadowName="xinlv" ColorValueForPointValue="#000000" MaxValue="180" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" Title="脈搏" ValueVisible="false" HollowCovertTargetName="tiwen">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+      <YAxis Name="TEMP" MinValue="34" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" MaxValue="42" SymbolStyle="Cross" ValueFormatString="0.0" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#0000FF" Title="體溫" RedLineValue="37" ValueVisible="false">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+      <YAxis Style="Text" Name="wenben" ColorValueForDownValue="#FF0000" ColorValueForPointValue="#000000" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" SymbolColorValue="#0000FF" Title="文本内容">
+        <AbNormalRangeSettings>
+          <NormalRangeUpLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeUpLineStyle>
+          <NormalRangeDownLineStyle>
+            <Color>#00FFFFFF</Color>
+            <Width>0</Width>
+          </NormalRangeDownLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+      </YAxis>
+    </YAxisInfos>
+    <PageSettings>
+      <TopMargin>50</TopMargin>
+      <RightMargin>50</RightMargin>
+      <LeftMargin>50</LeftMargin>
+      <BottomMargin>50</BottomMargin>
+    </PageSettings>
+    <SymbolSize>22</SymbolSize>
+    <FontName>宋体</FontName>
+    <GridLineColorValue>#E0E0E0</GridLineColorValue>
+    <HeaderLabels>
+      <Label Title="姓名" SeperatorChar="58" Value="陳某某" />
+      <Label Title="性別" SeperatorChar="58" Value="男" />
+      <Label Title="護理站" SeperatorChar="58" Value="M05" />
+      <Label Title="病歷號" SeperatorChar="58" Value="123456" />
+      <Label Title="入院日期" SeperatorChar="58" Value="2014年06月06日" />
+    </HeaderLabels>
+    <Images />
+    <Labels />
+    <PageIndexText>第[%pageindex%]页</PageIndexText>
+  </Config>
+  <Datas>
+    <Data Name="INTAKE">
+      <Values>
+        <Value Link="#" Time="2014-06-06T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-07T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-08T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-09T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-10T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-11T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-12T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-13T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-14T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-15T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-16T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-17T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-18T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-19T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-20T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-21T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-22T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-23T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-24T00:00:00" Text="1050cc" />
+        <Value Link="#" Time="2014-06-25T00:00:00" Text="2200cc" />
+        <Value Link="#" Time="2014-06-26T00:00:00" Text="2790cc" />
+        <Value Link="#" Time="2014-06-27T00:00:00" Text="3680cc" />
+        <Value Link="#" Time="2014-06-28T00:00:00" Text="2400cc" />
+        <Value Link="#" Time="2014-06-29T00:00:00" Text="1930cc" />
+        <Value Link="#" Time="2014-06-30T00:00:00" Text="1690cc" />
+        <Value Link="#" Time="2014-07-01T00:00:00" Text="3800cc" />
+        <Value Link="#" Time="2014-07-02T00:00:00" Text="3870cc" />
+        <Value Link="#" Time="2014-07-03T00:00:00" Text="2540cc" />
+        <Value Link="#" Time="2014-07-04T00:00:00" Text="2490cc" />
+        <Value Link="#" Time="2014-07-05T00:00:00" Text="2710cc" />
+        <Value Link="#" Time="2014-07-06T00:00:00" Text="2460cc" />
+        <Value Link="#" Time="2014-07-07T00:00:00" Text="2760cc" />
+        <Value Link="#" Time="2014-07-08T00:00:00" Text="2335cc" />
+        <Value Link="#" Time="2014-07-09T00:00:00" Text="1510cc" />
+        <Value Link="#" Time="2014-07-10T00:00:00" Text="2650cc" />
+        <Value Link="#" Time="2014-07-11T00:00:00" Text="1750cc" />
+        <Value Link="#" Time="2014-07-12T00:00:00" Text="1750cc" />
+        <Value Link="#" Time="2014-07-13T00:00:00" Text="2150cc" />
+        <Value Link="#" Time="2014-07-14T00:00:00" Text="2700cc" />
+        <Value Link="#" Time="2014-07-15T00:00:00" Text="2250cc" />
+        <Value Link="#" Time="2014-07-16T00:00:00" Text="2580cc" />
+        <Value Link="#" Time="2014-07-17T00:00:00" Text="2210cc" />
+        <Value Link="#" Time="2014-07-18T00:00:00" Text="2100cc" />
+        <Value Link="#" Time="2014-07-19T00:00:00" Text="1800cc" />
+        <Value Link="#" Time="2014-07-20T00:00:00" Text="1850cc" />
+        <Value Link="#" Time="2014-07-21T00:00:00" Text="1500cc" />
+        <Value Link="#" Time="2014-07-22T00:00:00" Text="1800cc" />
+        <Value Link="#" Time="2014-07-23T00:00:00" Text="1300cc" />
+        <Value Link="#" Time="2014-07-24T00:00:00" Text="1300cc" />
+        <Value Link="#" Time="2014-07-25T00:00:00" Text="1300cc" />
+        <Value Link="#" Time="2014-07-26T00:00:00" Text="700cc" />
+      </Values>
+    </Data>
+    <Data Name="OUTPUT">
+      <Values>
+        <Value Link="#" Time="2014-06-06T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-07T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-08T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-09T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-10T00:00:00" Text="500cc" />
+        <Value Link="#" Time="2014-06-11T00:00:00" Text="3250cc" />
+        <Value Link="#" Time="2014-06-12T00:00:00" Text="3950cc" />
+        <Value Link="#" Time="2014-06-13T00:00:00" Text="3350cc" />
+        <Value Link="#" Time="2014-06-14T00:00:00" Text="3150cc" />
+        <Value Link="#" Time="2014-06-15T00:00:00" Text="1900cc" />
+        <Value Link="#" Time="2014-06-16T00:00:00" Text="4000cc" />
+        <Value Link="#" Time="2014-06-17T00:00:00" Text="1000cc" />
+        <Value Link="#" Time="2014-06-18T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-19T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-20T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-21T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-22T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-23T00:00:00" Text="0cc" />
+        <Value Link="#" Time="2014-06-24T00:00:00" Text="700cc" />
+        <Value Link="#" Time="2014-06-25T00:00:00" Text="3320cc" />
+        <Value Link="#" Time="2014-06-26T00:00:00" Text="2720cc" />
+        <Value Link="#" Time="2014-06-27T00:00:00" Text="2480cc" />
+        <Value Link="#" Time="2014-06-28T00:00:00" Text="3160cc" />
+        <Value Link="#" Time="2014-06-29T00:00:00" Text="2240cc" />
+        <Value Link="#" Time="2014-06-30T00:00:00" Text="1910cc" />
+        <Value Link="#" Time="2014-07-01T00:00:00" Text="4040cc" />
+        <Value Link="#" Time="2014-07-02T00:00:00" Text="3460cc" />
+        <Value Link="#" Time="2014-07-03T00:00:00" Text="2260cc" />
+        <Value Link="#" Time="2014-07-04T00:00:00" Text="3400cc" />
+        <Value Link="#" Time="2014-07-05T00:00:00" Text="2550cc" />
+        <Value Link="#" Time="2014-07-06T00:00:00" Text="3820cc" />
+        <Value Link="#" Time="2014-07-07T00:00:00" Text="2670cc" />
+        <Value Link="#" Time="2014-07-08T00:00:00" Text="2750cc" />
+        <Value Link="#" Time="2014-07-09T00:00:00" Text="2300cc" />
+        <Value Link="#" Time="2014-07-10T00:00:00" Text="2450cc" />
+        <Value Link="#" Time="2014-07-11T00:00:00" Text="1750cc" />
+        <Value Link="#" Time="2014-07-12T00:00:00" Text="1850cc" />
+        <Value Link="#" Time="2014-07-13T00:00:00" Text="1750cc" />
+        <Value Link="#" Time="2014-07-14T00:00:00" Text="1800cc" />
+        <Value Link="#" Time="2014-07-15T00:00:00" Text="1700cc" />
+        <Value Link="#" Time="2014-07-16T00:00:00" Text="1550cc" />
+        <Value Link="#" Time="2014-07-17T00:00:00" Text="1450cc" />
+        <Value Link="#" Time="2014-07-18T00:00:00" Text="720cc" />
+        <Value Link="#" Time="2014-07-19T00:00:00" Text="700cc" />
+        <Value Link="#" Time="2014-07-20T00:00:00" Text="1000cc" />
+        <Value Link="#" Time="2014-07-21T00:00:00" Text="1200cc" />
+        <Value Link="#" Time="2014-07-22T00:00:00" Text="1070cc" />
+        <Value Link="#" Time="2014-07-23T00:00:00" Text="360cc" />
+        <Value Link="#" Time="2014-07-24T00:00:00" Text="970cc" />
+        <Value Link="#" Time="2014-07-25T00:00:00" Text="550cc" />
+        <Value Link="#" Time="2014-07-26T00:00:00" Text="270cc" />
+      </Values>
+    </Data>
+    <Data Name="HW">
+      <Values>
+        <Value Link="#" Time="2014-06-06T00:00:00" Text="186cm/50Kg" />
+        <Value Link="#" Time="2014-06-07T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-08T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-09T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-10T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-11T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-12T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-13T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-14T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-15T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-16T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-17T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-18T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-19T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-20T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-21T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-22T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-23T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-24T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-25T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-26T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-27T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-28T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-29T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-06-30T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-01T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-02T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-03T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-04T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-05T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-06T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-07T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-08T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-09T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-10T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-11T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-12T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-13T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-14T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-15T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-16T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-17T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-18T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-19T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-20T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-21T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-22T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-23T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-24T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-25T00:00:00" Text="186cm/-" />
+        <Value Link="#" Time="2014-07-26T00:00:00" Text="186cm/-" />
+      </Values>
+    </Data>
+    <Data Name="URINE">
+      <Values>
+        <Value Link="#" Time="2014-06-10T00:00:00" Text="Foley：500cc" />
+        <Value Link="#" Time="2014-06-11T00:00:00" Text="Foley：3250cc" />
+        <Value Link="#" Time="2014-06-12T00:00:00" Text="Foley：3950cc" />
+        <Value Link="#" Time="2014-06-13T00:00:00" Text="Foley：3350cc" />
+        <Value Link="#" Time="2014-06-14T00:00:00" Text="Foley：3150cc" />
+        <Value Link="#" Time="2014-06-15T00:00:00" Text="Foley：1900cc" />
+        <Value Link="#" Time="2014-06-16T00:00:00" Text="Foley：4000cc" />
+        <Value Link="#" Time="2014-06-17T00:00:00" Text="Foley：1000cc" />
+        <Value Link="#" Time="2014-06-24T00:00:00" Text="自解：700cc" />
+        <Value Link="#" Time="2014-06-25T00:00:00" Text="自解：2240cc" />
+        <Value Link="#" Time="2014-06-26T00:00:00" Text="自解：2720cc" />
+        <Value Link="#" Time="2014-06-27T00:00:00" Text="自解：2480cc" />
+        <Value Link="#" Time="2014-06-28T00:00:00" Text="自解：2500cc" />
+        <Value Link="#" Time="2014-06-29T00:00:00" Text="自解：2240cc" />
+        <Value Link="#" Time="2014-06-30T00:00:00" Text="自解：1910cc" />
+        <Value Link="#" Time="2014-07-01T00:00:00" Text="自解：3750cc" />
+        <Value Link="#" Time="2014-07-02T00:00:00" Text="自解：3400cc" />
+        <Value Link="#" Time="2014-07-03T00:00:00" Text="自解：2000cc" />
+        <Value Link="#" Time="2014-07-04T00:00:00" Text="自解：3400cc" />
+        <Value Link="#" Time="2014-07-05T00:00:00" Text="自解：2550cc" />
+        <Value Link="#" Time="2014-07-06T00:00:00" Text="自解：3820cc" />
+        <Value Link="#" Time="2014-07-07T00:00:00" Text="自解：2550cc" />
+        <Value Link="#" Time="2014-07-08T00:00:00" Text="自解：2750cc" />
+        <Value Link="#" Time="2014-07-09T00:00:00" Text="自解：1500cc" />
+        <Value Link="#" Time="2014-07-10T00:00:00" Text="自解：2450cc" />
+        <Value Link="#" Time="2014-07-11T00:00:00" Text="自解：1750cc" />
+        <Value Link="#" Time="2014-07-12T00:00:00" Text="自解：1850cc" />
+        <Value Link="#" Time="2014-07-13T00:00:00" Text="自解：1750cc" />
+        <Value Link="#" Time="2014-07-14T00:00:00" Text="自解：1800cc" />
+        <Value Link="#" Time="2014-07-15T00:00:00" Text="自解：1100cc" />
+        <Value Link="#" Time="2014-07-16T00:00:00" Text="自解：1550cc" />
+        <Value Link="#" Time="2014-07-17T00:00:00" Text="自解：1450cc" />
+        <Value Link="#" Time="2014-07-18T00:00:00" Text="單導：720cc" />
+        <Value Link="#" Time="2014-07-19T00:00:00" Text="自解：500cc" />
+        <Value Link="#" Time="2014-07-20T00:00:00" Text="自解：1000cc" />
+        <Value Link="#" Time="2014-07-21T00:00:00" Text="自解：1200cc" />
+        <Value Link="#" Time="2014-07-22T00:00:00" Text="自解：1070cc" />
+        <Value Link="#" Time="2014-07-23T00:00:00" Text="單導：360cc" />
+        <Value Link="#" Time="2014-07-24T00:00:00" Text="Foley：970cc" />
+        <Value Link="#" Time="2014-07-25T00:00:00" Text="Foley：550cc" />
+        <Value Link="#" Time="2014-07-26T00:00:00" Text="Foley：270cc" />
+      </Values>
+    </Data>
+    <Data Name="DRANK">
+      <Values>
+        <Value Link="#" Time="2014-06-24T00:00:00" Text="液體(含藥)：150cc" />
+        <Value Link="#" Time="2014-06-25T00:00:00" Text="液體(含藥)：0cc" />
+        <Value Link="#" Time="2014-06-25T00:00:01" Text="管灌：0cc" />
+        <Value Link="#" Time="2014-06-26T00:00:00" Text="固體類：530cc" />
+        <Value Link="#" Time="2014-06-27T00:00:00" Text="固體類：1330cc" />
+        <Value Link="#" Time="2014-06-27T00:00:01" Text="液體(含藥)：300cc" />
+        <Value Link="#" Time="2014-06-28T00:00:00" Text="液體(含藥)：60cc" />
+        <Value Link="#" Time="2014-06-28T00:00:01" Text="固體類：660cc" />
+        <Value Link="#" Time="2014-06-29T00:00:00" Text="固體類：170cc" />
+        <Value Link="#" Time="2014-06-29T00:00:01" Text="液體(含藥)：0cc" />
+        <Value Link="#" Time="2014-06-30T00:00:00" Text="液體(含藥)：40cc" />
+        <Value Link="#" Time="2014-07-01T00:00:00" Text="固體類：300cc" />
+        <Value Link="#" Time="2014-07-01T00:00:01" Text="液體(含藥)：800cc" />
+        <Value Link="#" Time="2014-07-02T00:00:00" Text="液體(含藥)：1000cc" />
+        <Value Link="#" Time="2014-07-03T00:00:00" Text="液體(含藥)：240cc" />
+        <Value Link="#" Time="2014-07-04T00:00:00" Text="液體(含藥)：490cc" />
+        <Value Link="#" Time="2014-07-05T00:00:00" Text="液體(含藥)：490cc" />
+        <Value Link="#" Time="2014-07-06T00:00:00" Text="液體(含藥)：220cc" />
+        <Value Link="#" Time="2014-07-06T00:00:01" Text="管灌：20cc" />
+        <Value Link="#" Time="2014-07-07T00:00:00" Text="液體(含藥)：850cc" />
+        <Value Link="#" Time="2014-07-08T00:00:00" Text="固體類：35cc" />
+        <Value Link="#" Time="2014-07-08T00:00:01" Text="液體(含藥)：720cc" />
+        <Value Link="#" Time="2014-07-09T00:00:00" Text="液體(含藥)：160cc" />
+        <Value Link="#" Time="2014-07-09T00:00:01" Text="固體類：370cc" />
+        <Value Link="#" Time="2014-07-10T00:00:00" Text="液體(含藥)：370cc" />
+        <Value Link="#" Time="2014-07-10T00:00:01" Text="固體類：700cc" />
+        <Value Link="#" Time="2014-07-11T00:00:00" Text="固體類：20cc" />
+        <Value Link="#" Time="2014-07-11T00:00:01" Text="液體(含藥)：310cc" />
+        <Value Link="#" Time="2014-07-12T00:00:00" Text="液體(含藥)：430cc" />
+        <Value Link="#" Time="2014-07-13T00:00:00" Text="液體(含藥)：750cc" />
+        <Value Link="#" Time="2014-07-14T00:00:00" Text="液體(含藥)：490cc" />
+        <Value Link="#" Time="2014-07-15T00:00:00" Text="液體(含藥)：170cc" />
+        <Value Link="#" Time="2014-07-16T00:00:00" Text="液體(含藥)：20cc" />
+        <Value Link="#" Time="2014-07-16T00:00:01" Text="固體類：130cc" />
+        <Value Link="#" Time="2014-07-17T00:00:00" Text="液體(含藥)：20cc" />
+        <Value Link="#" Time="2014-07-17T00:00:01" Text="固體類：0cc" />
+        <Value Link="#" Time="2014-07-18T00:00:00" Text="液體(含藥)：0cc" />
+        <Value Link="#" Time="2014-07-19T00:00:00" Text="液體(含藥)：0cc" />
+        <Value Link="#" Time="2014-07-20T00:00:00" Text="液體(含藥)：0cc" />
+      </Values>
+    </Data>
+    <Data Name="INJECT">
+      <Values>
+        <Value Link="#" Time="2014-06-24T00:00:00" Text="靜脈灌注：900" />
+        <Value Link="#" Time="2014-06-25T00:00:00" Text="靜脈灌注：2200" />
+        <Value Link="#" Time="2014-06-26T00:00:00" Text="靜脈灌注：2260" />
+        <Value Link="#" Time="2014-06-27T00:00:00" Text="靜脈灌注：2050" />
+        <Value Link="#" Time="2014-06-28T00:00:00" Text="靜脈灌注：1680" />
+        <Value Link="#" Time="2014-06-29T00:00:00" Text="靜脈灌注：1760" />
+        <Value Link="#" Time="2014-06-30T00:00:00" Text="靜脈灌注：1650" />
+        <Value Link="#" Time="2014-07-01T00:00:00" Text="靜脈灌注：2700" />
+        <Value Link="#" Time="2014-07-02T00:00:00" Text="靜脈灌注：2870" />
+        <Value Link="#" Time="2014-07-03T00:00:00" Text="靜脈灌注：2300" />
+        <Value Link="#" Time="2014-07-04T00:00:00" Text="靜脈灌注：2000" />
+        <Value Link="#" Time="2014-07-05T00:00:00" Text="靜脈灌注：2220" />
+        <Value Link="#" Time="2014-07-06T00:00:00" Text="靜脈灌注：2220" />
+        <Value Link="#" Time="2014-07-07T00:00:00" Text="靜脈灌注：1910" />
+        <Value Link="#" Time="2014-07-08T00:00:00" Text="靜脈灌注：1500" />
+        <Value Link="#" Time="2014-07-08T00:00:01" Text="小量IV：80" />
+        <Value Link="#" Time="2014-07-09T00:00:00" Text="靜脈灌注：900" />
+        <Value Link="#" Time="2014-07-09T00:00:01" Text="小量IV：80" />
+        <Value Link="#" Time="2014-07-10T00:00:00" Text="輸血量：350" />
+        <Value Link="#" Time="2014-07-10T00:00:01" Text="靜脈灌注：1230" />
+        <Value Link="#" Time="2014-07-11T00:00:00" Text="靜脈灌注：1420" />
+        <Value Link="#" Time="2014-07-12T00:00:00" Text="靜脈灌注：1320" />
+        <Value Link="#" Time="2014-07-13T00:00:00" Text="靜脈灌注：1400" />
+        <Value Link="#" Time="2014-07-14T00:00:00" Text="靜脈灌注：2210" />
+        <Value Link="#" Time="2014-07-15T00:00:00" Text="靜脈灌注：2080" />
+        <Value Link="#" Time="2014-07-16T00:00:00" Text="靜脈灌注：2430" />
+        <Value Link="#" Time="2014-07-17T00:00:00" Text="靜脈灌注：2190" />
+        <Value Link="#" Time="2014-07-18T00:00:00" Text="靜脈灌注：2100" />
+        <Value Link="#" Time="2014-07-19T00:00:00" Text="靜脈灌注：1800" />
+        <Value Link="#" Time="2014-07-20T00:00:00" Text="靜脈灌注：1850" />
+        <Value Link="#" Time="2014-07-21T00:00:00" Text="靜脈灌注：1500" />
+        <Value Link="#" Time="2014-07-22T00:00:00" Text="靜脈灌注：1800" />
+        <Value Link="#" Time="2014-07-23T00:00:00" Text="靜脈灌注：1300" />
+        <Value Link="#" Time="2014-07-24T00:00:00" Text="靜脈灌注：1300" />
+        <Value Link="#" Time="2014-07-25T00:00:00" Text="靜脈灌注：1300" />
+        <Value Link="#" Time="2014-07-26T00:00:00" Text="靜脈灌注：700" />
+      </Values>
+    </Data>
+    <Data Name="TEMP">
+      <Values>
+        <Value Link="#" Time="2014-06-06T14:48:32" Value="36.6" />
+        <Value Link="#" Time="2014-06-06T15:45:00" Value="36.6" />
+        <Value Link="#" Time="2014-06-06T21:00:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-07T05:00:00" Value="37" />
+        <Value Link="#" Time="2014-06-07T13:00:00" Value="36.4" />
+        <Value Link="#" Time="2014-06-07T21:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-06-08T05:00:00" Value="36.4" />
+        <Value Link="#" Time="2014-06-08T13:00:00" Value="36.6" />
+        <Value Link="#" Time="2014-06-08T21:00:00" Value="37" />
+        <Value Link="#" Time="2014-06-08T23:35:00" Value="37.2" />
+        <Value Link="#" Time="2014-06-09T05:00:00" Value="36.4" />
+        <Value Link="#" Time="2014-06-09T13:00:00" Value="36.6" />
+        <Value Link="#" Time="2014-06-09T13:05:00" Value="36.4" />
+        <Value Link="#" Time="2014-06-09T21:00:00" Value="36" />
+        <Value Link="#" Time="2014-06-10T05:00:00" Value="37" />
+        <Value Link="#" Time="2014-06-10T10:25:00" Value="36.6" />
+        <Value Link="#" Time="2014-06-10T13:00:00" Value="36.4" />
+        <Value Link="#" Time="2014-06-10T22:30:00" Value="36.7" />
+        <Value Link="#" Time="2014-06-11T00:30:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-11T02:30:00" Value="37" />
+        <Value Link="#" Time="2014-06-11T04:30:00" Value="36" />
+        <Value Link="#" Time="2014-06-11T10:25:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-11T13:30:00" Value="36.6" />
+        <Value Link="#" Time="2014-06-11T17:00:00" Value="36.3" />
+        <Value Link="#" Time="2014-06-11T23:00:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-12T05:00:00" Value="37" />
+        <Value Link="#" Time="2014-06-12T11:00:00" Value="36.6" />
+        <Value Link="#" Time="2014-06-12T17:01:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-12T23:00:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-13T05:00:00" Value="37.4" />
+        <Value Link="#" Time="2014-06-13T06:51:00" Value="36.6" />
+        <Value Link="#" Time="2014-06-13T11:00:00" Value="36.4" />
+        <Value Link="#" Time="2014-06-13T17:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-06-13T23:00:00" Value="36.4" />
+        <Value Link="#" Time="2014-06-14T05:00:00" Value="36.3" />
+        <Value Link="#" Time="2014-06-14T11:00:00" Value="36.6" />
+        <Value Link="#" Time="2014-06-14T17:00:00" Value="36.3" />
+        <Value Link="#" Time="2014-06-14T23:00:00" Value="36.4" />
+        <Value Link="#" Time="2014-06-15T05:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-06-15T11:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-06-15T17:00:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-15T22:51:00" Value="36.1" />
+        <Value Link="#" Time="2014-06-16T05:00:00" Value="36.6" />
+        <Value Link="#" Time="2014-06-16T11:00:00" Value="37.1" />
+        <Value Link="#" Time="2014-06-16T17:00:00" Value="36.7" />
+        <Value Link="#" Time="2014-06-16T23:00:00" Value="36.9" />
+        <Value Link="#" Time="2014-06-17T05:00:00" Value="36.9" />
+        <Value Link="#" Time="2014-06-17T11:00:00" Value="37.3" />
+        <Value Link="#" Time="2014-06-17T17:00:00" Value="37.2" />
+        <Value Link="#" Time="2014-06-17T23:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-06-18T05:00:00" Value="36.7" />
+        <Value Link="#" Time="2014-06-18T11:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-06-18T17:00:00" Value="36.6" />
+        <Value Link="#" Time="2014-06-18T23:00:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-19T05:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-06-19T11:00:00" Value="37" />
+        <Value Link="#" Time="2014-06-19T17:00:00" Value="36.3" />
+        <Value Link="#" Time="2014-06-19T23:00:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-20T05:00:00" Value="36.9" />
+        <Value Link="#" Time="2014-06-20T13:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-06-20T23:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-06-21T05:00:00" Value="36.7" />
+        <Value Link="#" Time="2014-06-21T11:00:00" Value="37.2" />
+        <Value Link="#" Time="2014-06-21T17:00:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-21T23:00:00" Value="36.1" />
+        <Value Link="#" Time="2014-06-22T05:00:00" Value="37" />
+        <Value Link="#" Time="2014-06-22T11:00:00" Value="37.2" />
+        <Value Link="#" Time="2014-06-22T17:00:00" Value="36.1" />
+        <Value Link="#" Time="2014-06-22T23:00:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-23T05:00:00" Value="37.1" />
+        <Value Link="#" Time="2014-06-23T11:00:00" Value="37.4" />
+        <Value Link="#" Time="2014-06-23T17:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-06-23T23:00:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-24T05:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-06-24T18:00:00" Value="37" />
+        <Value Link="#" Time="2014-06-25T09:30:00" Value="37.3" />
+        <Value Link="#" Time="2014-06-25T18:00:00" Value="37.2" />
+        <Value Link="#" Time="2014-06-26T09:30:00" Value="37.9" />
+        <Value Link="#" Time="2014-06-27T09:00:00" Value="37.2" />
+        <Value Link="#" Time="2014-06-27T18:31:00" Value="37.5" />
+        <Value Link="#" Time="2014-06-28T09:00:00" Value="37.9" />
+        <Value Link="#" Time="2014-06-28T18:39:00" Value="36.2" />
+        <Value Link="#" Time="2014-06-29T09:00:00" Value="37.2" />
+        <Value Link="#" Time="2014-06-29T17:33:00" Value="38.3" />
+        <Value Link="#" Time="2014-06-30T05:40:00" Value="39" />
+        <Value Link="#" Time="2014-06-30T06:30:00" Value="38" />
+        <Value Link="#" Time="2014-06-30T07:16:00" Value="37.2" />
+        <Value Link="#" Time="2014-06-30T09:40:00" Value="37.1" />
+        <Value Link="#" Time="2014-06-30T22:25:00" Value="36.7" />
+        <Value Link="#" Time="2014-07-01T10:15:00" Value="37" />
+        <Value Link="#" Time="2014-07-01T18:00:00" Value="37.6" />
+        <Value Link="#" Time="2014-07-02T10:09:00" Value="36.9" />
+        <Value Link="#" Time="2014-07-02T18:00:00" Value="37.7" />
+        <Value Link="#" Time="2014-07-02T19:00:00" Value="38.6" />
+        <Value Link="#" Time="2014-07-02T20:32:00" Value="36.3" />
+        <Value Link="#" Time="2014-07-03T10:00:00" Value="37" />
+        <Value Link="#" Time="2014-07-03T18:00:00" Value="37.8" />
+        <Value Link="#" Time="2014-07-04T10:00:00" Value="37.2" />
+        <Value Link="#" Time="2014-07-04T17:30:00" Value="38.1" />
+        <Value Link="#" Time="2014-07-04T19:00:00" Value="38.5" />
+        <Value Link="#" Time="2014-07-05T10:36:00" Value="36.9" />
+        <Value Link="#" Time="2014-07-05T18:00:00" Value="37.1" />
+        <Value Link="#" Time="2014-07-06T11:19:00" Value="36.7" />
+        <Value Link="#" Time="2014-07-06T18:21:00" Value="37.4" />
+        <Value Link="#" Time="2014-07-07T10:22:00" Value="36.4" />
+        <Value Link="#" Time="2014-07-07T18:35:00" Value="37.8" />
+        <Value Link="#" Time="2014-07-08T10:49:00" Value="36.8" />
+        <Value Link="#" Time="2014-07-08T19:20:00" Value="36.6" />
+        <Value Link="#" Time="2014-07-09T10:10:00" Value="36.7" />
+        <Value Link="#" Time="2014-07-09T18:30:00" Value="37.1" />
+        <Value Link="#" Time="2014-07-10T09:30:00" Value="37" />
+        <Value Link="#" Time="2014-07-10T18:19:00" Value="37.2" />
+        <Value Link="#" Time="2014-07-11T10:00:00" Value="37.3" />
+        <Value Link="#" Time="2014-07-11T18:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-07-12T09:30:00" Value="36.7" />
+        <Value Link="#" Time="2014-07-12T18:00:00" Value="37" />
+        <Value Link="#" Time="2014-07-13T09:40:00" Value="36.7" />
+        <Value Link="#" Time="2014-07-13T17:00:00" Value="38.3" />
+        <Value Link="#" Time="2014-07-13T18:05:00" Value="37.5" />
+        <Value Link="#" Time="2014-07-14T09:17:00" Value="36.3" />
+        <Value Link="#" Time="2014-07-14T18:00:00" Value="37.6" />
+        <Value Link="#" Time="2014-07-15T11:30:00" Value="36.8" />
+        <Value Link="#" Time="2014-07-15T17:00:00" Value="37.5" />
+        <Value Link="#" Time="2014-07-15T18:30:00" Value="39" />
+        <Value Link="#" Time="2014-07-15T19:40:00" Value="37.9" />
+        <Value Link="#" Time="2014-07-15T22:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-07-16T11:23:00" Value="36.6" />
+        <Value Link="#" Time="2014-07-16T18:11:00" Value="37.3" />
+        <Value Link="#" Time="2014-07-17T09:30:00" Value="36.2" />
+        <Value Link="#" Time="2014-07-17T18:00:00" Value="37.1" />
+        <Value Link="#" Time="2014-07-18T09:30:00" Value="37.1" />
+        <Value Link="#" Time="2014-07-18T17:20:00" Value="37.6" />
+        <Value Link="#" Time="2014-07-19T09:30:00" Value="37.5" />
+        <Value Link="#" Time="2014-07-19T17:18:00" Value="37.9" />
+        <Value Link="#" Time="2014-07-20T09:00:00" Value="36.8" />
+        <Value Link="#" Time="2014-07-20T17:20:00" Value="38.4" />
+        <Value Link="#" Time="2014-07-21T09:30:00" Value="37.1" />
+        <Value Link="#" Time="2014-07-21T18:00:00" Value="37.6" />
+        <Value Link="#" Time="2014-07-22T09:23:00" Value="37.4" />
+        <Value Link="#" Time="2014-07-22T19:00:00" Value="36.4" />
+        <Value Link="#" Time="2014-07-23T09:30:00" Value="36.7" />
+        <Value Link="#" Time="2014-07-23T18:21:00" Value="37.6" />
+        <Value Link="#" Time="2014-07-24T09:08:00" Value="36.9" />
+        <Value Link="#" Time="2014-07-25T10:15:00" Value="36.9" />
+        <Value Link="#" Time="2014-07-25T18:18:00" Value="37.8" />
+        <Value Link="#" Time="2014-07-26T11:23:00" Value="38.1" />
+      </Values>
+    </Data>
+    <Data Name="PULSE">
+      <Values>
+        <Value Link="#" Time="2014-06-06T14:48:32" Value="87" />
+        <Value Link="#" Time="2014-06-06T15:45:00" Value="83" />
+        <Value Link="#" Time="2014-06-06T21:00:00" Value="89" />
+        <Value Link="#" Time="2014-06-07T05:00:00" Value="102" />
+        <Value Link="#" Time="2014-06-07T13:00:00" Value="100" />
+        <Value Link="#" Time="2014-06-07T21:00:00" Value="117" />
+        <Value Link="#" Time="2014-06-08T05:00:00" Value="119" />
+        <Value Link="#" Time="2014-06-08T13:00:00" Value="97" />
+        <Value Link="#" Time="2014-06-08T21:00:00" Value="134" />
+        <Value Link="#" Time="2014-06-08T21:30:00" Value="138" />
+        <Value Link="#" Time="2014-06-08T22:20:00" Value="150" />
+        <Value Link="#" Time="2014-06-08T23:35:00" Value="127" />
+        <Value Link="#" Time="2014-06-09T00:37:00" Value="121" />
+        <Value Link="#" Time="2014-06-09T05:00:00" Value="106" />
+        <Value Link="#" Time="2014-06-09T13:00:00" Value="107" />
+        <Value Link="#" Time="2014-06-09T13:05:00" Value="107" />
+        <Value Link="#" Time="2014-06-09T21:00:00" Value="122" />
+        <Value Link="#" Time="2014-06-10T05:00:00" Value="126" />
+        <Value Link="#" Time="2014-06-10T07:05:00" Value="124" />
+        <Value Link="#" Time="2014-06-10T10:25:00" Value="113" />
+        <Value Link="#" Time="2014-06-10T13:00:00" Value="100" />
+        <Value Link="#" Time="2014-06-10T22:30:00" Value="124" />
+        <Value Link="#" Time="2014-06-11T00:30:00" Value="104" />
+        <Value Link="#" Time="2014-06-11T02:30:00" Value="102" />
+        <Value Link="#" Time="2014-06-11T04:30:00" Value="104" />
+        <Value Link="#" Time="2014-06-11T10:25:00" Value="97" />
+        <Value Link="#" Time="2014-06-11T13:30:00" Value="84" />
+        <Value Link="#" Time="2014-06-11T17:00:00" Value="89" />
+        <Value Link="#" Time="2014-06-11T23:00:00" Value="95" />
+        <Value Link="#" Time="2014-06-12T05:00:00" Value="160" />
+        <Value Link="#" Time="2014-06-12T05:10:00" Value="126" />
+        <Value Link="#" Time="2014-06-12T11:00:00" Value="105" />
+        <Value Link="#" Time="2014-06-12T17:01:00" Value="115" />
+        <Value Link="#" Time="2014-06-12T23:00:00" Value="118" />
+        <Value Link="#" Time="2014-06-13T05:00:00" Value="152" />
+        <Value Link="#" Time="2014-06-13T06:51:00" Value="157" />
+        <Value Link="#" Time="2014-06-13T11:00:00" Value="140" />
+        <Value Link="#" Time="2014-06-13T17:00:00" Value="103" />
+        <Value Link="#" Time="2014-06-13T23:00:00" Value="120" />
+        <Value Link="#" Time="2014-06-14T05:00:00" Value="141" />
+        <Value Link="#" Time="2014-06-14T07:30:00" Value="156" />
+        <Value Link="#" Time="2014-06-14T11:00:00" Value="141" />
+        <Value Link="#" Time="2014-06-14T15:00:00" Value="125" />
+        <Value Link="#" Time="2014-06-14T17:00:00" Value="120" />
+        <Value Link="#" Time="2014-06-14T23:00:00" Value="119" />
+        <Value Link="#" Time="2014-06-15T05:00:00" Value="130" />
+        <Value Link="#" Time="2014-06-15T07:02:00" Value="138" />
+        <Value Link="#" Time="2014-06-15T11:00:00" Value="115" />
+        <Value Link="#" Time="2014-06-15T15:15:00" Value="119" />
+        <Value Link="#" Time="2014-06-15T15:20:00" Value="119" />
+        <Value Link="#" Time="2014-06-15T17:00:00" Value="117" />
+        <Value Link="#" Time="2014-06-15T22:51:00" Value="116" />
+        <Value Link="#" Time="2014-06-16T05:00:00" Value="126" />
+        <Value Link="#" Time="2014-06-16T06:17:00" Value="127" />
+        <Value Link="#" Time="2014-06-16T11:00:00" Value="133" />
+        <Value Link="#" Time="2014-06-16T17:00:00" Value="126" />
+        <Value Link="#" Time="2014-06-16T23:00:00" Value="119" />
+        <Value Link="#" Time="2014-06-17T05:00:00" Value="131" />
+        <Value Link="#" Time="2014-06-17T11:00:00" Value="131" />
+        <Value Link="#" Time="2014-06-17T17:00:00" Value="120" />
+        <Value Link="#" Time="2014-06-17T23:00:00" Value="136" />
+        <Value Link="#" Time="2014-06-18T05:00:00" Value="122" />
+        <Value Link="#" Time="2014-06-18T06:44:00" Value="123" />
+        <Value Link="#" Time="2014-06-18T11:00:00" Value="123" />
+        <Value Link="#" Time="2014-06-18T17:00:00" Value="110" />
+        <Value Link="#" Time="2014-06-18T23:00:00" Value="113" />
+        <Value Link="#" Time="2014-06-19T05:00:00" Value="119" />
+        <Value Link="#" Time="2014-06-19T06:59:00" Value="117" />
+        <Value Link="#" Time="2014-06-19T11:00:00" Value="119" />
+        <Value Link="#" Time="2014-06-19T13:00:00" Value="122" />
+        <Value Link="#" Time="2014-06-19T17:00:00" Value="115" />
+        <Value Link="#" Time="2014-06-19T23:00:00" Value="120" />
+        <Value Link="#" Time="2014-06-20T05:00:00" Value="127" />
+        <Value Link="#" Time="2014-06-20T13:00:00" Value="121" />
+        <Value Link="#" Time="2014-06-20T23:00:00" Value="116" />
+        <Value Link="#" Time="2014-06-21T05:00:00" Value="121" />
+        <Value Link="#" Time="2014-06-21T11:00:00" Value="130" />
+        <Value Link="#" Time="2014-06-21T17:00:00" Value="124" />
+        <Value Link="#" Time="2014-06-21T23:00:00" Value="121" />
+        <Value Link="#" Time="2014-06-22T05:00:00" Value="127" />
+        <Value Link="#" Time="2014-06-22T11:00:00" Value="131" />
+        <Value Link="#" Time="2014-06-22T17:00:00" Value="119" />
+        <Value Link="#" Time="2014-06-22T22:00:00" Value="112" />
+        <Value Link="#" Time="2014-06-22T23:00:00" Value="112" />
+        <Value Link="#" Time="2014-06-23T05:00:00" Value="128" />
+        <Value Link="#" Time="2014-06-23T11:00:00" Value="113" />
+        <Value Link="#" Time="2014-06-23T17:00:00" Value="108" />
+        <Value Link="#" Time="2014-06-23T23:00:00" Value="110" />
+        <Value Link="#" Time="2014-06-24T05:00:00" Value="125" />
+        <Value Link="#" Time="2014-06-24T18:00:00" Value="117" />
+        <Value Link="#" Time="2014-06-25T09:30:00" Value="138" />
+        <Value Link="#" Time="2014-06-25T18:00:00" Value="108" />
+        <Value Link="#" Time="2014-06-26T09:30:00" Value="136" />
+        <Value Link="#" Time="2014-06-27T09:00:00" Value="120" />
+        <Value Link="#" Time="2014-06-27T18:31:00" Value="125" />
+        <Value Link="#" Time="2014-06-28T09:00:00" Value="119" />
+        <Value Link="#" Time="2014-06-28T18:39:00" Value="97" />
+        <Value Link="#" Time="2014-06-29T09:00:00" Value="115" />
+        <Value Link="#" Time="2014-06-29T17:33:00" Value="125" />
+        <Value Link="#" Time="2014-06-30T05:40:00" Value="120" />
+        <Value Link="#" Time="2014-06-30T09:40:00" Value="124" />
+        <Value Link="#" Time="2014-06-30T22:25:00" Value="99" />
+        <Value Link="#" Time="2014-07-01T10:15:00" Value="112" />
+        <Value Link="#" Time="2014-07-01T18:00:00" Value="113" />
+        <Value Link="#" Time="2014-07-02T10:09:00" Value="102" />
+        <Value Link="#" Time="2014-07-02T18:00:00" Value="107" />
+        <Value Link="#" Time="2014-07-03T10:00:00" Value="110" />
+        <Value Link="#" Time="2014-07-03T18:00:00" Value="107" />
+        <Value Link="#" Time="2014-07-04T10:00:00" Value="104" />
+        <Value Link="#" Time="2014-07-04T17:30:00" Value="107" />
+        <Value Link="#" Time="2014-07-05T10:36:00" Value="102" />
+        <Value Link="#" Time="2014-07-05T18:00:00" Value="116" />
+        <Value Link="#" Time="2014-07-06T11:19:00" Value="106" />
+        <Value Link="#" Time="2014-07-06T18:21:00" Value="118" />
+        <Value Link="#" Time="2014-07-07T10:22:00" Value="120" />
+        <Value Link="#" Time="2014-07-07T18:35:00" Value="128" />
+        <Value Link="#" Time="2014-07-08T10:49:00" Value="110" />
+        <Value Link="#" Time="2014-07-08T19:20:00" Value="123" />
+        <Value Link="#" Time="2014-07-09T10:10:00" Value="120" />
+        <Value Link="#" Time="2014-07-09T18:30:00" Value="125" />
+        <Value Link="#" Time="2014-07-10T09:30:00" Value="117" />
+        <Value Link="#" Time="2014-07-10T18:19:00" Value="123" />
+        <Value Link="#" Time="2014-07-11T10:00:00" Value="111" />
+        <Value Link="#" Time="2014-07-11T18:00:00" Value="108" />
+        <Value Link="#" Time="2014-07-12T09:30:00" Value="122" />
+        <Value Link="#" Time="2014-07-12T18:00:00" Value="117" />
+        <Value Link="#" Time="2014-07-13T09:40:00" Value="103" />
+        <Value Link="#" Time="2014-07-13T17:00:00" Value="113" />
+        <Value Link="#" Time="2014-07-14T09:17:00" Value="114" />
+        <Value Link="#" Time="2014-07-14T18:00:00" Value="120" />
+        <Value Link="#" Time="2014-07-15T11:30:00" Value="124" />
+        <Value Link="#" Time="2014-07-15T18:30:00" Value="155" />
+        <Value Link="#" Time="2014-07-15T22:00:00" Value="112" />
+        <Value Link="#" Time="2014-07-16T11:23:00" Value="106" />
+        <Value Link="#" Time="2014-07-16T18:11:00" Value="117" />
+        <Value Link="#" Time="2014-07-17T09:30:00" Value="118" />
+        <Value Link="#" Time="2014-07-17T18:00:00" Value="107" />
+        <Value Link="#" Time="2014-07-18T09:30:00" Value="117" />
+        <Value Link="#" Time="2014-07-18T17:20:00" Value="120" />
+        <Value Link="#" Time="2014-07-19T09:30:00" Value="110" />
+        <Value Link="#" Time="2014-07-19T17:18:00" Value="135" />
+        <Value Link="#" Time="2014-07-19T18:00:00" Value="130" />
+        <Value Link="#" Time="2014-07-20T09:00:00" Value="111" />
+        <Value Link="#" Time="2014-07-20T17:20:00" Value="155" />
+        <Value Link="#" Time="2014-07-21T09:30:00" Value="124" />
+        <Value Link="#" Time="2014-07-21T18:00:00" Value="139" />
+        <Value Link="#" Time="2014-07-22T09:23:00" Value="136" />
+        <Value Link="#" Time="2014-07-22T19:00:00" Value="121" />
+        <Value Link="#" Time="2014-07-23T09:30:00" Value="128" />
+        <Value Link="#" Time="2014-07-23T18:21:00" Value="129" />
+        <Value Link="#" Time="2014-07-24T09:08:00" Value="126" />
+        <Value Link="#" Time="2014-07-25T10:15:00" Value="128" />
+        <Value Link="#" Time="2014-07-25T18:18:00" Value="130" />
+        <Value Link="#" Time="2014-07-26T11:23:00" Value="134" />
+      </Values>
+    </Data>
+    <Data Name="RESP">
+      <Values>
+        <Value Link="#" Time="2014-06-06T14:48:32" Value="16" />
+        <Value Link="#" Time="2014-06-06T15:45:00" Value="16" />
+        <Value Link="#" Time="2014-06-06T21:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-07T05:00:00" Value="19" />
+        <Value Link="#" Time="2014-06-07T13:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-07T21:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-08T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-08T13:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-08T21:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-08T23:35:00" Value="18" />
+        <Value Link="#" Time="2014-06-09T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-09T13:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-09T13:05:00" Value="20" />
+        <Value Link="#" Time="2014-06-09T21:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-10T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-10T10:25:00" Value="20" />
+        <Value Link="#" Time="2014-06-10T13:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-10T22:30:00" Value="20" />
+        <Value Link="#" Time="2014-06-11T00:30:00" Value="18" />
+        <Value Link="#" Time="2014-06-11T02:30:00" Value="19" />
+        <Value Link="#" Time="2014-06-11T04:30:00" Value="19" />
+        <Value Link="#" Time="2014-06-11T10:25:00" Value="20" />
+        <Value Link="#" Time="2014-06-11T13:30:00" Value="16" />
+        <Value Link="#" Time="2014-06-11T17:00:00" Value="19" />
+        <Value Link="#" Time="2014-06-11T23:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-12T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-12T11:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-12T17:01:00" Value="18" />
+        <Value Link="#" Time="2014-06-12T23:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-13T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-13T11:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-13T17:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-13T23:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-14T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-14T11:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-14T17:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-14T23:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-15T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-15T11:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-15T17:00:00" Value="19" />
+        <Value Link="#" Time="2014-06-15T22:51:00" Value="19" />
+        <Value Link="#" Time="2014-06-16T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-16T11:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-16T17:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-16T23:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-17T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-17T11:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-17T17:00:00" Value="16" />
+        <Value Link="#" Time="2014-06-17T23:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-18T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-18T11:00:00" Value="16" />
+        <Value Link="#" Time="2014-06-18T17:00:00" Value="16" />
+        <Value Link="#" Time="2014-06-18T23:00:00" Value="19" />
+        <Value Link="#" Time="2014-06-19T05:00:00" Value="19" />
+        <Value Link="#" Time="2014-06-19T11:00:00" Value="16" />
+        <Value Link="#" Time="2014-06-19T17:00:00" Value="16" />
+        <Value Link="#" Time="2014-06-19T23:00:00" Value="19" />
+        <Value Link="#" Time="2014-06-20T05:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-20T13:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-20T23:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-21T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-21T11:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-21T17:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-21T23:00:00" Value="17" />
+        <Value Link="#" Time="2014-06-22T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-22T11:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-22T17:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-22T23:00:00" Value="19" />
+        <Value Link="#" Time="2014-06-23T05:00:00" Value="20" />
+        <Value Link="#" Time="2014-06-23T11:00:00" Value="19" />
+        <Value Link="#" Time="2014-06-23T17:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-23T23:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-24T05:00:00" Value="18" />
+        <Value Link="#" Time="2014-06-24T18:00:00" Value="14" />
+        <Value Link="#" Time="2014-06-25T09:30:00" Value="15" />
+        <Value Link="#" Time="2014-06-25T18:00:00" Value="16" />
+        <Value Link="#" Time="2014-06-26T09:30:00" Value="12" />
+        <Value Link="#" Time="2014-06-27T09:00:00" Value="13" />
+        <Value Link="#" Time="2014-06-27T18:31:00" Value="16" />
+        <Value Link="#" Time="2014-06-28T09:00:00" Value="13" />
+        <Value Link="#" Time="2014-06-28T18:39:00" Value="16" />
+        <Value Link="#" Time="2014-06-29T09:00:00" Value="13" />
+        <Value Link="#" Time="2014-06-29T17:33:00" Value="16" />
+        <Value Link="#" Time="2014-06-30T05:40:00" Value="24" />
+        <Value Link="#" Time="2014-06-30T09:40:00" Value="12" />
+        <Value Link="#" Time="2014-06-30T22:25:00" Value="16" />
+        <Value Link="#" Time="2014-07-01T10:15:00" Value="14" />
+        <Value Link="#" Time="2014-07-01T18:00:00" Value="14" />
+        <Value Link="#" Time="2014-07-02T10:09:00" Value="16" />
+        <Value Link="#" Time="2014-07-02T18:00:00" Value="12" />
+        <Value Link="#" Time="2014-07-03T10:00:00" Value="16" />
+        <Value Link="#" Time="2014-07-03T18:00:00" Value="12" />
+        <Value Link="#" Time="2014-07-04T10:00:00" Value="16" />
+        <Value Link="#" Time="2014-07-04T17:30:00" Value="13" />
+        <Value Link="#" Time="2014-07-05T10:36:00" Value="16" />
+        <Value Link="#" Time="2014-07-05T18:00:00" Value="13" />
+        <Value Link="#" Time="2014-07-06T11:19:00" Value="14" />
+        <Value Link="#" Time="2014-07-06T18:21:00" Value="20" />
+        <Value Link="#" Time="2014-07-07T10:22:00" Value="12" />
+        <Value Link="#" Time="2014-07-07T18:35:00" Value="16" />
+        <Value Link="#" Time="2014-07-08T10:49:00" Value="14" />
+        <Value Link="#" Time="2014-07-08T19:20:00" Value="14" />
+        <Value Link="#" Time="2014-07-09T10:10:00" Value="14" />
+        <Value Link="#" Time="2014-07-09T18:30:00" Value="18" />
+        <Value Link="#" Time="2014-07-10T09:30:00" Value="14" />
+        <Value Link="#" Time="2014-07-10T18:19:00" Value="14" />
+        <Value Link="#" Time="2014-07-11T10:00:00" Value="14" />
+        <Value Link="#" Time="2014-07-11T18:00:00" Value="13" />
+        <Value Link="#" Time="2014-07-12T09:30:00" Value="12" />
+        <Value Link="#" Time="2014-07-12T18:00:00" Value="12" />
+        <Value Link="#" Time="2014-07-13T09:40:00" Value="12" />
+        <Value Link="#" Time="2014-07-13T17:00:00" Value="10" />
+        <Value Link="#" Time="2014-07-14T09:17:00" Value="14" />
+        <Value Link="#" Time="2014-07-14T18:00:00" Value="14" />
+        <Value Link="#" Time="2014-07-15T11:30:00" Value="14" />
+        <Value Link="#" Time="2014-07-15T18:30:00" Value="13" />
+        <Value Link="#" Time="2014-07-16T11:23:00" Value="14" />
+        <Value Link="#" Time="2014-07-16T18:11:00" Value="15" />
+        <Value Link="#" Time="2014-07-17T09:30:00" Value="14" />
+        <Value Link="#" Time="2014-07-17T18:00:00" Value="15" />
+        <Value Link="#" Time="2014-07-18T09:30:00" Value="13" />
+        <Value Link="#" Time="2014-07-18T17:20:00" Value="14" />
+        <Value Link="#" Time="2014-07-19T09:30:00" Value="7" />
+        <Value Link="#" Time="2014-07-19T17:18:00" Value="18" />
+        <Value Link="#" Time="2014-07-20T09:00:00" Value="13" />
+        <Value Link="#" Time="2014-07-20T17:20:00" Value="18" />
+        <Value Link="#" Time="2014-07-21T09:30:00" Value="9" />
+        <Value Link="#" Time="2014-07-21T18:00:00" Value="18" />
+        <Value Link="#" Time="2014-07-22T09:23:00" Value="14" />
+        <Value Link="#" Time="2014-07-22T19:00:00" Value="20" />
+        <Value Link="#" Time="2014-07-23T09:30:00" Value="16" />
+        <Value Link="#" Time="2014-07-23T18:21:00" Value="18" />
+        <Value Link="#" Time="2014-07-24T09:08:00" Value="14" />
+        <Value Link="#" Time="2014-07-25T10:15:00" Value="18" />
+        <Value Link="#" Time="2014-07-25T18:18:00" Value="10" />
+        <Value Link="#" Time="2014-07-26T11:23:00" Value="18" />
+      </Values>
+    </Data>
+    <Data Name="SYSTOLIC">
+      <Values>
+        <Value Link="#" Time="2014-06-06T14:48:32" Value="136" />
+        <Value Link="#" Time="2014-06-06T15:45:00" Value="136" />
+        <Value Link="#" Time="2014-06-06T21:00:00" Value="139" />
+        <Value Link="#" Time="2014-06-07T05:00:00" Value="137" />
+        <Value Link="#" Time="2014-06-07T13:00:00" Value="139" />
+        <Value Link="#" Time="2014-06-07T21:00:00" Value="134" />
+        <Value Link="#" Time="2014-06-08T05:00:00" Value="135" />
+        <Value Link="#" Time="2014-06-08T13:00:00" Value="141" />
+        <Value Link="#" Time="2014-06-08T21:00:00" Value="128" />
+        <Value Link="#" Time="2014-06-08T22:20:00" Value="132" />
+        <Value Link="#" Time="2014-06-08T23:35:00" Value="137" />
+        <Value Link="#" Time="2014-06-09T00:37:00" Value="125" />
+        <Value Link="#" Time="2014-06-09T05:00:00" Value="126" />
+        <Value Link="#" Time="2014-06-09T13:00:00" Value="145" />
+        <Value Link="#" Time="2014-06-09T13:05:00" Value="145" />
+        <Value Link="#" Time="2014-06-09T21:00:00" Value="147" />
+        <Value Link="#" Time="2014-06-10T05:00:00" Value="143" />
+        <Value Link="#" Time="2014-06-10T07:05:00" Value="154" />
+        <Value Link="#" Time="2014-06-10T10:25:00" Value="133" />
+        <Value Link="#" Time="2014-06-10T13:00:00" Value="154" />
+        <Value Link="#" Time="2014-06-10T22:30:00" Value="159" />
+        <Value Link="#" Time="2014-06-11T00:30:00" Value="138" />
+        <Value Link="#" Time="2014-06-11T02:30:00" Value="151" />
+        <Value Link="#" Time="2014-06-11T04:30:00" Value="143" />
+        <Value Link="#" Time="2014-06-11T10:25:00" Value="141" />
+        <Value Link="#" Time="2014-06-11T13:30:00" Value="151" />
+        <Value Link="#" Time="2014-06-11T17:00:00" Value="160" />
+        <Value Link="#" Time="2014-06-11T23:00:00" Value="127" />
+        <Value Link="#" Time="2014-06-12T05:00:00" Value="140" />
+        <Value Link="#" Time="2014-06-12T11:00:00" Value="140" />
+        <Value Link="#" Time="2014-06-12T17:01:00" Value="149" />
+        <Value Link="#" Time="2014-06-12T23:00:00" Value="150" />
+        <Value Link="#" Time="2014-06-13T05:00:00" Value="154" />
+        <Value Link="#" Time="2014-06-13T06:51:00" Value="152" />
+        <Value Link="#" Time="2014-06-13T11:00:00" Value="148" />
+        <Value Link="#" Time="2014-06-13T17:00:00" Value="143" />
+        <Value Link="#" Time="2014-06-13T23:00:00" Value="145" />
+        <Value Link="#" Time="2014-06-14T05:00:00" Value="122" />
+        <Value Link="#" Time="2014-06-14T11:00:00" Value="135" />
+        <Value Link="#" Time="2014-06-14T17:00:00" Value="131" />
+        <Value Link="#" Time="2014-06-14T23:00:00" Value="144" />
+        <Value Link="#" Time="2014-06-15T05:00:00" Value="160" />
+        <Value Link="#" Time="2014-06-15T07:02:00" Value="150" />
+        <Value Link="#" Time="2014-06-15T11:00:00" Value="151" />
+        <Value Link="#" Time="2014-06-15T15:15:00" Value="157" />
+        <Value Link="#" Time="2014-06-15T15:20:00" Value="157" />
+        <Value Link="#" Time="2014-06-15T17:00:00" Value="140" />
+        <Value Link="#" Time="2014-06-15T22:51:00" Value="153" />
+        <Value Link="#" Time="2014-06-16T05:00:00" Value="153" />
+        <Value Link="#" Time="2014-06-16T06:17:00" Value="168" />
+        <Value Link="#" Time="2014-06-16T11:00:00" Value="139" />
+        <Value Link="#" Time="2014-06-16T17:00:00" Value="143" />
+        <Value Link="#" Time="2014-06-16T23:00:00" Value="155" />
+        <Value Link="#" Time="2014-06-17T05:00:00" Value="105" />
+        <Value Link="#" Time="2014-06-17T11:00:00" Value="157" />
+        <Value Link="#" Time="2014-06-17T17:00:00" Value="139" />
+        <Value Link="#" Time="2014-06-17T23:00:00" Value="141" />
+        <Value Link="#" Time="2014-06-18T05:00:00" Value="151" />
+        <Value Link="#" Time="2014-06-18T06:44:00" Value="162" />
+        <Value Link="#" Time="2014-06-18T11:00:00" Value="141" />
+        <Value Link="#" Time="2014-06-18T17:00:00" Value="157" />
+        <Value Link="#" Time="2014-06-18T23:00:00" Value="162" />
+        <Value Link="#" Time="2014-06-19T05:00:00" Value="160" />
+        <Value Link="#" Time="2014-06-19T06:59:00" Value="158" />
+        <Value Link="#" Time="2014-06-19T11:00:00" Value="156" />
+        <Value Link="#" Time="2014-06-19T13:00:00" Value="160" />
+        <Value Link="#" Time="2014-06-19T17:00:00" Value="163" />
+        <Value Link="#" Time="2014-06-19T23:00:00" Value="134" />
+        <Value Link="#" Time="2014-06-20T05:00:00" Value="153" />
+        <Value Link="#" Time="2014-06-20T13:00:00" Value="149" />
+        <Value Link="#" Time="2014-06-20T23:00:00" Value="147" />
+        <Value Link="#" Time="2014-06-21T05:00:00" Value="155" />
+        <Value Link="#" Time="2014-06-21T11:00:00" Value="147" />
+        <Value Link="#" Time="2014-06-21T17:00:00" Value="148" />
+        <Value Link="#" Time="2014-06-21T23:00:00" Value="156" />
+        <Value Link="#" Time="2014-06-22T05:00:00" Value="149" />
+        <Value Link="#" Time="2014-06-22T11:00:00" Value="140" />
+        <Value Link="#" Time="2014-06-22T17:00:00" Value="136" />
+        <Value Link="#" Time="2014-06-22T23:00:00" Value="144" />
+        <Value Link="#" Time="2014-06-23T05:00:00" Value="128" />
+        <Value Link="#" Time="2014-06-23T11:00:00" Value="128" />
+        <Value Link="#" Time="2014-06-23T17:00:00" Value="141" />
+        <Value Link="#" Time="2014-06-23T23:00:00" Value="138" />
+        <Value Link="#" Time="2014-06-24T05:00:00" Value="134" />
+        <Value Link="#" Time="2014-06-24T18:00:00" Value="129" />
+        <Value Link="#" Time="2014-06-25T09:30:00" Value="93" />
+        <Value Link="#" Time="2014-06-25T18:00:00" Value="109" />
+        <Value Link="#" Time="2014-06-26T09:30:00" Value="112" />
+        <Value Link="#" Time="2014-06-27T09:00:00" Value="121" />
+        <Value Link="#" Time="2014-06-27T18:31:00" Value="107" />
+        <Value Link="#" Time="2014-06-28T09:00:00" Value="108" />
+        <Value Link="#" Time="2014-06-28T18:39:00" Value="109" />
+        <Value Link="#" Time="2014-06-29T09:00:00" Value="104" />
+        <Value Link="#" Time="2014-06-29T17:33:00" Value="116" />
+        <Value Link="#" Time="2014-06-30T05:40:00" Value="113" />
+        <Value Link="#" Time="2014-06-30T09:40:00" Value="120" />
+        <Value Link="#" Time="2014-06-30T22:25:00" Value="103" />
+        <Value Link="#" Time="2014-07-01T10:15:00" Value="102" />
+        <Value Link="#" Time="2014-07-01T18:00:00" Value="100" />
+        <Value Link="#" Time="2014-07-02T10:09:00" Value="110" />
+        <Value Link="#" Time="2014-07-02T18:00:00" Value="110" />
+        <Value Link="#" Time="2014-07-03T10:00:00" Value="113" />
+        <Value Link="#" Time="2014-07-03T18:00:00" Value="108" />
+        <Value Link="#" Time="2014-07-04T10:00:00" Value="117" />
+        <Value Link="#" Time="2014-07-04T17:30:00" Value="114" />
+        <Value Link="#" Time="2014-07-05T10:36:00" Value="116" />
+        <Value Link="#" Time="2014-07-05T18:00:00" Value="107" />
+        <Value Link="#" Time="2014-07-06T11:19:00" Value="115" />
+        <Value Link="#" Time="2014-07-06T18:21:00" Value="111" />
+        <Value Link="#" Time="2014-07-07T10:22:00" Value="102" />
+        <Value Link="#" Time="2014-07-07T18:35:00" Value="113" />
+        <Value Link="#" Time="2014-07-08T10:49:00" Value="97" />
+        <Value Link="#" Time="2014-07-08T19:20:00" Value="110" />
+        <Value Link="#" Time="2014-07-09T10:10:00" Value="107" />
+        <Value Link="#" Time="2014-07-09T18:30:00" Value="102" />
+        <Value Link="#" Time="2014-07-10T09:30:00" Value="102" />
+        <Value Link="#" Time="2014-07-10T18:19:00" Value="98" />
+        <Value Link="#" Time="2014-07-11T10:00:00" Value="103" />
+        <Value Link="#" Time="2014-07-11T18:00:00" Value="93" />
+        <Value Link="#" Time="2014-07-12T09:30:00" Value="106" />
+        <Value Link="#" Time="2014-07-12T18:00:00" Value="106" />
+        <Value Link="#" Time="2014-07-13T09:40:00" Value="94" />
+        <Value Link="#" Time="2014-07-13T17:00:00" Value="97" />
+        <Value Link="#" Time="2014-07-14T09:17:00" Value="95" />
+        <Value Link="#" Time="2014-07-14T18:00:00" Value="96" />
+        <Value Link="#" Time="2014-07-15T11:30:00" Value="105" />
+        <Value Link="#" Time="2014-07-15T18:30:00" Value="100" />
+        <Value Link="#" Time="2014-07-16T11:23:00" Value="81" />
+        <Value Link="#" Time="2014-07-16T18:11:00" Value="100" />
+        <Value Link="#" Time="2014-07-17T09:30:00" Value="90" />
+        <Value Link="#" Time="2014-07-17T18:00:00" Value="92" />
+        <Value Link="#" Time="2014-07-18T09:30:00" Value="90" />
+        <Value Link="#" Time="2014-07-18T17:20:00" Value="85" />
+        <Value Link="#" Time="2014-07-19T09:30:00" Value="85" />
+        <Value Link="#" Time="2014-07-19T17:18:00" Value="82" />
+        <Value Link="#" Time="2014-07-20T09:00:00" Value="102" />
+        <Value Link="#" Time="2014-07-20T17:20:00" Value="126" />
+        <Value Link="#" Time="2014-07-21T09:30:00" Value="91" />
+        <Value Link="#" Time="2014-07-21T18:00:00" Value="99" />
+        <Value Link="#" Time="2014-07-22T09:23:00" Value="96" />
+        <Value Link="#" Time="2014-07-22T19:00:00" Value="113" />
+        <Value Link="#" Time="2014-07-23T09:30:00" Value="89" />
+        <Value Link="#" Time="2014-07-23T18:21:00" Value="79" />
+        <Value Link="#" Time="2014-07-24T09:08:00" Value="79" />
+        <Value Link="#" Time="2014-07-25T10:15:00" Value="79" />
+        <Value Link="#" Time="2014-07-25T18:18:00" Value="75" />
+        <Value Link="#" Time="2014-07-26T11:23:00" Value="77" />
+      </Values>
+    </Data>
+    <Data Name="DIASTOLIC">
+      <Values>
+        <Value Link="#" Time="2014-06-06T14:48:32" Value="87" />
+        <Value Link="#" Time="2014-06-06T15:45:00" Value="86" />
+        <Value Link="#" Time="2014-06-06T21:00:00" Value="89" />
+        <Value Link="#" Time="2014-06-07T05:00:00" Value="86" />
+        <Value Link="#" Time="2014-06-07T13:00:00" Value="99" />
+        <Value Link="#" Time="2014-06-07T21:00:00" Value="88" />
+        <Value Link="#" Time="2014-06-08T05:00:00" Value="89" />
+        <Value Link="#" Time="2014-06-08T13:00:00" Value="92" />
+        <Value Link="#" Time="2014-06-08T21:00:00" Value="86" />
+        <Value Link="#" Time="2014-06-08T22:20:00" Value="83" />
+        <Value Link="#" Time="2014-06-08T23:35:00" Value="93" />
+        <Value Link="#" Time="2014-06-09T00:37:00" Value="90" />
+        <Value Link="#" Time="2014-06-09T05:00:00" Value="84" />
+        <Value Link="#" Time="2014-06-09T13:00:00" Value="91" />
+        <Value Link="#" Time="2014-06-09T13:05:00" Value="91" />
+        <Value Link="#" Time="2014-06-09T21:00:00" Value="101" />
+        <Value Link="#" Time="2014-06-10T05:00:00" Value="105" />
+        <Value Link="#" Time="2014-06-10T07:05:00" Value="99" />
+        <Value Link="#" Time="2014-06-10T10:25:00" Value="104" />
+        <Value Link="#" Time="2014-06-10T13:00:00" Value="110" />
+        <Value Link="#" Time="2014-06-10T22:30:00" Value="102" />
+        <Value Link="#" Time="2014-06-11T00:30:00" Value="91" />
+        <Value Link="#" Time="2014-06-11T02:30:00" Value="91" />
+        <Value Link="#" Time="2014-06-11T04:30:00" Value="97" />
+        <Value Link="#" Time="2014-06-11T10:25:00" Value="92" />
+        <Value Link="#" Time="2014-06-11T13:30:00" Value="93" />
+        <Value Link="#" Time="2014-06-11T17:00:00" Value="92" />
+        <Value Link="#" Time="2014-06-11T23:00:00" Value="86" />
+        <Value Link="#" Time="2014-06-12T05:00:00" Value="91" />
+        <Value Link="#" Time="2014-06-12T11:00:00" Value="100" />
+        <Value Link="#" Time="2014-06-12T17:01:00" Value="90" />
+        <Value Link="#" Time="2014-06-12T23:00:00" Value="103" />
+        <Value Link="#" Time="2014-06-13T05:00:00" Value="105" />
+        <Value Link="#" Time="2014-06-13T06:51:00" Value="91" />
+        <Value Link="#" Time="2014-06-13T11:00:00" Value="87" />
+        <Value Link="#" Time="2014-06-13T17:00:00" Value="91" />
+        <Value Link="#" Time="2014-06-13T23:00:00" Value="90" />
+        <Value Link="#" Time="2014-06-14T05:00:00" Value="83" />
+        <Value Link="#" Time="2014-06-14T11:00:00" Value="88" />
+        <Value Link="#" Time="2014-06-14T17:00:00" Value="87" />
+        <Value Link="#" Time="2014-06-14T23:00:00" Value="92" />
+        <Value Link="#" Time="2014-06-15T05:00:00" Value="108" />
+        <Value Link="#" Time="2014-06-15T07:02:00" Value="107" />
+        <Value Link="#" Time="2014-06-15T11:00:00" Value="103" />
+        <Value Link="#" Time="2014-06-15T15:15:00" Value="100" />
+        <Value Link="#" Time="2014-06-15T15:20:00" Value="100" />
+        <Value Link="#" Time="2014-06-15T17:00:00" Value="94" />
+        <Value Link="#" Time="2014-06-15T22:51:00" Value="102" />
+        <Value Link="#" Time="2014-06-16T05:00:00" Value="105" />
+        <Value Link="#" Time="2014-06-16T06:17:00" Value="101" />
+        <Value Link="#" Time="2014-06-16T11:00:00" Value="99" />
+        <Value Link="#" Time="2014-06-16T17:00:00" Value="99" />
+        <Value Link="#" Time="2014-06-16T23:00:00" Value="103" />
+        <Value Link="#" Time="2014-06-17T05:00:00" Value="103" />
+        <Value Link="#" Time="2014-06-17T11:00:00" Value="98" />
+        <Value Link="#" Time="2014-06-17T17:00:00" Value="102" />
+        <Value Link="#" Time="2014-06-17T23:00:00" Value="85" />
+        <Value Link="#" Time="2014-06-18T05:00:00" Value="102" />
+        <Value Link="#" Time="2014-06-18T06:44:00" Value="105" />
+        <Value Link="#" Time="2014-06-18T11:00:00" Value="97" />
+        <Value Link="#" Time="2014-06-18T17:00:00" Value="108" />
+        <Value Link="#" Time="2014-06-18T23:00:00" Value="104" />
+        <Value Link="#" Time="2014-06-19T05:00:00" Value="110" />
+        <Value Link="#" Time="2014-06-19T06:59:00" Value="110" />
+        <Value Link="#" Time="2014-06-19T11:00:00" Value="106" />
+        <Value Link="#" Time="2014-06-19T13:00:00" Value="103" />
+        <Value Link="#" Time="2014-06-19T17:00:00" Value="107" />
+        <Value Link="#" Time="2014-06-19T23:00:00" Value="98" />
+        <Value Link="#" Time="2014-06-20T05:00:00" Value="107" />
+        <Value Link="#" Time="2014-06-20T13:00:00" Value="99" />
+        <Value Link="#" Time="2014-06-20T23:00:00" Value="107" />
+        <Value Link="#" Time="2014-06-21T05:00:00" Value="109" />
+        <Value Link="#" Time="2014-06-21T11:00:00" Value="106" />
+        <Value Link="#" Time="2014-06-21T17:00:00" Value="103" />
+        <Value Link="#" Time="2014-06-21T23:00:00" Value="97" />
+        <Value Link="#" Time="2014-06-22T05:00:00" Value="96" />
+        <Value Link="#" Time="2014-06-22T11:00:00" Value="88" />
+        <Value Link="#" Time="2014-06-22T17:00:00" Value="92" />
+        <Value Link="#" Time="2014-06-22T23:00:00" Value="93" />
+        <Value Link="#" Time="2014-06-23T05:00:00" Value="82" />
+        <Value Link="#" Time="2014-06-23T11:00:00" Value="93" />
+        <Value Link="#" Time="2014-06-23T17:00:00" Value="86" />
+        <Value Link="#" Time="2014-06-23T23:00:00" Value="95" />
+        <Value Link="#" Time="2014-06-24T05:00:00" Value="87" />
+        <Value Link="#" Time="2014-06-24T18:00:00" Value="96" />
+        <Value Link="#" Time="2014-06-25T09:30:00" Value="64" />
+        <Value Link="#" Time="2014-06-25T18:00:00" Value="77" />
+        <Value Link="#" Time="2014-06-26T09:30:00" Value="63" />
+        <Value Link="#" Time="2014-06-27T09:00:00" Value="88" />
+        <Value Link="#" Time="2014-06-27T18:31:00" Value="70" />
+        <Value Link="#" Time="2014-06-28T09:00:00" Value="70" />
+        <Value Link="#" Time="2014-06-28T18:39:00" Value="72" />
+        <Value Link="#" Time="2014-06-29T09:00:00" Value="75" />
+        <Value Link="#" Time="2014-06-29T17:33:00" Value="81" />
+        <Value Link="#" Time="2014-06-30T05:40:00" Value="71" />
+        <Value Link="#" Time="2014-06-30T09:40:00" Value="79" />
+        <Value Link="#" Time="2014-06-30T22:25:00" Value="81" />
+        <Value Link="#" Time="2014-07-01T10:15:00" Value="69" />
+        <Value Link="#" Time="2014-07-01T18:00:00" Value="64" />
+        <Value Link="#" Time="2014-07-02T10:09:00" Value="78" />
+        <Value Link="#" Time="2014-07-02T18:00:00" Value="73" />
+        <Value Link="#" Time="2014-07-03T10:00:00" Value="82" />
+        <Value Link="#" Time="2014-07-03T18:00:00" Value="81" />
+        <Value Link="#" Time="2014-07-04T10:00:00" Value="82" />
+        <Value Link="#" Time="2014-07-04T17:30:00" Value="77" />
+        <Value Link="#" Time="2014-07-05T10:36:00" Value="87" />
+        <Value Link="#" Time="2014-07-05T18:00:00" Value="80" />
+        <Value Link="#" Time="2014-07-06T11:19:00" Value="80" />
+        <Value Link="#" Time="2014-07-06T18:21:00" Value="83" />
+        <Value Link="#" Time="2014-07-07T10:22:00" Value="71" />
+        <Value Link="#" Time="2014-07-07T18:35:00" Value="74" />
+        <Value Link="#" Time="2014-07-08T10:49:00" Value="68" />
+        <Value Link="#" Time="2014-07-08T19:20:00" Value="59" />
+        <Value Link="#" Time="2014-07-09T10:10:00" Value="76" />
+        <Value Link="#" Time="2014-07-09T18:30:00" Value="63" />
+        <Value Link="#" Time="2014-07-10T09:30:00" Value="71" />
+        <Value Link="#" Time="2014-07-10T18:19:00" Value="65" />
+        <Value Link="#" Time="2014-07-11T10:00:00" Value="83" />
+        <Value Link="#" Time="2014-07-11T18:00:00" Value="62" />
+        <Value Link="#" Time="2014-07-12T09:30:00" Value="84" />
+        <Value Link="#" Time="2014-07-12T18:00:00" Value="73" />
+        <Value Link="#" Time="2014-07-13T09:40:00" Value="68" />
+        <Value Link="#" Time="2014-07-13T17:00:00" Value="67" />
+        <Value Link="#" Time="2014-07-14T09:17:00" Value="66" />
+        <Value Link="#" Time="2014-07-14T18:00:00" Value="67" />
+        <Value Link="#" Time="2014-07-15T11:30:00" Value="70" />
+        <Value Link="#" Time="2014-07-15T18:30:00" Value="67" />
+        <Value Link="#" Time="2014-07-16T11:23:00" Value="60" />
+        <Value Link="#" Time="2014-07-16T18:11:00" Value="61" />
+        <Value Link="#" Time="2014-07-17T09:30:00" Value="70" />
+        <Value Link="#" Time="2014-07-17T18:00:00" Value="65" />
+        <Value Link="#" Time="2014-07-18T09:30:00" Value="63" />
+        <Value Link="#" Time="2014-07-18T17:20:00" Value="58" />
+        <Value Link="#" Time="2014-07-19T09:30:00" Value="45" />
+        <Value Link="#" Time="2014-07-19T17:18:00" Value="52" />
+        <Value Link="#" Time="2014-07-20T09:00:00" Value="73" />
+        <Value Link="#" Time="2014-07-20T17:20:00" Value="70" />
+        <Value Link="#" Time="2014-07-21T09:30:00" Value="57" />
+        <Value Link="#" Time="2014-07-21T18:00:00" Value="62" />
+        <Value Link="#" Time="2014-07-22T09:23:00" Value="64" />
+        <Value Link="#" Time="2014-07-22T19:00:00" Value="65" />
+        <Value Link="#" Time="2014-07-23T09:30:00" Value="51" />
+        <Value Link="#" Time="2014-07-23T18:21:00" Value="50" />
+        <Value Link="#" Time="2014-07-24T09:08:00" Value="54" />
+        <Value Link="#" Time="2014-07-25T10:15:00" Value="46" />
+        <Value Link="#" Time="2014-07-25T18:18:00" Value="49" />
+        <Value Link="#" Time="2014-07-26T11:23:00" Value="56" />
+      </Values>
+    </Data>
+    <Data Name="PAIN">
+      <Values>
+        <Value Link="#" Time="2014-06-06T21:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-07T05:00:00" Value="0" />
+        <Value Link="#" Time="2014-06-07T13:00:00" Value="2" />
+        <Value Link="#" Time="2014-06-07T21:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-08T07:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-08T13:00:00" Value="2" />
+        <Value Link="#" Time="2014-06-08T21:00:00" Value="2" />
+        <Value Link="#" Time="2014-06-08T23:30:00" Value="1" />
+        <Value Link="#" Time="2014-06-09T05:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-09T21:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-10T05:00:00" Value="0" />
+        <Value Link="#" Time="2014-06-10T22:30:00" Value="3" />
+        <Value Link="#" Time="2014-06-11T05:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-11T23:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-12T05:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-12T13:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-12T23:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-13T05:00:00" Value="0" />
+        <Value Link="#" Time="2014-06-13T23:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-14T05:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-14T11:00:00" Value="2" />
+        <Value Link="#" Time="2014-06-14T17:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-14T23:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-15T05:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-15T11:05:00" Value="2" />
+        <Value Link="#" Time="2014-06-15T18:12:00" Value="1" />
+        <Value Link="#" Time="2014-06-15T22:51:00" Value="1" />
+        <Value Link="#" Time="2014-06-16T05:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-16T13:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-16T17:00:00" Value="2" />
+        <Value Link="#" Time="2014-06-16T23:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-17T05:00:00" Value="0" />
+        <Value Link="#" Time="2014-06-17T11:00:00" Value="2" />
+        <Value Link="#" Time="2014-06-17T23:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-18T05:00:00" Value="0" />
+        <Value Link="#" Time="2014-06-18T11:33:00" Value="3" />
+        <Value Link="#" Time="2014-06-18T23:08:00" Value="1" />
+        <Value Link="#" Time="2014-06-19T05:00:00" Value="0" />
+        <Value Link="#" Time="2014-06-19T11:00:00" Value="2" />
+        <Value Link="#" Time="2014-06-19T23:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-20T05:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-20T13:00:00" Value="2" />
+        <Value Link="#" Time="2014-06-20T23:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-21T05:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-21T15:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-21T17:00:00" Value="2" />
+        <Value Link="#" Time="2014-06-21T23:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-22T05:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-22T11:00:00" Value="2" />
+        <Value Link="#" Time="2014-06-22T19:05:00" Value="1" />
+        <Value Link="#" Time="2014-06-22T23:19:00" Value="1" />
+        <Value Link="#" Time="2014-06-23T05:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-23T11:24:00" Value="1" />
+        <Value Link="#" Time="2014-06-23T23:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-24T05:00:00" Value="1" />
+        <Value Link="#" Time="2014-06-25T12:44:00" Value="0" />
+        <Value Link="#" Time="2014-06-26T10:01:00" Value="0" />
+        <Value Link="#" Time="2014-06-27T11:16:00" Value="0" />
+        <Value Link="#" Time="2014-06-28T09:47:00" Value="0" />
+        <Value Link="#" Time="2014-06-29T12:18:00" Value="0" />
+        <Value Link="#" Time="2014-07-01T20:23:00" Value="0" />
+        <Value Link="#" Time="2014-07-02T20:28:00" Value="0" />
+        <Value Link="#" Time="2014-07-03T22:44:00" Value="0" />
+        <Value Link="#" Time="2014-07-04T19:22:00" Value="0" />
+        <Value Link="#" Time="2014-07-05T23:56:00" Value="0" />
+        <Value Link="#" Time="2014-07-12T01:11:00" Value="0" />
+        <Value Link="#" Time="2014-07-12T21:48:00" Value="0" />
+        <Value Link="#" Time="2014-07-13T18:04:00" Value="0" />
+        <Value Link="#" Time="2014-07-14T19:26:00" Value="0" />
+        <Value Link="#" Time="2014-07-15T19:36:00" Value="0" />
+        <Value Link="#" Time="2014-07-19T10:43:00" Value="0" />
+        <Value Link="#" Time="2014-07-20T09:56:00" Value="0" />
+        <Value Link="#" Time="2014-07-21T11:35:00" Value="0" />
+      </Values>
+    </Data>
+    <Data Name="REMARK">
+      <Values>
+        <Value Link="#" Time="2014-06-24T00:00:00" Text="Durogesic 100μg/hr &#xD;&#xA;&#xD;&#xA;Morphine 1amp(PRN) *2&#xD;&#xA;&#xD;&#xA;tramtor 1amp(PRN)*1&#xD;&#xA;&#xD;&#xA;tramtor 1#(Q6H) *1" />
+        <Value Link="#" Time="2014-06-25T00:00:00" Text="Durogesic 100μg/hr" />
+        <Value Link="#" Time="2014-06-26T00:00:00" Text="Durogesic 100μg/hr" />
+        <Value Link="#" Time="2014-06-27T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Morphine 1amp(PRN) *2" />
+        <Value Link="#" Time="2014-06-28T00:00:00" Text="Durogesic 100μg/hr" />
+        <Value Link="#" Time="2014-06-29T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Morphine 1amp(PRN) *2" />
+        <Value Link="#" Time="2014-06-30T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Morphine 1amp(PRN) *1" />
+        <Value Link="#" Time="2014-07-04T00:00:00" Text="Durogesic 100μg/hr" />
+        <Value Link="#" Time="2014-07-05T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 1amp(PRN) *3" />
+        <Value Link="#" Time="2014-07-06T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 1amp(PRN) *3" />
+        <Value Link="#" Time="2014-07-07T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 1amp(PRN) *2&#xD;&#xA;&#xD;&#xA;Morphine 2# Q8H PO*2" />
+        <Value Link="#" Time="2014-07-08T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 2# Q8H*3" />
+        <Value Link="#" Time="2014-07-09T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 2# Q6H*3&#xD;&#xA;&#xD;&#xA;Morphine 2# stat*1&#xD;&#xA;&#xD;&#xA;Morphine 1amp(PRN) *1" />
+        <Value Link="#" Time="2014-07-10T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 2# Q4H*5&#xD;&#xA;&#xD;&#xA;Morphine 1amp(PRN) *2" />
+        <Value Link="#" Time="2014-07-11T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 2# Q4H*6&#xD;&#xA;&#xD;&#xA;Morphine 1amp(PRN) *1" />
+        <Value Link="#" Time="2014-07-12T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 2# Q4H*5&#xD;&#xA;&#xD;&#xA;Morphine 1amp(PRN) *1" />
+        <Value Link="#" Time="2014-07-13T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 2# Q4H*6" />
+        <Value Link="#" Time="2014-07-14T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 2# Q4H*2&#xD;&#xA;&#xD;&#xA;Morphine 2# Q8H*2" />
+        <Value Link="#" Time="2014-07-16T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 2# Q8H*3" />
+        <Value Link="#" Time="2014-07-17T00:00:00" Text="Durogesic 100μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 2# Q8H*3" />
+        <Value Link="#" Time="2014-07-18T00:00:00" Text="Durogesic 125μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 2# Q8H*1" />
+        <Value Link="#" Time="2014-07-19T00:00:00" Text="Durogesic 125μg/hr" />
+        <Value Link="#" Time="2014-07-20T00:00:00" Text="Durogesic 125μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 15mg prn sc*2&#xD;&#xA;&#xD;&#xA;total 30mg" />
+        <Value Link="#" Time="2014-07-21T00:00:00" Text="Durogesic 125μg/hr&#xD;&#xA;&#xD;&#xA;Morphine 5mg Q6H sc*3&#xD;&#xA;&#xD;&#xA;Morphine 5mg st. sc*1&#xD;&#xA;&#xD;&#xA;Morphine 15mg prn sc*1&#xD;&#xA;&#xD;&#xA;Total 35mg" />
+      </Values>
+    </Data>
+    <Data Name="wenben">
+      <Values>
+        <Value Link="#" Time="2014-06-09T09:20:00" Text="R't Femur_Lateral" />
+        <Value Link="#" Time="2014-06-09T09:21:00" Text="R't Femur_AP" />
+        <Value Link="#" Time="2014-06-09T09:21:00" Text="R't Lower leg_Lateral" />
+        <Value Link="#" Time="2014-06-09T09:21:00" Text="R't Lower leg_AP" />
+        <Value Link="#" Time="2014-06-10T00:00:00" Text="股骨幹骨折開放性復位術 Open reduction for fracture of femoral shaft手術" />
+        <Value Link="#" Time="2014-06-10T14:45:00" Text="Blood gas analysis (限心導管室專用)" />
+        <Value Link="#" Time="2014-06-10T14:45:00" Text="Blood sugar(one touch) (心內)" />
+        <Value Link="#" Time="2014-06-10T21:55:00" Text="R't Femur_Lateral" />
+        <Value Link="#" Time="2014-06-10T21:55:00" Text="R't Lower leg_AP" />
+        <Value Link="#" Time="2014-06-10T21:55:00" Text="R't Femur_AP" />
+        <Value Link="#" Time="2014-06-10T21:55:00" Text="R't Lower leg_Lateral" />
+        <Value Link="#" Time="2014-06-18T17:00:00" Text="R't Mandible" />
+        <Value Link="#" Time="2014-06-23T06:52:00" Text="R't Femur_Lateral" />
+        <Value Link="#" Time="2014-06-23T06:52:00" Text="R't Lower leg_AP" />
+        <Value Link="#" Time="2014-06-23T06:52:00" Text="R't Femur_AP" />
+        <Value Link="#" Time="2014-06-23T06:52:00" Text="R't Lower leg_Lateral" />
+        <Value Link="#" Time="2014-06-30T11:51:00" Text="Chest PA" />
+        <Value Link="#" Time="2014-07-08T07:00:00" Text="Chest PA" />
+        <Value Link="#" Time="2014-07-16T08:46:00" Text="Chest PA" />
+      </Values>
+    </Data>
+    <Data>
+      <Values />
+    </Data>
+    <Data Name="zhuangtai2">
+      <Values />
+    </Data>
+    <Data Name="tiwen">
+      <Values />
+    </Data>
+  </Datas>
+</TemperatureDocument>

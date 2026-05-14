@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<TemperatureDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Parameters />
+  <Datas>
+    <Data Name="日期">
+      <Values />
+    </Data>
+    <Data Name="住院天数">
+      <Values />
+    </Data>
+    <Data Name="术后天数">
+      <Values />
+    </Data>
+    <Data>
+      <Values />
+    </Data>
+    <Data Name="7">
+      <Values />
+    </Data>
+    <Data Name="1">
+      <Values />
+    </Data>
+    <Data Name="9">
+      <Values />
+    </Data>
+    <Data Name="WENBEN">
+      <Values />
+    </Data>
+  </Datas>
+  <Config Version="1.0">
+    <Zones />
+    <FontName>宋体</FontName>
+    <HeaderLines>
+      <Line TickStep="6" Name="日期" Title="日期" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line TickStep="6" Name="住院天数" Title="住院天数" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line TickStep="6" Name="术后天数" Title="术后天数" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line TickStep="3" LoopTextList="上午,下午" Title="时刻" ValueType="TickText">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line Title="体重  体温" ValueType="HourTick">
+        <DataSource />
+        <Scales />
+      </Line>
+    </HeaderLines>
+    <FooterLines>
+      <Line TickStep="42" ExtendGridLineType="None" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line TickStep="42" ExtendGridLineType="None" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line TickStep="42" ExtendGridLineType="None" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line TickStep="42" ExtendGridLineType="None" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line TickStep="42" ExtendGridLineType="None" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line TickStep="42" ExtendGridLineType="None" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+      <Line TickStep="42" ExtendGridLineType="None" ValueType="Data">
+        <DataSource />
+        <Scales />
+      </Line>
+    </FooterLines>
+    <YAxisInfos>
+      <YAxis Title="400" ColorValueForDownValue="#FF0000" AllowOutofRange="true" SymbolStyle="None" MaxValue="400" AlertLineColorValue="#FF0000" MinValue="-400" ColorValueForUpValue="#FF0000" BottomTitle="" Name="7" ValueVisible="false" ColorValueForPointValue="#000000" SymbolSize="30">
+        <AbNormalRangeSettings>
+          <NormalRangeDownLineStyle>
+            <Width>0</Width>
+            <Color>#00FFFFFF</Color>
+          </NormalRangeDownLineStyle>
+          <NormalRangeUpLineStyle>
+            <Width>0</Width>
+            <Color>#00FFFFFF</Color>
+          </NormalRangeUpLineStyle>
+        </AbNormalRangeSettings>
+        <BottomPadding>0.1115</BottomPadding>
+        <Scales />
+        <DataSource />
+        <TopPadding>0</TopPadding>
+      </YAxis>
+      <YAxis Title="42" EnableLanternValue="true" SymbolColorValue="#0000FF" ColorValueForDownValue="#FF0000" AllowOutofRange="true" LanternValueTitle="物理降温" SymbolStyle="None" MaxValue="42" TitleValueDispalyFormat="" AlertLineColorValue="#FF0000" MinValue="34" ColorValueForUpValue="#FF0000" ValueFormatString="0.0" BottomTitle="" Name="1" ColorValueForPointValue="#000000" RedLineValue="37" SymbolSize="30">
+        <AbNormalRangeSettings>
+          <NormalRangeDownLineStyle>
+            <Width>0</Width>
+            <Color>#00FFFFFF</Color>
+          </NormalRangeDownLineStyle>
+          <NormalRangeUpLineStyle>
+            <Width>0</Width>
+            <Color>#00FFFFFF</Color>
+          </NormalRangeUpLineStyle>
+        </AbNormalRangeSettings>
+        <BottomPadding>0.1115</BottomPadding>
+        <Scales />
+        <DataSource />
+        <TopPadding>0</TopPadding>
+      </YAxis>
+      <YAxis Title="" ColorValueForDownValue="#FF0000" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" Name="9" ColorValueForPointValue="#000000" Style="Text">
+        <AbNormalRangeSettings>
+          <NormalRangeDownLineStyle>
+            <Width>0</Width>
+            <Color>#00FFFFFF</Color>
+          </NormalRangeDownLineStyle>
+          <NormalRangeUpLineStyle>
+            <Width>0</Width>
+            <Color>#00FFFFFF</Color>
+          </NormalRangeUpLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+        <DataSource />
+      </YAxis>
+      <YAxis SymbolColorValue="#0000FF" ColorValueForDownValue="#FF0000" AlertLineColorValue="#FF0000" ColorValueForUpValue="#FF0000" Name="WENBEN" ColorValueForPointValue="#000000" Style="Text">
+        <AbNormalRangeSettings>
+          <NormalRangeDownLineStyle>
+            <Width>0</Width>
+            <Color>#00FFFFFF</Color>
+          </NormalRangeDownLineStyle>
+          <NormalRangeUpLineStyle>
+            <Width>0</Width>
+            <Color>#00FFFFFF</Color>
+          </NormalRangeUpLineStyle>
+        </AbNormalRangeSettings>
+        <Scales />
+        <DataSource />
+        <TopPadding>0.35</TopPadding>
+      </YAxis>
+    </YAxisInfos>
+    <GridYSplitInfo>
+      <GridYSplitNum>9</GridYSplitNum>
+    </GridYSplitInfo>
+    <PageSettings>
+      <BottomMargin>20</BottomMargin>
+      <LeftMargin>50</LeftMargin>
+      <TopMargin>90</TopMargin>
+      <RightMargin>50</RightMargin>
+    </PageSettings>
+    <Images />
+    <SymbolSize>18</SymbolSize>
+    <Labels>
+      <Label Top="-140" Left="950" Height="180" Text="平阳县人民医院" Width="300">
+        <Font>
+          <Size>16</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Label>
+      <Label Top="-55" Left="950" Height="180" Text="婴儿体温单" Width="300">
+        <Font>
+          <Size>16</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Label>
+      <Label Top="-60" Alignment="Near" ColorValue="#FF0000" Left="1700" Height="180" LineAlignment="Near" Text="过敏史:" Width="80" />
+      <Label MultiLine="true" Top="-60" Alignment="Near" Left="1830" Height="300" LineAlignment="Near" Text="GMS" Width="460" />
+      <Label Top="-61" Alignment="Near" ColorValue="#FF0000" Left="1700" Height="200" LineAlignment="Near" Text="" Width="600">
+        <ShowBorder>true</ShowBorder>
+      </Label>
+      <Label MultiLine="true" Top="2216" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" BackColorValue="#FFFFFF" Height="830" Text="" Width="2180">
+        <ShowBorder>true</ShowBorder>
+      </Label>
+      <Label Top="2276" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" BackColorValue="#FFFFFF" Left="10" Text="新生儿预防接种记录" Width="2160">
+        <Font>
+          <Size>14.25</Size>
+          <Bold>true</Bold>
+        </Font>
+      </Label>
+      <Label Top="2376" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="10" Text="卡介苗注射日期:" Width="360" />
+      <Label Top="2376" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_kajiemzsrq" Left="360" Text="" Width="300" />
+      <Label Top="2376" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="610" Text="执行人:" Width="150" />
+      <Label Top="2376" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_kajiemzxrxm" Left="760" Text="" Width="300" />
+      <Label Top="2376" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="1060" Text="未注射原因:" Width="250" />
+      <Label Top="2376" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_kajiemwjzyy" Left="1310" Text="" Width="600" />
+      <Label Top="2446" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Height="1" Text="" Width="2180">
+        <ShowBorder>true</ShowBorder>
+      </Label>
+      <Label Top="2446" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="10" Text="乙肝疫苗注射日期:" Width="360" />
+      <Label Top="2446" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_yiganymzsrq" Left="360" Text="" Width="300" />
+      <Label Top="2446" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="610" Text="执行人:" Width="150" />
+      <Label Top="2446" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_yiganymzxrxm" Left="760" Text="" Width="300" />
+      <Label Top="2446" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="1060" Text="未注射原因:" Width="250" />
+      <Label Top="2446" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_yiganymwjzyy" Left="1310" Text="" Width="600" />
+      <Label Top="2526" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Height="1" Text="" Width="2180">
+        <ShowBorder>true</ShowBorder>
+      </Label>
+      <Label Top="2530" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="10" Text="血氧饱和度:" Width="360" />
+      <Label Top="2530" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="360" Text="测定日期:" Width="180" />
+      <Label Top="2530" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_xueyanbhdcdrq" Left="545" Text="" Width="300" />
+      <Label Top="2530" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="845" Text="右上肢(%)" Width="180" />
+      <Label Top="2530" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_xueyanbhdysz" Left="1025" Text="" Width="300" />
+      <Label Top="2530" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="1325" Text="下肢" Width="180" />
+      <Label Top="2530" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_xueyanbhdxz" Left="1525" Text="" Width="300" />
+      <Label Top="2600" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="360" Text="复测日期:" Width="180" />
+      <Label Top="2600" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_xueyanbhdfcrq" Left="545" Text="" Width="300" />
+      <Label Top="2600" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="845" Text="右上肢(%)" Width="180" />
+      <Label Top="2600" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_xueyanbhdfcysz" Left="1025" Text="" Width="300" />
+      <Label Top="2600" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="1325" Text="下肢" Width="180" />
+      <Label Top="2600" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_xueyanbhdfcxz" Left="1525" Text="" Width="300" />
+      <Label Top="2670" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Height="1" Text="" Width="2180">
+        <ShowBorder>true</ShowBorder>
+      </Label>
+      <Label Top="2676" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="10" Text="血糖:" Width="360" />
+      <Label Top="2676" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="360" Text="测定日期:" Width="180" />
+      <Label Top="2676" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_xuetangcdrq" Left="545" Text="" Width="300" />
+      <Label Top="2676" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_xuetangz" Left="845" Text="" Width="300" />
+      <Label Top="2676" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="1145" Text="mmol/L" Width="180" />
+      <Label Top="2676" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="1325" Text="执行人:" Width="180" />
+      <Label Top="2676" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_xuetangzxrxm" Left="1525" Text="" Width="300" />
+      <Label Top="2746" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="360" Text="复测日期:" Width="180" />
+      <Label Top="2746" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_xuetangfcrq" Left="545" Text="" Width="300" />
+      <Label Top="2746" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_xuetangfcz" Left="845" Text="" Width="300" />
+      <Label Top="2746" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="1145" Text="mmol/L" Width="180" />
+      <Label Top="2746" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="1325" Text="执行人:" Width="180" />
+      <Label Top="2746" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_xuetangfczxrxm" Left="1525" Text="" Width="300" />
+      <Label Top="2826" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Height="1" Text="" Width="2180">
+        <ShowBorder>true</ShowBorder>
+      </Label>
+      <Label Top="2830" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="10" Text="早接触:" Width="200" />
+      <Label Top="2830" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_zaojiec" Left="205" Text="" />
+      <Label Top="2830" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="375" Text="早开奶:" Width="180" />
+      <Label Top="2830" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_zaokain" Left="555" Text="" />
+      <Label Top="2830" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="655" Text="早吸吮:" Width="180" />
+      <Label Top="2830" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_zaoxish" Left="835" Text="" />
+      <Label Top="2830" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Far" BackColorValue="#FFFFFF" Left="1000" Text="其他:" Width="180" />
+      <Label Top="2830" PositionFixModeForAutoHeightLine="AboveAutoHeightLine" Alignment="Near" BackColorValue="#FFFFFF" ParameterName="vc_qitaxx" Left="1185" Text="" Width="600" />
+    </Labels>
+    <PageIndexText>第[%pageindex%]周</PageIndexText>
+    <FooterDescription>                       </FooterDescription>
+    <HeaderLabels>
+      <Label DataSourceName="XINGMING" SeperatorChar="58" Title="姓名" />
+      <Label DataSourceName="XINGBIE" SeperatorChar="58" Title="性别" />
+      <Label DataSourceName="DANGQIANBQMC" SeperatorChar="58" Title="病区" />
+      <Label DataSourceName="DANGQIANCW" SeperatorChar="58" Title="床号" />
+      <Label DataSourceName="ZHUYUANHAO" SeperatorChar="58" Title="住院号" />
+    </HeaderLabels>
+    <BigVerticalGridLineWidth>5</BigVerticalGridLineWidth>
+    <GridYSplitNum>9</GridYSplitNum>
+    <Ticks>
+      <Tick ColorValue="#FF0000" Value="2" Text="2" />
+      <Tick Value="6" Text="6" />
+      <Tick Value="10" Text="10" />
+      <Tick Value="14" Text="14" />
+      <Tick ColorValue="#FF0000" Value="18" Text="18" />
+      <Tick ColorValue="#FF0000" Value="22" Text="22" />
+    </Ticks>
+  </Config>
+</TemperatureDocument>

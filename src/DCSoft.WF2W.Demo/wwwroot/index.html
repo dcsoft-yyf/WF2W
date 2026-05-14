@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" /><!-- Warning:Must be UTF-8 , otherwise Error !! -->
+    <title>WF2W.Demo</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Segoe UI Emoji";
+        }
+
+        .page-header {
+            padding: 12px 16px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+            .page-header h1 {
+                margin: 0 0 8px 0;
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            .page-header a {
+                color: #2563eb;
+                text-decoration: none;
+            }
+
+                .page-header a:hover {
+                    text-decoration: underline;
+                }
+
+        #split-container {
+            display: flex;
+            width: 100vw;
+            height: calc(100% - 80px);
+            box-sizing: border-box;
+        }
+
+        #left-pane {
+            flex: 1 1 auto;
+            min-width: 160px;
+            overflow: hidden;
+        }
+
+        #splitter {
+            flex: 0 0 6px;
+            cursor: col-resize;
+            background: linear-gradient(90deg,#e5e7eb,#cbd5e1);
+        }
+
+        #right-pane {
+            flex: 0 0 300px;
+            width: 300px;
+            min-width: 180px;
+            max-width: 60vw;
+            padding: 12px;
+            box-sizing: border-box;
+            overflow: auto;
+            background: #f9fafb;
+            border-right: 1px solid #e5e7eb;
+        }
+
+        .controls-title {
+            margin: 0 0 8px 0;
+            font-size: 14px;
+            font-weight: 600;
+            color: #334155;
+        }
+
+        .vue-btn {
+            appearance: none;
+            border: 0;
+            background: lightgray;
+            color: black;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 1px 2px rgba(0,0,0,.04);
+            transition: background .15s ease, transform .02s;
+            margin: 4px 0;
+            width: 100%;
+            text-align: left;
+        }
+
+            .vue-btn:hover {
+                background: #3aa876;
+            }
+
+            .vue-btn:active {
+                transform: translateY(1px);
+            }
+
+        .hint {
+            font-size: 12px;
+            color: #64748b;
+            margin: 8px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <h1>Demos for <a href="https://github.com/dcsoft-yyf/WF2W" target="_blank">WF2W</a></h1>
+        <div>
+            <br />This Blazor WASM application is packaged to a single js file by <a href="https://github.com/dcsoft-yyf/BlazorWASMPackager" target="_blank">BlazorWASMPackager</a>.
+            <br />Notice: You need to download a BIG js file more than 8MB size at the first time. Please wait patiently.
+        </div>
+    </div>
+    <div id="split-container">
+        <div id="right-pane">
+            <div class="controls-title">Examples</div>
+            <button class="vue-btn" onclick="RunCommand('RunMinesweeper');">Game Minesweeper (with GDI+)</button>
+            <button class="vue-btn" onclick="RunCommand('Main4WinFormCalculator');">Calculator (Button & TextBox)</button>
+            <button class="vue-btn" onclick="RunCommand('TestMessageBox');">MessageBox and MessageBoxNew</button>
+            <button class="vue-btn" onclick="RunCommand('TestResourceForm');">Load data from Form.resx</button>
+            <button class="vue-btn" onclick="RunCommand('TestTimer');">Test System.Windows.Forms.Timer</button>
+            <button class="vue-btn" onclick="RunCommand('RunTextFileViewer');">Test OpenFileDialog</button>
+            <button class="vue-btn" onclick="RunCommand('RunDCTimeLine');">Test DCTimeline</button>
+            <button class="vue-btn" onclick="RunCommand('RunWinClock');">RunWinClock</button>
+            <button class="vue-btn" onclick="RunCommand('RunChess');">RunChess</button>
+            <button class="vue-btn" onclick="RunCommand('RunMenuForm');">RunMenuForm</button>
+            <button class="vue-btn" onclick="RunCommand('RunWinFormsControlsDemo');">RunWinFormsControlsDemo</button>
+        </div>
+        <div id="splitter" title="Drag to resize"></div>
+        <div id="left-pane">
+            <div dctype="System.Windows.Forms.Screen"
+                style="border:3px solid black; width:calc(100% - 6px); height:800px; font-family:宋体; font-size:12px; background-image:url(win10.jpg); background-repeat:no-repeat; background-size:100% 100%"
+                EntryPoint="RunDCTimeLine">
+                <span style="color:yellow;font-size:20px">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const container = document.getElementById('split-container');
+            const splitter = document.getElementById('splitter');
+            const right = document.getElementById('right-pane');
+            let dragging = false;
+
+            splitter.addEventListener('mousedown', function (e) {
+                e.preventDefault();
+                dragging = true;
+                document.body.style.userSelect = 'none';
+            });
+            window.addEventListener('mousemove', function (e) {
+                if (!dragging) return;
+                const rect = container.getBoundingClientRect();
+                let x = e.clientX - rect.left; // splitter center X
+                const minRight = 180; // px
+                const maxRight = Math.max(180, Math.floor(rect.width * 0.6));
+                let newRight = x - splitter.offsetWidth; // right-pane on the left, drag right to expand
+                if (newRight < minRight) newRight = minRight;
+                if (newRight > maxRight) newRight = maxRight;
+                right.style.flex = '0 0 ' + newRight + 'px';
+                right.style.width = newRight + 'px';
+            });
+            window.addEventListener('mouseup', function () {
+                if (!dragging) return;
+                dragging = false;
+                document.body.style.userSelect = '';
+            });
+        })();
+
+        function RunCommand(strEntryName) {
+            var src = document.querySelector('div[dctype="System.Windows.Forms.Screen"]');
+            if (src != null) {
+                src.DCRun(strEntryName);
+            }
+        }
+    </script>
+    <script src="DCResourceStrings-zh-cn.js"></script>
+    <script2 src="winform2wasm-demo.js"></script2>
+    <script src="_framework/blazor.webassembly.js"></script>
+</body>
+</html>
